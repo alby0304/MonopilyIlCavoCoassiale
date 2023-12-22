@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-63d709a55369880c1f35.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Monopoly_Il_Cavo_Coassiale",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Casella::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Casella-Debug-832902b982455d9a55a9.json",
+					"name" : "Casella",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Casella_laterale::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Casella_laterale-Debug-af0eb7eb1f984bf07205.json",
+					"name" : "Casella_laterale",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Tabellone::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Tabellone-Debug-a78484ed5559feae6ae4.json",
+					"name" : "Tabellone",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TestTabellone::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TestTabellone-Debug-27f33fac165969e7be01.json",
+					"name" : "TestTabellone",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/alber/Downloads/Monopoli/build",
+		"source" : "C:/Users/alber/Downloads/Monopoli"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -36,16 +36,24 @@ public:
     // Costruttore
     Casella(Index_riga R, int C, char cont);
 
+    //funzioni membro
+    void addPlayer(Giocatore* player);// agginge un giocatore (Push_Back)
+    void removePlayer(Giocatore* player); //rimuve un giocatore da una casella (metordo vector.erase())
+
     // Utile per la stampa
     std::string normalize(std::string);
     virtual std::string to_String();
-
+    
+    // Funzioni GET
+    char getType() const  {return _type;}
+    char getDimMaxCasella() const {return _dim_max_Casella;}
+    position GetCordinata() const {return _coordinata;}
 
 protected:
-    std::vector<Giocatore*> players;
-    position _coordinata;
+    std::vector<Giocatore*> _players;
+    const position _coordinata;
     const char _type;
-    const int dim_max_Casella = 9; // Per l'output
+    const int _dim_max_Casella = 9; // Per l'output
     // La scelta del 9 è per poter stampare il carattere di inizio casella "|" + il tipo di casella "E/S/L/ "
     // + un numero variabile di giocatori (massimo 4, caso raro ma possibile) + carattere di chiusura cella "|"
     // = tot, che al massimo è 7

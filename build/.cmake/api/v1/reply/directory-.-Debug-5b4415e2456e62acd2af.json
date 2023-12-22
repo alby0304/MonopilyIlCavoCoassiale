@@ -17,7 +17,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 27,
+				"line" : 32,
 				"parent" : 0
 			}
 		]
@@ -33,7 +33,7 @@
 				"TestTabellone.exe"
 			],
 			"targetId" : "TestTabellone::@6890427a1f51a3e7e1df",
-			"targetIndex" : 3,
+			"targetIndex" : 4,
 			"type" : "target"
 		},
 		{
@@ -42,7 +42,7 @@
 			"cxxModuleBmiTarget" : 
 			{
 				"id" : "TestTabellone::@6890427a1f51a3e7e1df",
-				"index" : 3
+				"index" : 4
 			},
 			"destination" : "C:/Users/alber/Downloads/Monopoli/bin",
 			"type" : "cxxModuleBmi"

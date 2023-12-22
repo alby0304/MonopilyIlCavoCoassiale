@@ -19,6 +19,12 @@
 },
 {
   "directory": "C:/Users/alber/Downloads/Monopoli/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Giocatore.dir/includes_CXX.rsp -g -o CMakeFiles\\Giocatore.dir\\src\\Giocatore.cpp.obj -c C:\\Users\\alber\\Downloads\\Monopoli\\src\\Giocatore.cpp",
+  "file": "C:/Users/alber/Downloads/Monopoli/src/Giocatore.cpp",
+  "output": "CMakeFiles/Giocatore.dir/src/Giocatore.cpp.obj"
+},
+{
+  "directory": "C:/Users/alber/Downloads/Monopoli/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/TestTabellone.dir/includes_CXX.rsp -g -o CMakeFiles\\TestTabellone.dir\\src\\TestTabellone.cpp.obj -c C:\\Users\\alber\\Downloads\\Monopoli\\src\\TestTabellone.cpp",
   "file": "C:/Users/alber/Downloads/Monopoli/src/TestTabellone.cpp",
   "output": "CMakeFiles/TestTabellone.dir/src/TestTabellone.cpp.obj"

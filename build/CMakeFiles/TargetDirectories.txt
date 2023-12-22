@@ -1,6 +1,7 @@
 C:/Users/alber/Downloads/Monopoli/build/CMakeFiles/Casella.dir
 C:/Users/alber/Downloads/Monopoli/build/CMakeFiles/Casella_laterale.dir
 C:/Users/alber/Downloads/Monopoli/build/CMakeFiles/Tabellone.dir
+C:/Users/alber/Downloads/Monopoli/build/CMakeFiles/Giocatore.dir
 C:/Users/alber/Downloads/Monopoli/build/CMakeFiles/TestTabellone.dir
 C:/Users/alber/Downloads/Monopoli/build/CMakeFiles/edit_cache.dir
 C:/Users/alber/Downloads/Monopoli/build/CMakeFiles/rebuild_cache.dir

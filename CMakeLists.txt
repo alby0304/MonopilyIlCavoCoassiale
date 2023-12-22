@@ -19,6 +19,11 @@ include/Tabellone.h
 src/Tabellone.cpp
 )
 
+add_library(Giocatore
+include/Giocatore.h
+src/Giocatore.cpp
+)
+
 add_executable(TestTabellone src/TestTabellone.cpp)
 
 target_link_libraries(TestTabellone Tabellone Casella_laterale Casella)

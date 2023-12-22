@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = C:\Users\alber\Downloads\Monopoli\build
 all: CMakeFiles/Casella.dir/all
 all: CMakeFiles/Casella_laterale.dir/all
 all: CMakeFiles/Tabellone.dir/all
+all: CMakeFiles/Giocatore.dir/all
 all: CMakeFiles/TestTabellone.dir/all
 .PHONY : all
 
@@ -76,6 +77,7 @@ preinstall:
 clean: CMakeFiles/Casella.dir/clean
 clean: CMakeFiles/Casella_laterale.dir/clean
 clean: CMakeFiles/Tabellone.dir/clean
+clean: CMakeFiles/Giocatore.dir/clean
 clean: CMakeFiles/TestTabellone.dir/clean
 .PHONY : clean
 
@@ -138,7 +140,7 @@ CMakeFiles/Casella_laterale.dir/clean:
 CMakeFiles/Tabellone.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tabellone.dir\build.make CMakeFiles/Tabellone.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tabellone.dir\build.make CMakeFiles/Tabellone.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\alber\Downloads\Monopoli\build\CMakeFiles --progress-num=5,6 "Built target Tabellone"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\alber\Downloads\Monopoli\build\CMakeFiles --progress-num=7,8 "Built target Tabellone"
 .PHONY : CMakeFiles/Tabellone.dir/all
 
 # Build rule for subdir invocation for target.
@@ -158,15 +160,41 @@ CMakeFiles/Tabellone.dir/clean:
 .PHONY : CMakeFiles/Tabellone.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/Giocatore.dir
+
+# All Build rule for target.
+CMakeFiles/Giocatore.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Giocatore.dir\build.make CMakeFiles/Giocatore.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Giocatore.dir\build.make CMakeFiles/Giocatore.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\alber\Downloads\Monopoli\build\CMakeFiles --progress-num=5,6 "Built target Giocatore"
+.PHONY : CMakeFiles/Giocatore.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Giocatore.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\alber\Downloads\Monopoli\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Giocatore.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\alber\Downloads\Monopoli\build\CMakeFiles 0
+.PHONY : CMakeFiles/Giocatore.dir/rule
+
+# Convenience name for target.
+Giocatore: CMakeFiles/Giocatore.dir/rule
+.PHONY : Giocatore
+
+# clean rule for target.
+CMakeFiles/Giocatore.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Giocatore.dir\build.make CMakeFiles/Giocatore.dir/clean
+.PHONY : CMakeFiles/Giocatore.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/TestTabellone.dir
 
 # All Build rule for target.
+CMakeFiles/TestTabellone.dir/all: CMakeFiles/Tabellone.dir/all
 CMakeFiles/TestTabellone.dir/all: CMakeFiles/Casella.dir/all
 CMakeFiles/TestTabellone.dir/all: CMakeFiles/Casella_laterale.dir/all
-CMakeFiles/TestTabellone.dir/all: CMakeFiles/Tabellone.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestTabellone.dir\build.make CMakeFiles/TestTabellone.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestTabellone.dir\build.make CMakeFiles/TestTabellone.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\alber\Downloads\Monopoli\build\CMakeFiles --progress-num=7,8 "Built target TestTabellone"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\alber\Downloads\Monopoli\build\CMakeFiles --progress-num=9,10 "Built target TestTabellone"
 .PHONY : CMakeFiles/TestTabellone.dir/all
 
 # Build rule for subdir invocation for target.

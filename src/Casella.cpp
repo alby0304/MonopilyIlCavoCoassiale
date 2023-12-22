@@ -1,7 +1,7 @@
 #include "../include/Casella.h"
 
-Casella::Casella(Index_riga R, int C, char cont): _coordinata{new position(R,C)}, _type{cont}
-{}
+//Casella::Casella(Index_riga R, int C, char cont): _coordinata{new position(R,C)}, _type{cont}
+//{}
 
 /*Casella* Casella::find(int giocatore)
 {
@@ -25,7 +25,7 @@ Casella::Casella(Index_riga R, int C, char cont): _coordinata{new position(R,C)}
     return nullptr;
 }*/
 
-std::string Casella::to_String()
+/*std::string Casella::to_String()
 {
     // Ogni casella viene rappresentata da una stringa di 9 spazi in output (a seconda di cosa c'è "sopra alla casella" inserisco i relativi spazi)
     std::string s = "|";
@@ -49,20 +49,20 @@ std::string Casella::to_String()
 
     s = normalize(s);
     return s;
-}
+}*/
 
-std::string normalize (std::string s)
+std::string Casella::normalize (std::string s)
 {
     // in questo programma normalize viene invocato da stringhe con lunghezza massima di 7 caratteri, quindi è sempre minore di dim_max_Cella
     // Sfrutto il fatto che la divisione tra due interi in C++ restituisce la parte intera del risultato, troncando eventuali decimali
-    int x = (dim_max_Casella - s.length())/2;
+    int x = (_dim_max_Casella - s.length())/2;
     // Aggiungo x spazi da entrambe le parti (per arrivaere a: s.length() = dim_max_Cella || dim_max_Cella-1)
     for (int i=0; i<x; i++)
     { 
         s = " " + s + " ";
     }
     // Se s.length() = dim_max_Cella-1, aggiungo uno spazio a sinistra (scelta di programmazione, potevo agiungerlo anche a destra)
-    if (s.length()!=dim_max_Casella)
+    if (s.length()!=_dim_max_Casella)
     {
         s = " " + s;
     }

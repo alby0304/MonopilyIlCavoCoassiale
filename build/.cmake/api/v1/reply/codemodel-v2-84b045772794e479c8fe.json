@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-63d709a55369880c1f35.json",
+					"jsonFile" : "directory-.-Debug-5b4415e2456e62acd2af.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -19,7 +19,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -37,7 +38,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -59,6 +61,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "Giocatore::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Giocatore-Debug-1a2cbc2680502b9cd9df.json",
+					"name" : "Giocatore",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "Tabellone::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Tabellone-Debug-a78484ed5559feae6ae4.json",
 					"name" : "Tabellone",
@@ -67,7 +76,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "TestTabellone::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TestTabellone-Debug-27f33fac165969e7be01.json",
+					"jsonFile" : "target-TestTabellone-Debug-b748a614adedb27da4ac.json",
 					"name" : "TestTabellone",
 					"projectIndex" : 0
 				}

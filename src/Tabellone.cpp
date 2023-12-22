@@ -1,6 +1,5 @@
 #include "../include/Tabellone.h"
 
-
 /*  Il meccanismo di creazione del tabellone viene brevemente spiegato qui.
     Il tabellone ha come variabile membro un puntatore alla casella di partenza.
     Creo la casella di partenza.
@@ -11,7 +10,7 @@
     S = 10 Standard, L = 6 lusso. Ogni volta che ne viene creata una, diminuisce il numero di caselle disponibili da creare.
     Alla fine del processo l'ultima casella punterà alla casella di partenza creando così una lista concatenata di caselle chiusa in sè stassa.
 */
-Tabellone::Tabellone()
+Tabellone::Tabellone() 
 {    
     // Indici di riga e colonna
     int indice_riga = dim_y;
@@ -65,6 +64,7 @@ Tabellone::Tabellone()
         if(i==tot_caselle-1)
             Casella_Now->succ = partenza;
 
+        
     }
 }
 
@@ -140,9 +140,9 @@ std::string Tabellone::to_String()
     */
     std::string s = "Celle di gioco:\n" + partenza->to_String();
     Casella* next = partenza->succ;
-    while (next->_type!='P')
+    while (next->getType() != 'P')
     {
-        if (next->_type==' ')
+        if (next->getType() == ' ')
         { s= s + "\n";}
         s = s + next->to_String();
         next = next->succ;

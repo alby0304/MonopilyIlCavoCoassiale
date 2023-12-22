@@ -200,6 +200,19 @@ Tabellone/fast:
 .PHONY : Tabellone/fast
 
 #=============================================================================
+# Target rules for targets named Giocatore
+
+# Build rule for target.
+Giocatore: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Giocatore
+.PHONY : Giocatore
+
+# fast build rule for target.
+Giocatore/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Giocatore.dir\build.make CMakeFiles/Giocatore.dir/build
+.PHONY : Giocatore/fast
+
+#=============================================================================
 # Target rules for targets named TestTabellone
 
 # Build rule for target.
@@ -259,6 +272,30 @@ src/Casella_laterale.s: src/Casella_laterale.cpp.s
 src/Casella_laterale.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Casella_laterale.dir\build.make CMakeFiles/Casella_laterale.dir/src/Casella_laterale.cpp.s
 .PHONY : src/Casella_laterale.cpp.s
+
+src/Giocatore.obj: src/Giocatore.cpp.obj
+.PHONY : src/Giocatore.obj
+
+# target to build an object file
+src/Giocatore.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Giocatore.dir\build.make CMakeFiles/Giocatore.dir/src/Giocatore.cpp.obj
+.PHONY : src/Giocatore.cpp.obj
+
+src/Giocatore.i: src/Giocatore.cpp.i
+.PHONY : src/Giocatore.i
+
+# target to preprocess a source file
+src/Giocatore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Giocatore.dir\build.make CMakeFiles/Giocatore.dir/src/Giocatore.cpp.i
+.PHONY : src/Giocatore.cpp.i
+
+src/Giocatore.s: src/Giocatore.cpp.s
+.PHONY : src/Giocatore.s
+
+# target to generate assembly for a file
+src/Giocatore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Giocatore.dir\build.make CMakeFiles/Giocatore.dir/src/Giocatore.cpp.s
+.PHONY : src/Giocatore.cpp.s
 
 src/Tabellone.obj: src/Tabellone.cpp.obj
 .PHONY : src/Tabellone.obj
@@ -322,6 +359,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Casella
 	@echo ... Casella_laterale
+	@echo ... Giocatore
 	@echo ... Tabellone
 	@echo ... TestTabellone
 	@echo ... src/Casella.obj
@@ -330,6 +368,9 @@ help:
 	@echo ... src/Casella_laterale.obj
 	@echo ... src/Casella_laterale.i
 	@echo ... src/Casella_laterale.s
+	@echo ... src/Giocatore.obj
+	@echo ... src/Giocatore.i
+	@echo ... src/Giocatore.s
 	@echo ... src/Tabellone.obj
 	@echo ... src/Tabellone.i
 	@echo ... src/Tabellone.s

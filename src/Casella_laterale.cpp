@@ -46,17 +46,8 @@ std::string Casella_Laterale::to_String()
         s = s + "^";
 
     // Salva in s eventuali giocatori
-    if(giocatore1)
-        s = s + "1";
-    if(giocatore2)
-        s = s + "2";
-    if(giocatore3)
-        s = s + "3";
-    if(giocatore4)
-        s = s + "4";
+    // s = s + "|";
 
-    s = s + "|";
-
-    s = normalize(s);
+    // s = normalize(s);
     return s;
 }

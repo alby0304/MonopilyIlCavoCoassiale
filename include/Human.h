@@ -5,7 +5,7 @@
 
 class Human : public Giocatore
 {    
-    void buy() override;
+    bool makeChoice() override;
 };
 
 #endif  // HUMAN_H

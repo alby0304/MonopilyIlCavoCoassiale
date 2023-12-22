@@ -52,5 +52,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Casella.dir/DependInfo.cmake"
   "CMakeFiles/Casella_laterale.dir/DependInfo.cmake"
   "CMakeFiles/Tabellone.dir/DependInfo.cmake"
+  "CMakeFiles/Giocatore.dir/DependInfo.cmake"
   "CMakeFiles/TestTabellone.dir/DependInfo.cmake"
   )

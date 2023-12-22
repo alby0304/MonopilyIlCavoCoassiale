@@ -5,7 +5,7 @@
 
 class Computer : public Giocatore
 {
-    void buy() override;
+    bool makeChoice() override;
 };
 
 #endif  // COMPUTER_H

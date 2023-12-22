@@ -32,13 +32,9 @@ class Casella
 {
 public:
     Casella *succ;
-    std::vector<Giocatore*> players;
+    
     // Costruttore
     Casella(Index_riga R, int C, char cont);
-
-    // Forse non serve
-    // Trova la casella nella quale si trova il giocatore passato per int (1, 2, 3 o 4)
-    Casella *find(int);
 
     // Utile per la stampa
     std::string normalize(std::string);
@@ -46,13 +42,14 @@ public:
 
 
 protected:
+    std::vector<Giocatore*> players;
     position _coordinata;
     const char _type;
     const int dim_max_Casella = 9; // Per l'output
     // La scelta del 9 è per poter stampare il carattere di inizio casella "|" + il tipo di casella "E/S/L/ "
     // + un numero variabile di giocatori (massimo 4, caso raro ma possibile) + carattere di chiusura cella "|"
     // = tot, che al massimo è 7
-                                   // Aggiungo qualche spazio a destra e sinistra per avere un output del tabellone più omogeneo e arrivo a 9
+    // Aggiungo qualche spazio a destra e sinistra per avere un output del tabellone più omogeneo e arrivo a 9
 };
 
 #endif // CASELLA_H

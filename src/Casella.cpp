@@ -1,5 +1,44 @@
 #include "../include/Casella.h"
 
+//Costruttore
+Casella::Casella(Index_riga R, int C, char type): _coordinata{position(R,C)}, _type{type}{}
+
+//funzioni membros
+void Casella::addPlayer(Giocatore* player){
+    _players.push_back(player);
+}
+
+void Casella::removePlayer(Giocatore* player){
+    _players.erase(player);
+}   
+
+std::string Casella::normalize (std::string s)
+{
+    // in questo programma normalize viene invocato da stringhe con lunghezza massima di 7 caratteri, quindi è sempre minore di dim_max_Cella
+    // Sfrutto il fatto che la divisione tra due interi in C++ restituisce la parte intera del risultato, troncando eventuali decimali
+    int x = (_dim_max_Casella - s.length())/2;
+    // Aggiungo x spazi da entrambe le parti (per arrivaere a: s.length() = dim_max_Cella || dim_max_Cella-1)
+    for (int i=0; i<x; i++)
+    { 
+        s = " " + s + " ";
+    }
+    // Se s.length() = dim_max_Cella-1, aggiungo uno spazio a sinistra (scelta di programmazione, potevo agiungerlo anche a destra)
+    if (s.length()!=_dim_max_Casella)
+    {
+        s = " " + s;
+    }
+    return s;
+}
+
+
+
+
+
+
+
+
+
+
 //Casella::Casella(Index_riga R, int C, char cont): _coordinata{new position(R,C)}, _type{cont}
 //{}
 
@@ -51,20 +90,3 @@
     return s;
 }*/
 
-std::string Casella::normalize (std::string s)
-{
-    // in questo programma normalize viene invocato da stringhe con lunghezza massima di 7 caratteri, quindi è sempre minore di dim_max_Cella
-    // Sfrutto il fatto che la divisione tra due interi in C++ restituisce la parte intera del risultato, troncando eventuali decimali
-    int x = (_dim_max_Casella - s.length())/2;
-    // Aggiungo x spazi da entrambe le parti (per arrivaere a: s.length() = dim_max_Cella || dim_max_Cella-1)
-    for (int i=0; i<x; i++)
-    { 
-        s = " " + s + " ";
-    }
-    // Se s.length() = dim_max_Cella-1, aggiungo uno spazio a sinistra (scelta di programmazione, potevo agiungerlo anche a destra)
-    if (s.length()!=_dim_max_Casella)
-    {
-        s = " " + s;
-    }
-    return s;
-}

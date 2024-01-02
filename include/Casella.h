@@ -34,7 +34,7 @@ public:
     Casella *succ;
     
     // Costruttore
-    Casella(Index_riga R, int C, char cont);
+    Casella(Index_riga R, int C, char type);
 
     //funzioni membro
     void addPlayer(Giocatore* player);// agginge un giocatore (Push_Back)

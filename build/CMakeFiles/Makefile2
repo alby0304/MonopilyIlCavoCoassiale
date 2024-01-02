@@ -189,9 +189,9 @@ CMakeFiles/Giocatore.dir/clean:
 # Target rules for target CMakeFiles/TestTabellone.dir
 
 # All Build rule for target.
-CMakeFiles/TestTabellone.dir/all: CMakeFiles/Tabellone.dir/all
 CMakeFiles/TestTabellone.dir/all: CMakeFiles/Casella.dir/all
 CMakeFiles/TestTabellone.dir/all: CMakeFiles/Casella_laterale.dir/all
+CMakeFiles/TestTabellone.dir/all: CMakeFiles/Tabellone.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestTabellone.dir\build.make CMakeFiles/TestTabellone.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestTabellone.dir\build.make CMakeFiles/TestTabellone.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\alber\Downloads\Monopoli\build\CMakeFiles --progress-num=9,10 "Built target TestTabellone"

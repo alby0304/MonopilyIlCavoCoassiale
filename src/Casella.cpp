@@ -9,7 +9,7 @@ void Casella::addPlayer(Giocatore* player){
 }
 
 void Casella::removePlayer(Giocatore* player){
-    _players.erase(player);
+    _players.erase(_players);
 }   
 
 std::string Casella::normalize (std::string s)

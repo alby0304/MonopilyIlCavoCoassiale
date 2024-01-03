@@ -24,7 +24,7 @@ Tabellone::Tabellone(int tot_R, int tot_C)
 
     // Creo e riempio di dati la prima casella
     partenza = new Casella {indice_riga,indice_colonna,'P'};
-
+    dim_max_Casella= partenza->_dim_max_Casella;
     // Creo un puntatore con cui spostarmi per creare le caselle successive alla prima
     Casella* Casella_Now = partenza;
     // Utili per le variazioni degli indici (assumono solo 0 e 1 e -1)
@@ -107,7 +107,7 @@ std::string Tabellone::to_String()
     std::string tmp;
     std::string space;
     // Creo la stringa space in base alla dimensione di una Casella
-    for (int i=0; i < _dim_max_Casella; i++)
+    for (int i=0; i < dim_max_Casella; i++)
     {
         space += " ";
     }
@@ -119,7 +119,7 @@ std::string Tabellone::to_String()
     for (int i=1; i <= dim_x; i++)
     {
         tmp = std::to_string(i);
-        s += normalize(tmp);
+        s += normalize(tmp, dim_max_Casella);
     }
     // Vado a capo
     s = s + "\n";
@@ -130,7 +130,7 @@ std::string Tabellone::to_String()
     {
         // Inizio di riga
         tmp = int_to_char(i);
-        s += normalize(tmp);
+        s += normalize(tmp, dim_max_Casella);
         for (int j=0; j < dim_x; j++)
         {
             if ((i==0)||(i==dim_y-1)||(j==0)||(j==dim_x-1)) // Se sono ai bordi del tabellone
@@ -140,22 +140,11 @@ std::string Tabellone::to_String()
                 s = s + Target->to_String();
             }
             else    // Sono in mezzo, quindi devo stampare spazio vuoto
-            s = s + space;
+                s = s + space;
         }
         s = s + "\n";
     }
     
-    /*
-    std::string s = "Celle di gioco:\n" + partenza->to_String();
-    Casella* next = partenza->getSucc();
-    while (next->getType() != 'P')
-    {
-        if (next->getType() == ' ')
-        { s= s + "\n";}
-        s = s + next->to_String();
-        next = next->getSucc();
-    }
-    */
     return s;
 }
 

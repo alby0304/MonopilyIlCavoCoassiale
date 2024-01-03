@@ -2,7 +2,9 @@
 
 Casella::Casella(int R, int C, char cont)
 {
+    // Conversione da "riga 1" a "riga A"
     char r = int_to_char(R);
+
     _coordinata = std::make_pair(r,C);
     _type = cont;
 }
@@ -46,13 +48,13 @@ std::string Casella::to_String()
     }
 
     s = s + "|";
-    s = normalize(s);
+    s = normalize(s, _dim_max_Casella);
     return s;
 }
 
-std::string normalize (std::string s)
+std::string normalize (std::string s, int _dim_max_Casella)
 {
-    // in questo programma normalize viene invocato da stringhe con lunghezza massima di 7 caratteri, quindi è sempre minore di dim_max_Cella
+    // In questo programma normalize viene invocato da stringhe con lunghezza massima di 7 caratteri, quindi è sempre minore di dim_max_Cella
     // Sfrutto il fatto che la divisione tra due interi in C++ restituisce la parte intera del risultato, troncando eventuali decimali
     int x = (_dim_max_Casella - s.length())/2;
     // Aggiungo x spazi da entrambe le parti (per arrivaere a: s.length() = dim_max_Cella || dim_max_Cella-1)
@@ -83,4 +85,18 @@ char int_to_char(int n)
     }
     // Sarebbe il default dello switch
     return ' ';
+}
+
+void Casella::addPlayer(int ID_player)
+{
+    _players.push_back(ID_player);
+}
+
+void Casella::removePlayer()
+{
+    // Se c'è almeno un giocatore su questa casella, allora posso toglierlo
+    if(!_players.empty())
+    {
+         _players.erase(_players.begin());
+    }
 }

@@ -20,7 +20,7 @@ Tabellone::Tabellone(int tot_R, int tot_C)
 
     // Indici di riga e colonna
     int indice_riga = tot_R - 1;
-    int indice_colonna = tot_C;
+    int indice_colonna = tot_C; 
 
     // Creo e riempio di dati la prima casella
     partenza = new Casella {indice_riga,indice_colonna,'P'};

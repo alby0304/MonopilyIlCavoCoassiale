@@ -1,6 +1,7 @@
 #include "../include/Casella_laterale.h"
+#include "Casella.cpp"
 
-Casella_Laterale::Casella_Laterale(Index_riga R, int C, char cont) : Casella(R,C,cont)
+Casella_Laterale::Casella_Laterale(int R, int C, char cont) : Casella(R,C,cont)
 {
     _casa = false;
     _albergo = false;
@@ -33,7 +34,7 @@ Casella_Laterale::Casella_Laterale(Index_riga R, int C, char cont) : Casella(R,C
 
 std::string Casella_Laterale::to_String()
 {
-    // Ogni casella viene rappresentata da una stringa di 9 spazi in output (a seconda di cosa c'è "sopra alla casella" inserisco i relativi spazi)
+    // Ogni casella viene rappresentata da una stringa di dim_ma spazi in output (a seconda di cosa c'è "sopra alla casella" inserisco i relativi spazi)
     std::string s = "|";
 
     // Salva in s il contenuto (E, S o L)
@@ -46,8 +47,12 @@ std::string Casella_Laterale::to_String()
         s = s + "^";
 
     // Salva in s eventuali giocatori
-    // s = s + "|";
-
-    // s = normalize(s);
+    for (int i=0; i < _players.size(); i++)
+    {
+        s = s +  std::to_string(_players[i]);
+    }
+    
+    s = s + "|";
+    s = normalize(s);
     return s;
 }

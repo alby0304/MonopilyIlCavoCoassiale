@@ -1,11 +1,14 @@
-#ifndef COMPUTER_H
-#define COMPUTER_H
+#ifndef ROBOT_H
+#define ROBOT_H
 
 #include "Giocatore.h"
 
-class Computer : public Giocatore
+class Robot : public Giocatore
 {
-    bool makeChoice() override;
+public:
+    Robot(int ID, Casella* P) : Giocatore(ID,P){}
+
+    bool makeChoice() override;     // Decisione automatica con 25% di possibilità di comprarla
 };
 
-#endif  // COMPUTER_H
+#endif  // ROBOT_H

@@ -1,31 +1,32 @@
 #include "../include/Tabellone.h"
+#include "Casella_laterale.cpp"
 
 /*  Il meccanismo di creazione del tabellone viene brevemente spiegato qui.
     Il tabellone ha come variabile membro un puntatore alla casella di partenza.
     Creo la casella di partenza.
     Poi in base a quanto grande è il campo da gioco inserisco n-1 caselle (Ex. 8x8 => n_caselle = 24, quindi ne devo inserire altre 23).
-    Per ogni casella controllo tramite le proprietà del labirinto (numero di caselle orizzontali e verticali) in che posizione andrà inserita
+    Per ogni casella setto la posizione (Ex. A2) andrà inserita tramite le proprietà del labirinto (numero di caselle orizzontali e verticali)
     Una volta capito se angolare o laterale la creo e la aggiungo alla lista.
-    Per la creazione casuale delle caselle laterali c'è il metodo decide_type e ho a disposizione E = 8 economiche,
-    S = 10 Standard, L = 6 lusso. Ogni volta che ne viene creata una, diminuisce il numero di caselle disponibili da creare.
+    Per la creazione casuale delle caselle laterali c'è il metodo decide_type e ho a disposizione E = 8 economiche, S = 10 Standard, L = 6 lusso (da creare).
+    Ogni volta che ne viene creata una, diminuisce il numero di caselle disponibili da creare.
     Alla fine del processo l'ultima casella punterà alla casella di partenza creando così una lista concatenata di caselle chiusa in sè stassa.
 */
-Tabellone::Tabellone() 
+Tabellone::Tabellone(int tot_R, int tot_C) 
 {    
+    // Set delle variabili di default del tabellone
+    dim_y = tot_R;
+    dim_x = tot_C;
+    tot_caselle = 2 * (dim_x + dim_y) - 4; // -4 per togliere gli angoli contati 2 volte
+
     // Indici di riga e colonna
-    int indice_riga = dim_y;
-    int indice_colonna = dim_x;
+    int indice_riga = tot_R - 1;
+    int indice_colonna = tot_C;
 
     // Creo e riempio di dati la prima casella
-    partenza = new Casella {Index_riga(dim_y),indice_colonna,'P'};
+    partenza = new Casella {indice_riga,indice_colonna,'P'};
 
-    // Creo una copia della casella di partenza (per non perdere il puntatore alla casella di partenza)
+    // Creo un puntatore con cui spostarmi per creare le caselle successive alla prima
     Casella* Casella_Now = partenza;
-
-    // Contatore per ogni tipo di casella
-    int E = 8;     // Numero massimo (da inserire) di caselle economiche
-    int S = 10;    // Numero massimo (da inserire) di caselle standard
-    int L = 6;     // Numero massimo (da inserire) di caselle lusso
     // Utili per le variazioni degli indici (assumono solo 0 e 1 e -1)
     int vx = -1, vy = 0;
     
@@ -41,9 +42,9 @@ Tabellone::Tabellone()
         if ((i == dim_x - 1) || (i == dim_x + dim_y - 2) || (i == 2*dim_x + dim_y - 3)) // Mi trovo agli angoli (escluso P, già creato)
         {
             // Creo una nuova casella angolare
-            New_Casella = new Casella{Index_riga(indice_riga),indice_colonna,' '};
+            New_Casella = new Casella{indice_riga,indice_colonna,' '};
 
-            // Cambio di direzione della variazione delgi indici (lo faccio quando creo un angolo)
+            // Cambio di direzione della variazione degli indici (lo faccio quando creo un angolo)
             if (i == dim_x + dim_y - 2)     // Sono nel secondo angolo, ora gli indici devono aumentare quindi cambio il segno alla velocità
                 vy = -vy;
             int tmp = vx;
@@ -53,18 +54,17 @@ Tabellone::Tabellone()
         else
         {
             // Creo una nuova casella laterale
-            New_Casella = new Casella_Laterale {Index_riga(indice_riga),indice_colonna,decide_type(E, S, L)};
+            New_Casella = new Casella_Laterale {indice_riga,indice_colonna,decide_type(E, S, L)};
         }
         
         // Aggiungo la casella al tabellone e mi sposto su di essa
-        Casella_Now->succ = New_Casella;
+        Casella_Now->setSucc(New_Casella);
         Casella_Now = New_Casella;
         
         // Chiusura della lista concatenata su sè stessa ("head" = "tail" = "tabellone")
         if(i==tot_caselle-1)
-            Casella_Now->succ = partenza;
+            Casella_Now->setSucc(partenza);
 
-        
     }
 }
 
@@ -103,51 +103,59 @@ char Tabellone::decide_type(int& E, int& S, int& L)
 
 std::string Tabellone::to_String()
 {
-    /*
-    std::string s = ""; // stringa che conterrà tutto il tabellone
+    
     std::string tmp;
     std::string space;
     // Creo la stringa space in base alla dimensione di una Casella
-    for (int i=0; i < dim_x; i++)
+    for (int i=0; i < _dim_max_Casella; i++)
     {
         space += " ";
     }
+
+    std::string s = ""; // stringa che conterrà tutto il tabellone
     // Comincio a salvare la prima riga
     s = s + space;
     // Finisco di salvare tutta la prima riga (l'intestazione con le colonne A, B, C ...)
-    for (int i=1; i <= dim_max_Casella; i++)
+    for (int i=1; i <= dim_x; i++)
     {
         tmp = std::to_string(i);
         s += normalize(tmp);
     }
     // Vado a capo
     s = s + "\n";
+
     // Ora stampo il tabellone
+    Casella* Target;
     for (int i=0; i < dim_y; i++)
     {
-        tmp = Index_riga(i);
+        // Inizio di riga
+        tmp = int_to_char(i);
         s += normalize(tmp);
         for (int j=0; j < dim_x; j++)
         {
-            if ((i==0)||(i==dim_x-1)||(j==0)||(j==dim_y-1)) // Se sono ai "bordi" del campo da gioco
+            if ((i==0)||(i==dim_y-1)||(j==0)||(j==dim_x-1)) // Se sono ai bordi del tabellone
             {
-                // Stampa la casella, matrice nel costruttore o find??
+                std::pair<char, int> target(int_to_char(i), j+1);
+                Target = partenza->find(target);
+                s = s + Target->to_String();
             }
-            else
+            else    // Sono in mezzo, quindi devo stampare spazio vuoto
             s = s + space;
         }
+        s = s + "\n";
     }
-    */
+    
+    /*
     std::string s = "Celle di gioco:\n" + partenza->to_String();
-    Casella* next = partenza->succ;
+    Casella* next = partenza->getSucc();
     while (next->getType() != 'P')
     {
         if (next->getType() == ' ')
         { s= s + "\n";}
         s = s + next->to_String();
-        next = next->succ;
+        next = next->getSucc();
     }
-    s = s + "Fine tabellone";
+    */
     return s;
 }
 

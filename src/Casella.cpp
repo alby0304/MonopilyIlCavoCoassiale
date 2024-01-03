@@ -1,18 +1,56 @@
 #include "../include/Casella.h"
 
-//Costruttore
-Casella::Casella(Index_riga R, int C, char type): _coordinata{position(R,C)}, _type{type}{}
-
-//funzioni membros
-void Casella::addPlayer(Giocatore* player){
-    _players.push_back(player);
+Casella::Casella(int R, int C, char cont)
+{
+    char r = int_to_char(R);
+    _coordinata = std::make_pair(r,C);
+    _type = cont;
 }
 
-void Casella::removePlayer(Giocatore* player){
-    _players.erase(_players);
-}   
+Casella* Casella::find(std::pair<char,int> target)
+{
+    // Controllo che il nodo su cui viene chiamato è quello che cerco
+    if(this->_coordinata== target)
+        return this;
 
-std::string Casella::normalize (std::string s)
+    // Se il giocatore non è in questa casella, provo a cercare "andando avanti" rispetto alla Casella this
+    // Questo avviene finchè non ritorno da dove sono partito (controllo nella condizone while)
+    Casella* next = this->succ;
+    while (next->_type != 'P')
+    {
+        if ((next->_coordinata.first == target.first)&&((next->_coordinata.second == target.second)))
+        {
+            return next;
+        }
+        next = next->succ;
+    }
+
+    // Se non lo ho trovato significa che non c'è (non dovrebbe succedere), quindi restituisco nullptr 
+    return nullptr;
+}
+
+std::string Casella::to_String()
+{
+    // Ogni casella viene rappresentata da una stringa di 9 spazi in output (a seconda di cosa c'è "sopra alla casella" inserisco i relativi spazi)
+    std::string s = "|";
+
+    // Salva in s lo spazio vuoto solo se non c'è nessun giocatore sopra
+    if ((_players.size()==0)&&(_type==' '))
+        s = s + _type;
+    // Salva in s 'P' e poi eventuali giocatori
+    if (_type=='P')
+        s = s + _type;
+    for (int i=0; i < _players.size(); i++)
+    {
+        s = s +  std::to_string(_players[i]);
+    }
+
+    s = s + "|";
+    s = normalize(s);
+    return s;
+}
+
+std::string normalize (std::string s)
 {
     // in questo programma normalize viene invocato da stringhe con lunghezza massima di 7 caratteri, quindi è sempre minore di dim_max_Cella
     // Sfrutto il fatto che la divisione tra due interi in C++ restituisce la parte intera del risultato, troncando eventuali decimali
@@ -30,63 +68,19 @@ std::string Casella::normalize (std::string s)
     return s;
 }
 
-
-
-
-
-
-
-
-
-
-//Casella::Casella(Index_riga R, int C, char cont): _coordinata{new position(R,C)}, _type{cont}
-//{}
-
-/*Casella* Casella::find(int giocatore)
+char int_to_char(int n)
 {
-    // Controllo che il nodo su cui viene chiamato è quello che cerco
-    if(this->giocatore1)
-        return this;
-
-    // Se il giocatore non è in questa casella, provo a cercare "andando avanti" rispetto alla Casella this
-    // Questo avviene finchè non ritorno da dove sono partito (controllo nella condizone while)
-    Casella* next = this->succ;
-    while ((next->_riga != this->_riga)&&((next->_colonna != this->_colonna)))
+    switch(n)
     {
-        if(next->giocatore1)
-        {
-            return next;
-        }
-        next=next->succ;
+        case 0: return 'A';
+        case 1: return 'B';
+        case 2: return 'C';
+        case 3: return 'D';
+        case 4: return 'E';
+        case 5: return 'F';
+        case 6: return 'G';
+        case 7: return 'H';
     }
-
-    // Se non lo ho trovato significa che non c'è (non dovrebbe succedere), quindi restituisco nullptr 
-    return nullptr;
-}*/
-
-/*std::string Casella::to_String()
-{
-    // Ogni casella viene rappresentata da una stringa di 9 spazi in output (a seconda di cosa c'è "sopra alla casella" inserisco i relativi spazi)
-    std::string s = "|";
-    // Salva in s lo spazio vuoto solo se non c'è nessun giocatore sopra
-    if ((!giocatore1)&&(!giocatore2)&&(!giocatore3)&&(!giocatore4)&&(_type==' '))
-        s = s + _type;
-    // Salva in s 'P' e poi eventuali giocatori
-    if (_type=='P')
-        s = s + _type;
-    // Salva in s eventuali giocatori
-    if(giocatore1)
-        s = s + "1";
-    if(giocatore2)
-        s = s + "2";
-    if(giocatore3)
-        s = s + "3";
-    if(giocatore4)
-        s = s + "4";
-
-    s = s + "|";
-
-    s = normalize(s);
-    return s;
-}*/
-
+    // Sarebbe il default dello switch
+    return ' ';
+}

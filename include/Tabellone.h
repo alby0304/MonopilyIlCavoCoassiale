@@ -28,7 +28,7 @@ private:
     int E = 8;     // Numero massimo di caselle economiche
     int S = 10;    // Numero massimo di caselle standard
     int L = 6;     // Numero massimo di caselle lusso
-
+    int dim_max_Casella;    // Per l'output
     //Funzioni membro per decdere il tipo di casella (E,S,L)
     char decide_type(int &, int &, int &);
 };

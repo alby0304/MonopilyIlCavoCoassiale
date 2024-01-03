@@ -15,7 +15,7 @@ public:
 
     // Funzioni membro
     void addPlayer(int player);     // Agginge un giocatore (Push_Back)
-    void removePlayer(int player);  // Rimuve un giocatore da una casella (metordo vector.erase())
+    void removePlayer();            // Rimuve un giocatore da una casella (metordo vector.erase())
     Casella* find(std::pair<char,int>);
 
     // Utile per la stampa
@@ -28,23 +28,23 @@ public:
     // Metodo per settare la casella successiva (usato solo dal costruttore del tabellone)
     void setSucc(Casella* next) {succ = next;}
 
+    // Variabili oggetto
+    const int _dim_max_Casella = 9;
+    /*
+    La scelta del 9 è per poter stampare il carattere di inizio casella "|" + il tipo di casella "E/S/L/ "
+    + un numero variabile di giocatori (massimo 4, caso raro ma possibile) + carattere di chiusura cella "|"
+    = tot, che al massimo è 7.
+    Aggiungo qualche spazio a destra e sinistra per avere un output del tabellone più omogeneo e arrivo a 9.
+    */
 protected:
     Casella *succ;
     std::vector<int> _players;      // Rappresenta i giocatori che sono sopra alla casella
     std::pair<char,int> _coordinata;
     char _type;
-
 };
 
 // Metodi e variabili utili per la stampa, dichiarati in scope globale così tutti i file vi hanno accesso
-std::string normalize(std::string);
+std::string normalize(std::string, int);
 char int_to_char(int);
-
-const int _dim_max_Casella = 9;
-/*La scelta del 9 è per poter stampare il carattere di inizio casella "|" + il tipo di casella "E/S/L/ "
-+ un numero variabile di giocatori (massimo 4, caso raro ma possibile) + carattere di chiusura cella "|"
-= tot, che al massimo è 7.
-Aggiungo qualche spazio a destra e sinistra per avere un output del tabellone più omogeneo e arrivo a 9.
-*/
 
 #endif // CASELLA_H

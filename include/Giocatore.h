@@ -2,7 +2,9 @@
 #define GIOCATORE_H
 
 #include <vector>
-#include "Casella_laterale.h"
+#include "Casella_Laterale.h"
+
+class Casella_Laterale;
 
 class Giocatore
 {
@@ -11,17 +13,20 @@ public:
     Giocatore(int, Casella*);
 
     // Funzioni membro
-    void buy(); // Verifica se il giocatore ha abbastanza soldi (lancio eccezione) e procede all'acquisto in caso positivo (set primi valori private di casella laterale)
-    virtual bool makeChoice() = 0; // Restituisce true se il giocatore vuole comprare il terreno/casa/albergo
+    void buy(); // Effettua l'acquisto (push della casella in elenco proprietà, set variabili casella_laterale)
+    virtual bool makeChoice() {return false;}; // Restituisce true se il giocatore vuole comprare il terreno/casa/albergo
     
+    bool checkPosition();
     std::string to_String_elenco_proprietà();
 
     // Scambi di denaro tra giocatori
+    void Transfert (int n, Giocatore* Other);
     void pay(int n);     // Se non si hanno abbastanza soldi il giocatore ha perso e lancio eccezione
     void deposit(int n); // Quando un altro giocatore cade su un mio terreno e mi deve pagare o quando passo dal via
 
     // Funzione GET
-    int getMoney(){return _money;}
+    int getMoney()          const   {return _money;}
+    Casella* getPosition()  const   {return _pos;}
     
     // Move
     void move(int n);   //aggiornare _pos in cella;
@@ -31,24 +36,22 @@ public:
     // void move(Casella c);
     //***************
 
+    std::string to_String();
     // Distruttore
-    ~Giocatore(); // _elenco_proprietà, pos
+    ~Giocatore(); // _elenco_proprietà, _pos
+
+    void resetPlayer();
 
     // Eccezione
-    class Money_Finished{};
+    class You_Loosed{};
+    class Not_Enough_Money{};
     
-private:
-    std::vector<Casella*> _elenco_proprietà;
+protected:
+    std::vector<Casella_Laterale*> _elenco_proprieta;
     int _money;
-    int ID;         // Variabile che identifica il giocatore come giocatore 1, 2, 3, ecc. (utile per la stampa)
-    Casella* _pos;  // La posizione in cui si trova il giocatore nel tabellone
-    bool _isInGame; // = true (utile per la stampa)
+    int ID;         // Variabile che identi si trova il giocatore nel tabellone
+    bool _isInGame; // = true (utile per lfica il giocatore come giocatore 1, 2, 3, ecc. (utile per la stampa)
+    Casella* _pos;  // La posizione in cuia stampa)
 };
-
-std::ostream &operator<<(std::ostream &, Giocatore);
-/*
-Il testo del progetto richiede che (nella legenda) quando viene statmpato un giocatore si scriva questo:
-"Giocatore ID nella casella _pos con una casa /con un albergo"
-*/
 
 #endif // GIOCATORE_H

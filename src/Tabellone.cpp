@@ -150,5 +150,32 @@ std::string Tabellone::to_String()
 
 std::ostream& operator<< (std::ostream& os, Tabellone A)
 {
-    return os << A.to_String();
+    return os << A.to_String(); //<< A.getLegenda();
+}
+
+std::string Tabellone::getLegenda()
+{
+    std::string s = "\n Legenda:\n";
+    Casella* next = partenza->getSucc();
+    while (next == partenza)
+    {
+        Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(next); //se il casting va a buon fine 
+        if (_pos1)
+        {
+            char y = _pos1->getCoordinata().first;
+            int x = _pos1->getCoordinata().second;
+            if (_pos1->isCasa())
+            {
+                s = s + "Casella ";
+                //s.push_back(carattere);
+                s += + y + x + " con casa\n";
+            }
+            else if (_pos1->isAlbergo())
+            {
+                s += + y + x + " con Albergo\n";
+            }
+            next = next->getSucc();
+        }
+    }
+    return s;
 }

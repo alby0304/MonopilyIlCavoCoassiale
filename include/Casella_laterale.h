@@ -1,7 +1,8 @@
+// Giulio Zanardi 2076063
 #ifndef CASELLA_LATERALE_H
 #define CASELLA_LATERALE_H
 
-#include<iostream>
+#include <iostream>
 #include "Casella.h"
 #include "Giocatore.h"
 
@@ -15,11 +16,13 @@ public:
     Casella_Laterale(int R, int C, char cont);
 
     // Funzioni Membro
-    bool buy(Giocatore* g);  // compro casella (set proprietario), se ho casella compro casa, se ho casa compro albergo
-                            // restituisce true se l'acquisto è andato buon fine
-    int  getAffitto() const; // ritorna il prezzo da pagare di pedaggio (if casa e if albergo)
+    void buy(Giocatore* g);  // compro casella (set proprietario), se ho casella compro casa, se ho casa compro albergo
+                             // restituisce true se l'acquisto è andato buon fine
     void reset();            // reset cella (per quando un giocatore perde)
+    int  getAffitto() const; // ritorna il prezzo da pagare di pedaggio (if casa e if albergo)
     Giocatore* getProprietario() const    {return _proprietario;}
+    bool isCasa()    const {return _casa;}
+    bool isAlbergo() const {return _albergo;}
 
     // Utile per la stampa
     std::string to_String() override;

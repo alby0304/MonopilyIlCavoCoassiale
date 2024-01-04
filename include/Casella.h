@@ -24,6 +24,7 @@ public:
     // Funzioni GET
     char getType()     const    {return _type;}   // Utile per le caselle laterali
     Casella* getSucc() const    {return succ;}
+    std::pair<char,int> getCoordinata() const   {return _coordinata;}
 
     // Metodo per settare la casella successiva (usato solo dal costruttore del tabellone)
     void setSucc(Casella* next) {succ = next;}

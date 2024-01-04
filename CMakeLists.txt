@@ -4,28 +4,32 @@ project(Monopoly_Il_Cavo_Coassiale)
 
 include_directories(include) 
 
-add_library(Casella
-include/Casella.h
-src/Casella.cpp
-include/Casella_laterale.h
-src/Casella_laterale.cpp
-)
 
-add_library(Tabellone
-include/Tabellone.h
-src/Tabellone.cpp
-)
-
-add_library(Giocatore
-include/Giocatore.h
-src/Giocatore.cpp
+add_library(Monopoly
+    include/Casella.h
+    src/Casella.cpp
+    include/Casella_Laterale.h
+    src/Casella_Laterale.cpp
+    include/Tabellone.h
+    src/Tabellone.cpp
+    include/Giocatore.h
+    src/Giocatore.cpp
+    include/Human.h
+    src/Human.cpp
+    include/Computer.h
+    src/Computer.cpp
+    include/Human.h
+    src/Human.cpp
+    include/Computer.h
+    src/Computer.cpp
 )
 
 add_executable(TestTabellone src/TestTabellone.cpp)
 add_executable(Game src/Game.cpp)
 
-target_link_libraries(TestTabellone Tabellone Giocatore Casella)
-target_link_libraries(Game Giocatore Tabellone Casella)
+target_link_libraries(TestTabellone Monopoly)
+target_link_libraries(Game Monopoly)
+
 
 
 install(TARGETS TestTabellone DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/bin)

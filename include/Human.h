@@ -4,7 +4,11 @@
 #include "Giocatore.h"
 
 class Human : public Giocatore
-{    
+{
+public:
+    // Costruttore che richiama quello della superclasse
+    Human(int ID, Casella* P) : Giocatore(ID,P){}
+
     bool makeChoice() override;
 };
 

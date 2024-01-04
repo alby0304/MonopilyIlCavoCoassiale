@@ -1,5 +1,5 @@
 #include <random>
-#include "Casella_laterale.h"
+#include "Casella_Laterale.h"
 
 /*  Il tabellone è una lista concatenata di caselle e può avere numero di righe indipendente dal numero di colonne
     Posso creare tabelloni 3x4 come 9x15, bisogna solo aggiornare quante caselle economiche, standard e di lusso posso inserire (variabili di dafault del tabellone)
@@ -13,8 +13,8 @@ public:
     Tabellone() : Tabellone(8,8){};  // Assegna di default 8 righe e 8 colonne
     Tabellone(int R, int C); 
     
-    std::string to_String(); // Utile per l'operatore <<
-    
+    std::string to_String();  // Utile per l'operatore <<
+    std::string getLegenda();
     // Attributi del tabellone (variabili membro)
     Casella *partenza; // Puntatore alla casella di partenza P (assegnamento nel costruttore)
     

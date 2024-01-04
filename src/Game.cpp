@@ -1,5 +1,5 @@
 #include<iostream>
-#include<../include/Gicatore.h>
+#include"../include/Gicatore.h"
 
 
 void show();

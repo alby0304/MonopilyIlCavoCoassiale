@@ -25,7 +25,8 @@ add_executable(TestTabellone src/TestTabellone.cpp)
 add_executable(Game src/Game.cpp)
 
 target_link_libraries(TestTabellone Tabellone Giocatore Casella)
-target_link_libraries(Game Giocatori Tabellone Casella_laterale Casella)
+target_link_libraries(Game Giocatore Tabellone Casella)
 
 
 install(TARGETS TestTabellone DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+install(TARGETS Game DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/bin)

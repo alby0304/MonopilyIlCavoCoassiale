@@ -1,4 +1,4 @@
-#include "Tabellone.cpp"
+#include "Tabellone.h"
 
 int main()
 {

@@ -5,6 +5,9 @@
 #include "Casella.h"
 #include "Giocatore.h"
 
+// Forward declaration di Giocatore
+class Giocatore;
+
 class Casella_Laterale : public Casella
 {
 public:
@@ -12,7 +15,8 @@ public:
     Casella_Laterale(int R, int C, char cont);
 
     // Funzioni Membro
-    void buy(Giocatore* g);  // compro casella (set proprietario), se ho casella compro casa, se ho casa compro albergo
+    bool buy(Giocatore* g);  // compro casella (set proprietario), se ho casella compro casa, se ho casa compro albergo
+                            // restituisce true se l'acquisto è andato buon fine
     int  getAffitto() const; // ritorna il prezzo da pagare di pedaggio (if casa e if albergo)
     void reset();            // reset cella (per quando un giocatore perde)
     Giocatore* getProprietario() const    {return _proprietario;}
@@ -21,8 +25,8 @@ public:
     std::string to_String() override;
 
 private:
-    bool _casa;
-    bool _albergo;
+    bool _casa; //true se c'è una casa
+    bool _albergo; //true se c'è un albergo
     Giocatore*  _proprietario; // Utile per capire se posso acquistarla o per sapere a chi devo pagare.
 
     // Variabili default casella

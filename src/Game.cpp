@@ -1,5 +1,5 @@
 #include<iostream>
-#include"../include/Gicatore.h"
+#include"../include/Giocatore.h"
 
 
 void show();

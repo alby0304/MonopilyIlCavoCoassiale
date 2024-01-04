@@ -7,9 +7,6 @@ include_directories(include)
 add_library(Casella
 include/Casella.h
 src/Casella.cpp
-)
-
-add_library(Casella_laterale
 include/Casella_laterale.h
 src/Casella_laterale.cpp
 )
@@ -27,7 +24,7 @@ src/Giocatore.cpp
 add_executable(TestTabellone src/TestTabellone.cpp)
 add_executable(Game src/Game.cpp)
 
-target_link_libraries(TestTabellone Tabellone Giocatore Casella_laterale Casella)
+target_link_libraries(TestTabellone Tabellone Giocatore Casella)
 target_link_libraries(Game Giocatori Tabellone Casella_laterale Casella)
 
 

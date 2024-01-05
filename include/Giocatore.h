@@ -2,6 +2,7 @@
 #define GIOCATORE_H
 
 #include <vector>
+#include <string>
 #include "Casella_Laterale.h"
 
 class Casella_Laterale;
@@ -11,11 +12,15 @@ class Giocatore
 public:
     // Costruttore
     Giocatore(int, Casella*);
+    Giocatore() : Giocatore(0,nullptr) {std::cout << "costruttore di default" << std::endl;};
+
+    Giocatore& operator=(Giocatore* g);
 
     // Funzioni membro
     void buy(); // Effettua l'acquisto (push della casella in elenco proprietà, set variabili casella_laterale)
     virtual bool makeChoice() {return false;}; // Restituisce true se il giocatore vuole comprare il terreno/casa/albergo
-    
+    void resetPlayer();
+
     bool checkPosition();
 
     // Scambi di denaro tra giocatori
@@ -26,6 +31,8 @@ public:
     // Funzione GET
     int getMoney()          const   {return _money;}
     Casella* getPosition()  const   {return _pos;}
+    int getID()             const   {return ID;}
+    bool isInGame()         const   {return _isInGame;}
     
     // Move
     void move(int n);   //aggiornare _pos in cella;
@@ -41,7 +48,7 @@ public:
     // Distruttore
     ~Giocatore(); // _elenco_proprietà, _pos
 
-    void resetPlayer();
+    
 
     // Eccezione
     class You_Loosed{};

@@ -49,7 +49,7 @@ std::string Casella_Laterale::to_String()
     // Salva in s eventuali giocatori
     for (int i=0; i < _players.size(); i++)
     {
-        s = s +  std::to_string(_players[i]);
+        s = s +  std::to_string(_players.at(i));
     }
     
     s = s + "|";

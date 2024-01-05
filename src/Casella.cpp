@@ -1,12 +1,12 @@
 #include "../include/Casella.h"
 
-Casella::Casella(int R, int C, char cont)
+Casella::Casella(int R, int C, char cont): _coordinata{std::make_pair(int_to_char(R),C)}, _type{cont}
 {
-    // Conversione da "riga 1" a "riga A"
-    char r = int_to_char(R);
+    // // Conversione da "riga 1" a "riga A"
+    // char r = int_to_char(R);
 
-    _coordinata = std::make_pair(r,C);
-    _type = cont;
+    // _coordinata = std::make_pair(r,C);
+    // _type = cont;
 }
 
 Casella* Casella::find(std::pair<char,int> target)
@@ -44,7 +44,7 @@ std::string Casella::to_String()
         s = s + _type;
     for (int i=0; i < _players.size(); i++)
     {
-        s = s +  std::to_string(_players[i]);
+        s = s +  std::to_string(_players.at(i));
     }
 
     s = s + "|";
@@ -97,6 +97,6 @@ void Casella::removePlayer()
     // Se c'è almeno un giocatore su questa casella, allora posso toglierlo
     if(!_players.empty())
     {
-         _players.erase(_players.begin());
+        _players.erase(_players.begin());
     }
 }

@@ -1,20 +1,17 @@
 #include "../include/Casella_Laterale.h"
 #include "../include/Giocatore.h"
 
-std::string Giocatore::to_String_elenco_proprietà() { //inserisco in s il numero del giocatore con le rispettive proprietà
-    std::string s = "Giocatore " + ID;
-    s = s + " : ";
-    for (int i=0; i< _elenco_proprieta.size(); i++)
-        s = s + _elenco_proprieta[i]->to_String() +  " ";
-    return s;
+Giocatore::Giocatore(int n, Casella* P) : _pos{P}, ID{n}, _isInGame{true}, _money{100}{
+    _pos->addPlayer(ID);
+    std::cout << "costruttore di nostro : " << ID << std::endl;
+    
 }
 
-Giocatore::Giocatore(int n, Casella* P){
-    _pos = P;
-    ID = n;
-    P->addPlayer(n);
-    _isInGame = true;
-    _money = 100;
+Giocatore& Giocatore::operator=(Giocatore* g){
+    _pos= g->getPosition();
+    ID = g->getID();
+    _isInGame = g->isInGame();
+    _money = g->getMoney();
 }
 
 void Giocatore::buy() // si effettua il cast della posizione 
@@ -52,7 +49,7 @@ void Giocatore::Transfert (int n, Giocatore* Other){ // trasferisco i soldi da u
         _isInGame = false;
         Other->deposit(_money); // il giocatore paga tutti i soldi che ha 
         resetPlayer();
-        throw You_Loosed();    // se non hai abbastanza soldi per pagare perdi e il giocatore non è più in partita 
+        throw You_Loosed();    // se il giocatore non ha abbastanza soldi per pagare perde ed esce dalla partita 
         
     }
 }
@@ -67,7 +64,7 @@ void Giocatore::move(int n){  // mi sposto da una posizione alla successiva
     for (int i=0; i < n; i++)
     {
         _pos = _pos->getSucc();
-        if (_pos->getType() == 'P') // Passaggio dal via
+        if (_pos->getType() == 'P') // Passaggio dal via che incrementa il budget dei giocatori 
             deposit(20);
     }
 
@@ -90,9 +87,19 @@ void Giocatore::resetPlayer()
 
 std::string Giocatore::to_String()
 {
-    std::string s= "Giocatore " + ID;
-    // s = s + ": ";
-    //for (int i = 0; i < )
+    std::string s= "Giocatore " + std::to_string(ID) + ": ";
+    for (int i=0; i< _elenco_proprieta.size(); i++)
+    {
+        // s = s + 
+    }
+    return s;
+}
+
+std::string Giocatore::to_String_elenco_proprietà() { //inserisco in s il numero del giocatore con le rispettive proprietà
+    std::string s = "Giocatore " + std::to_string(ID);
+    s = s + " : ";
+    for (int i=0; i< _elenco_proprieta.size(); i++)
+        s = s + _elenco_proprieta[i]->to_String() +  " ";
     return s;
 }
 

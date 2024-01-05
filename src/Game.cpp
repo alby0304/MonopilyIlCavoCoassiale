@@ -2,6 +2,7 @@
 #include <vector>
 #include <random>
 #include <string>
+#include "../include/Giocatore.h"
 #include "../include/Human.h"
 #include "../include/Computer.h"
 #include "../include/Tabellone.h"
@@ -13,6 +14,7 @@ std::vector<int> startingOrder(); // mi restituisce un vettore di int con l'ordi
 // Mode passata come argomento da terminale
 int main(int argc, char *argv[])
 {
+
     // verifico che
     if (argc < 2)
     {
@@ -21,88 +23,89 @@ int main(int argc, char *argv[])
     }
     std::string mode = argv[1]; // salvo l'argomento passato da terminale
 
+    // std::vector<int> order = startingOrder();
     Tabellone T; // creo il tabellone
-    std::vector<int> order = startingOrder();
-    
-    std::vector<Giocatore*> players; // inizializzo il vettore di Giocatori
-    if (mode == "computer")
-    {   
-        // Creo il primo giocatore Computer
-        Computer player(order[0], T.partenza);
-        players.push_back(&player);
-        
-        // Numero di turni massimo per partita tra soli computer
-        const int max_Iteration = 4000;
-    }
-    else if (mode == "human")
+    std::cout << "\nTabellone creato, ora passo alla creazione dei giocatori.";
+    Giocatore players[4]; // inizializzo il vettore di Giocatori
+    std::cout << "\nVector creato";
+    try
     {
-        // Creo il primo giocatore Human
-        Human player(order[0], T.partenza);
-        players.push_back(&player);
-        T.partenza->addPlayer(order[0]);
-    }
-    else
-    {
-        std::cout << "Argomenti errati riprovate, Argomenti accettari\n computer: partita con 4 Computer \n human: partita con 3 Computer e un Human";
-        return 1;
-    }
-    std::cout << *players[0];
-    // Creo gli altri 3 giocatori (in ogni caso ci sono sempre 3 Computer)
-    for (int i = 1; i < 4; i++)
-    {
-        std::cout << "FOR CREAZIONE COMPUTER";
-        Computer player(order[i], T.partenza);
-        std::cout << " A";
-        players.push_back(&player);
-        std::cout << *players[i];
-        std::cout << i;
-    }
-
-    std::cout << "ola cicho";
-    /*TODO
-    // Ora capiamo l'ordine di gioco (ordine del vettore players)
-
-    bool playing = true;
-    bool scelta;
-    while (playing)
-    {
-        // Turno di ogni giocatore
-        for (int i = 0; i < 4; i++)
+        // Giocatore player1;
+        if (mode == "computer")
         {
-            players[i].move(getDiceRoll());
-            // Vedo dove sono capitato
-            Casella_Laterale *_pos1 = dynamic_cast<Casella_Laterale *>(players[i].getPosition()); // se il casting va a buon fine
-            if (_pos1)  // Se sono su una casella laterale
-            {
-                Giocatore* player_i = &players[i];
-                if (_pos1->getProprietario()==player_i)
-                {}  // Sono il proprietario
-                else
-                {
-                    // Verifico chi è il proprietario
-                    if (_pos1->getProprietario()==nullptr)  // Se il proprietario non è nessuno
-                    {                               // allora posso decidere se acquistare il terreno
-                        std::cout << "Benvenuto nella casella " << _pos1->getCoordinata() << "\nVuoi comprarla?" std::endl;
-                        scelta = players[i].makeChoice();
-                        if (scelta)     // Se il giocatore vuole comprare
-                        {
-                            players[i].buy();
-                        }
-                    }
-                    
-                }
-                
-                if (scelta == true) // verifico che il giocatore sia il proprietario
-                 
-            }
-            else
-            {
-                // Non succede nulla, poichè sono in una casella angolare
-            }
-            
+            // Creo il primo giocatore Computer e lo inserisco nel vettore di players
+            std::cout << "CREAZIONE COMPUTER";
+            players[0] = Giocatore(1, T.partenza);
+            std::cout << "COMPUTER creato";
+            // Numero di turni massimo per partita tra soli computer
+            const int max_Iteration = 4000;
         }
-    }*/
+        else if (mode == "human")
+        {
+            // Creo il primo giocatore Human e lo inserisco nel vettore di players
+            std::cout << "CREAZIONE HUMAN";
+            players[0] = Giocatore(1, T.partenza);
+        }
+        else
+        {
+            std::cout << "Argomenti errati riprovate, Argomenti accettari\n computer: partita con 4 Computer \n human: partita con 3 Computer e un Human";
+            return 1;
+        }
+        // Giocatore* _pos1 = dynamic_cast<Giocatore*>(player1); //se il casting va a buon fine 
+        
+        // for (int i = 1; i < 4; i++)
+        // {
+        //     std::cout << "FOR CREAZIONE COMPUTER";
+        //     try
+        //     {
+        //         players.push_back(Computer(i, T.partenza));
+        //     }
+        //     catch(const std::exception& e)
+        //     {
+        //         std::cerr << e.what() << '\n';
+        //     }
+        //     std::cout << i;
+        // }
+
+        Giocatore player2(2, T.partenza->getSucc());
+        players[1] = player2;
+        Giocatore player3(3, T.partenza->getSucc());
+        players[2] = player3;
+        Giocatore player4(4, T.partenza->getSucc());
+        players[3] = player4;
+
+        std::cout << T;
+    }
+    catch (const std::exception &e)
+    {
+        std::cerr << "Errore durante l'esecuzione del programma: " << e.what() << std::endl;
+        return 1; 
+    }
+    std::cin.get();
+    /*
+    // Creo gli altri 3 giocatori (in ogni caso ci sono sempre 3 Computer)
+    Computer player(1, T.partenza);
+    std::cout << "\ncreazione 2";
+    Computer player2(2, T.partenza);
+    std::cout << "\ncreato 2";
+    // players.push_back(&player2);
+    std::cout << "\npush 2";
+    std::cout << "\ncreazione 3";
+    Computer player3(3, T.partenza->getSucc());
+    std::cout << "\ncreato 3";
+    // players.push_back(&player3);
+    std::cout << "\npush 3";
+    Computer player4(4, T.partenza);
+    std::cout << "\ncreato 4";
+    // players.push_back(&player4);
+    std::cout << "\npush 4";
+    std::cout << "I 4 Giocatori sono stati creati";
+
+
+    std::cout << "\n ola cicho";
+    std:: cout << T;
     return 0;
+    */
 }
 
 int getDiceRoll()
@@ -125,24 +128,24 @@ std::vector<int> startingOrder()
         int l = getDiceRoll();
         lanci.push_back(l);
     }
-    std::vector<int> order = {1,2,3,4};
+    std::vector<int> order = {1, 2, 3, 4};
     bool isOrder = false;
-    while(!isOrder)
+    while (!isOrder)
     {
         isOrder = true;
         for (int i = 1; i < lanci.size(); i++)
         {
-            if(lanci[i-1]<lanci[i])
+            if (lanci[i - 1] < lanci[i])
             {
-                int tmp = lanci[i-1];
-                lanci[i-1] = lanci[i];
+                int tmp = lanci[i - 1];
+                lanci[i - 1] = lanci[i];
                 lanci[i] = tmp;
-                tmp = order[i-1];
-                order[i-1] = order[i];
+                tmp = order[i - 1];
+                order[i - 1] = order[i];
                 order[i] = tmp;
                 isOrder = false;
             }
         }
-    }    
+    }
     return order;
 }

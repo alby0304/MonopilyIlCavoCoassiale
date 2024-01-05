@@ -150,7 +150,7 @@ std::string Tabellone::to_String()
 
 std::ostream& operator<<(std::ostream& os, Tabellone A)
 {
-    return os << A.getLegenda();
+    return os << A.to_String() << A.getLegenda();
 }
 
 std::string Tabellone::getLegenda()
@@ -168,11 +168,13 @@ std::string Tabellone::getLegenda()
             {
                 s = s + "Casella ";
                 //s.push_back(carattere);
-                s += + y + x + " con casa\n";
+                s += + y;
+                s += std::to_string(x) + " con casa\n";
             }
             else if (_pos1->isAlbergo())
             {
-                s += + y + x + " con Albergo\n";
+                s += + y;
+                s += std::to_string(x) + " con Albergo\n";
             }
             next = next->getSucc();
         }

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include <random>
+#include <string>
 #include "../include/Human.h"
 #include "../include/Computer.h"
 #include "../include/Tabellone.h"
@@ -13,7 +13,6 @@ std::vector<int> startingOrder(); // mi restituisce un vettore di int con l'ordi
 // Mode passata come argomento da terminale
 int main(int argc, char *argv[])
 {
-    std::cout << argc;
     // verifico che
     if (argc < 2)
     {
@@ -21,26 +20,25 @@ int main(int argc, char *argv[])
         return 1; // Restituisce 1 in caso di errore
     }
     std::string mode = argv[1]; // salvo l'argomento passato da terminale
-    std::cout << mode;
 
     Tabellone T; // creo il tabellone
     std::vector<int> order = startingOrder();
-
     
-    std::vector<Giocatore> players; // inizializzo il vettore di Giocatori
+    std::vector<Giocatore*> players; // inizializzo il vettore di Giocatori
     if (mode == "computer")
-    {
+    {   
         // Creo il primo giocatore Computer
         Computer player(order[0], T.partenza);
-        players.push_back(player);
+        players.push_back(&player);
+        
         // Numero di turni massimo per partita tra soli computer
         const int max_Iteration = 4000;
     }
     else if (mode == "human")
     {
         // Creo il primo giocatore Human
-        Human playerh(order[0], T.partenza);
-        players.push_back(playerh);
+        Human player(order[0], T.partenza);
+        players.push_back(&player);
         T.partenza->addPlayer(order[0]);
     }
     else
@@ -48,16 +46,19 @@ int main(int argc, char *argv[])
         std::cout << "Argomenti errati riprovate, Argomenti accettari\n computer: partita con 4 Computer \n human: partita con 3 Computer e un Human";
         return 1;
     }
-
+    std::cout << *players[0];
     // Creo gli altri 3 giocatori (in ogni caso ci sono sempre 3 Computer)
     for (int i = 1; i < 4; i++)
     {
+        std::cout << "FOR CREAZIONE COMPUTER";
         Computer player(order[i], T.partenza);
-        players.push_back(player);
-        // T.partenza->addPlayer(order[i]);
+        std::cout << " A";
+        players.push_back(&player);
+        std::cout << *players[i];
+        std::cout << i;
     }
 
-    std::cout << T;
+    std::cout << "ola cicho";
     /*TODO
     // Ora capiamo l'ordine di gioco (ordine del vettore players)
 

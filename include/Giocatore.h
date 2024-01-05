@@ -17,7 +17,6 @@ public:
     virtual bool makeChoice() {return false;}; // Restituisce true se il giocatore vuole comprare il terreno/casa/albergo
     
     bool checkPosition();
-    std::string to_String_elenco_proprietà();
 
     // Scambi di denaro tra giocatori
     void Transfert (int n, Giocatore* Other);
@@ -37,6 +36,8 @@ public:
     //***************
 
     std::string to_String();
+    std::string to_String_elenco_proprietà();
+
     // Distruttore
     ~Giocatore(); // _elenco_proprietà, _pos
 
@@ -53,5 +54,7 @@ protected:
     bool _isInGame; // = true (utile per lfica il giocatore come giocatore 1, 2, 3, ecc. (utile per la stampa)
     Casella* _pos;  // La posizione in cuia stampa)
 };
+
+std::ostream& operator<<(std::ostream& os, Giocatore G);
 
 #endif // GIOCATORE_H

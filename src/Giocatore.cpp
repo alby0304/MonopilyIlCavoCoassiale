@@ -91,7 +91,12 @@ void Giocatore::resetPlayer()
 std::string Giocatore::to_String()
 {
     std::string s= "Giocatore " + ID;
-    s = s + ": ";
+    // s = s + ": ";
     //for (int i = 0; i < )
     return s;
+}
+
+std::ostream& operator<<(std::ostream& os, Giocatore G)
+{
+    return os << G.to_String();
 }

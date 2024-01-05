@@ -148,9 +148,9 @@ std::string Tabellone::to_String()
     return s;
 }
 
-std::ostream& operator<< (std::ostream& os, Tabellone A)
+std::ostream& operator<<(std::ostream& os, Tabellone A)
 {
-    return os << A.to_String(); //<< A.getLegenda();
+    return os << A.getLegenda();
 }
 
 std::string Tabellone::getLegenda()

@@ -12,6 +12,7 @@ std::string Giocatore::to_String_elenco_proprietà() { //inserisco in s il numer
 Giocatore::Giocatore(int n, Casella* P){
     _pos = P;
     ID = n;
+    P->addPlayer(n);
     _isInGame = true;
     _money = 100;
 }

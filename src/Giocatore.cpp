@@ -3,7 +3,7 @@
 
 Giocatore::Giocatore(int n, Casella* P) : _pos{P}, ID{n}, _isInGame{true}, _money{100}{
     _pos->addPlayer(ID);
-    std::cout << "costruttore di nostro : " << ID << std::endl;
+    std::cout << "\nCostruttore di giocatore ha fatto il suo sporco lavoro, creato giocatore " << ID << std::endl;
     
 }
 
@@ -12,6 +12,7 @@ Giocatore& Giocatore::operator=(Giocatore* g){
     ID = g->getID();
     _isInGame = g->isInGame();
     _money = g->getMoney();
+    return *this;
 }
 
 void Giocatore::buy() // si effettua il cast della posizione 

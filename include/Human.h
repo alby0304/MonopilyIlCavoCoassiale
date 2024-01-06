@@ -17,4 +17,6 @@ public:
     bool want_to_buy_albergo();     // Se l'utente ha abbastanza soldi gli si chiede se vuole comprare l'albergo
 };
 
+std::ostream& operator<<(std::ostream& os, Human G);
+
 #endif  // HUMAN_H

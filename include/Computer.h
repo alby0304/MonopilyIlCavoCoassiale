@@ -17,4 +17,6 @@ public:
     bool want_to_buy_albergo();     // Decisione automatica con 25% di possibilità di comprarle l'albergo
 };
 
+std::ostream& operator<<(std::ostream& os, Computer G);
+
 #endif  // COMPUTER_H

@@ -23,7 +23,8 @@ void Giocatore::buy() // si effettua il cast della posizione
     if (_pos1)
     {
         _pos1->buy(this);  // si richiama il buy della classe Casella Laterale (che effettua anche il pay)
-        _elenco_proprieta.push_back(_pos1);
+        if (!_pos1->isCasa()&&(_pos1->getProprietario()==this))   // Se non c'è stato l'acquisto di una casa significa che il giocatore ha acquistato il terreno (verifico cmq che ne sia il proprietario)
+        _elenco_proprieta.push_back(_pos1);                       // e quindi aggiungo la casella alla lista di proprietà
     }
 }
 
@@ -84,7 +85,7 @@ std::string Giocatore::to_String()
     std::string s= "\nGiocatore " + std::to_string(ID) + ": ";
     for (int i=0; i< _elenco_proprieta.size(); i++)
     {
-        s +=  _elenco_proprieta[i]->getCoordinata_to_String();
+        s +=  _elenco_proprieta[i]->getCoordinata_to_String() + " ";
     }
     return s;
 }

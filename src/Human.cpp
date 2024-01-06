@@ -53,3 +53,9 @@ Giocatore& Human::operator=(Human* g)
     _pos->addPlayer(ID);
     return *this;
 }
+
+
+std::ostream& operator<<(std::ostream& os, Human G)
+{
+    return os << G.to_String();
+}

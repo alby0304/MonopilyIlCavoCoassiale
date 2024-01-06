@@ -41,10 +41,10 @@ std::string Casella_Laterale::to_String()
     s = s + _type;
 
     // Se c'è una casa o un'albergo lo salvo in s
-    if (_casa)
-        s = s + "*";
-    else if (_albergo)
+    if (_albergo)
         s = s + "^";
+    else if (_casa)
+        s = s + "*";
 
     // Salva in s eventuali giocatori
     for (int i=0; i < _players.size(); i++)
@@ -62,22 +62,42 @@ void Casella_Laterale::buy(Giocatore* g)
     // Se il giocatore possiede già il terreno e la casa e ha abbastanza soldi, si procede all'acquisto di un albergo
     if ((_proprietario == g)&&(!_albergo)&&(_casa == true))
     {
-        g->pay(_prezzo_albergo);
-        _albergo = true;
+        try
+        {
+            g->pay(_prezzo_albergo);
+            _albergo = true;
+        }
+        catch(const std::exception& Not_Enough_Money)
+        {
+            // Non succede nulla
+        }
     }
     // Se il giocatore possiede già il terreno e ha abbastanza soldi, si procede all'acquisto di una casa
     else if ((_proprietario == g)&&(_casa == false))
     {
-        g->pay(_prezzo_casa);
-        _casa = true;
+        try
+        {
+            g->pay(_prezzo_casa);
+            _casa = true;
+        }
+        catch(const std::exception& Not_Enough_Money)
+        {
+            // Non succede nulla
+        }
     }
     // Se la casella non è di nessuno e il giocatore ha abbastanza soldi, si procede all'acquisto
     else if ((_proprietario == nullptr))
     {
-        g->pay(_prezzo_terreno);
-        _proprietario = g;
+        try
+        {
+            g->pay(_prezzo_terreno);
+            _proprietario = g;
+        }
+        catch(const std::exception& Not_Enough_Money)
+        {
+            // Non succede nulla
+        }
     }
-
 }
 
 int Casella_Laterale::getAffitto() const

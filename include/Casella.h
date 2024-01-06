@@ -25,6 +25,8 @@ public:
     char getType()     const    {return _type;}   // Utile per le caselle laterali
     Casella* getSucc() const    {return succ;}
     std::pair<char,int> getCoordinata() const   {return _coordinata;}
+    
+    std::string getCoordinata_to_String() const   {return _coordinata.first + std::to_string(_coordinata.second);}
 
     // Metodo per settare la casella successiva (usato solo dal costruttore del tabellone)
     void setSucc(Casella* next) {succ = next;}
@@ -37,9 +39,9 @@ public:
     = tot, che al massimo è 7.
     Aggiungo qualche spazio a destra e sinistra per avere un output del tabellone più omogeneo e arrivo a 9.
     */
+    std::vector<int> _players;      // Rappresenta i giocatori che sono sopra alla casella
 protected:
     Casella *succ;
-    std::vector<int> _players;      // Rappresenta i giocatori che sono sopra alla casella
     std::pair<char,int> _coordinata;
     char _type;
 };

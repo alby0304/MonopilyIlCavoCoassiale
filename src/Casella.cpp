@@ -97,6 +97,7 @@ void Casella::removePlayer()
     // Se c'è almeno un giocatore su questa casella, allora posso toglierlo
     if(!_players.empty())
     {
+        // Il giocatore che si sposta sarà sempre il primo del vettore, perchè è stato il primo ad arrivare (quindi funziona anche in caso di più giocatori sulla stessa casella)
         _players.erase(_players.begin());
     }
 }

@@ -12,22 +12,18 @@ Giocatore& Giocatore::operator=(Giocatore* g){
     ID = g->getID();
     _isInGame = g->isInGame();
     _money = g->getMoney();
+    // Aggiungo il giocatore al tabellone
+    _pos->addPlayer(ID);
     return *this;
 }
 
 void Giocatore::buy() // si effettua il cast della posizione 
-{
-    try
+{   
+    Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(_pos); //se il casting va a buon fine 
+    if (_pos1)
     {
-        Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(_pos); //se il casting va a buon fine 
-        if (_pos1)
-        {
-            _pos1->buy(this);  // si richiama il buy della classe Casella Laterale 
-        }
-    }
-    catch(const std::exception& e)
-    {
-        throw Not_Enough_Money();    // Sto cercando di acquistare una casella che non è laterale (una casella angolare)
+        _pos1->buy(this);  // si richiama il buy della classe Casella Laterale (che effettua anche il pay)
+        _elenco_proprieta.push_back(_pos1);
     }
 }
 
@@ -45,7 +41,7 @@ void Giocatore::Transfert (int n, Giocatore* Other){ // trasferisco i soldi da u
         this->pay(n);
         Other->deposit(n);
     }
-    catch(const std::exception& e)
+    catch(const std::exception& Not_Enough_Money)
     {
         _isInGame = false;
         Other->deposit(_money); // il giocatore paga tutti i soldi che ha 
@@ -68,8 +64,6 @@ void Giocatore::move(int n){  // mi sposto da una posizione alla successiva
         if (_pos->getType() == 'P') // Passaggio dal via che incrementa il budget dei giocatori 
             deposit(20);
     }
-
-    
 }
 
 Giocatore::~Giocatore() // elimino il puntatore alla posizione 
@@ -83,28 +77,34 @@ void Giocatore::resetPlayer()
     {
         _elenco_proprieta[i]->reset();
     }
-
 }
 
 std::string Giocatore::to_String()
 {
-    std::string s= "Giocatore " + std::to_string(ID) + ": ";
+    std::string s= "\nGiocatore " + std::to_string(ID) + ": ";
     for (int i=0; i< _elenco_proprieta.size(); i++)
     {
-        // s = s + 
+        s +=  _elenco_proprieta[i]->getCoordinata_to_String();
     }
-    return s;
-}
-
-std::string Giocatore::to_String_elenco_proprietà() { //inserisco in s il numero del giocatore con le rispettive proprietà
-    std::string s = "Giocatore " + std::to_string(ID);
-    s = s + " : ";
-    for (int i=0; i< _elenco_proprieta.size(); i++)
-        s = s + _elenco_proprieta[i]->to_String() +  " ";
     return s;
 }
 
 std::ostream& operator<<(std::ostream& os, Giocatore G)
 {
     return os << G.to_String();
+}
+
+bool Giocatore::want_to_buy_terreno()
+{
+    return true;
+}
+
+bool Giocatore::want_to_buy_casa()
+{
+    return true;
+}
+
+bool Giocatore::want_to_buy_albergo()
+{
+    return true;
 }

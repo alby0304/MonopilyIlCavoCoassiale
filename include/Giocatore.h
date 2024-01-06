@@ -6,26 +6,28 @@
 #include "Casella_Laterale.h"
 
 class Casella_Laterale;
+class Computer;
+class Human;
 
 class Giocatore
 {
 public:
     // Costruttore
     Giocatore(int, Casella*);
-    Giocatore() : Giocatore(0,nullptr) {std::cout << "costruttore di default" << std::endl;};
+    Giocatore() {};
 
     Giocatore& operator=(Giocatore* g);
 
     // Funzioni membro
     void buy(); // Effettua l'acquisto (push della casella in elenco proprietà, set variabili casella_laterale)
-    virtual bool makeChoice() {return false;}; // Restituisce true se il giocatore vuole comprare il terreno/casa/albergo
-    void resetPlayer();
-
-    bool checkPosition();
+    bool want_to_buy_terreno();      // Restituisce true se il giocatore vuole comprare il terreno
+    bool want_to_buy_casa();         // Restituisce true se il giocatore vuole comprare la casa
+    bool want_to_buy_albergo();      // Restituisce true se il giocatore vuole comprare l'albergo
+    void resetPlayer();              // Per quando un giocatore perde
 
     // Scambi di denaro tra giocatori
     void Transfert (int n, Giocatore* Other);
-    void pay(int n);     // Se non si hanno abbastanza soldi il giocatore ha perso e lancio eccezione
+    void pay(int n);     // Se non si hanno abbastanza soldi il giocatore non può pagare e lancio eccezione
     void deposit(int n); // Quando un altro giocatore cade su un mio terreno e mi deve pagare o quando passo dal via
 
     // Funzione GET
@@ -48,9 +50,7 @@ public:
     // Distruttore
     ~Giocatore(); // _elenco_proprietà, _pos
 
-    
-
-    // Eccezione
+    // Eccezioni
     class You_Loosed{};
     class Not_Enough_Money{};
     

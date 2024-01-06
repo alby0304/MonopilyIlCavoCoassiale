@@ -112,7 +112,7 @@ std::string Tabellone::to_String()
         space += " ";
     }
 
-    std::string s = ""; // stringa che conterrà tutto il tabellone
+    std::string s = "\n"; // stringa che conterrà tutto il tabellone
     // Comincio a salvare la prima riga
     s = s + space;
     // Finisco di salvare tutta la prima riga (l'intestazione con le colonne A, B, C ...)
@@ -150,13 +150,44 @@ std::string Tabellone::to_String()
 
 std::ostream& operator<<(std::ostream& os, Tabellone A)
 {
-    return os << A.to_String() << A.getLegenda();
+    return os << A.to_String();
 }
 
 std::string Tabellone::getLegenda()
 {
     std::string s = "\n Legenda:\n";
-    Casella* next = partenza->getSucc();
+
+    // Puntatore che salva dove sono i giocatori nel tabellone
+    std::vector<Casella*> caselle_gia_stampate;
+    
+    // Ciclo per stampare il legenda dov'è ogni giocatore
+    Casella* next = partenza;
+    do
+    {
+        if (next->_players.size() > 0)  // Se nella casella next ci sono giocatori
+        {
+            for (int i=0; i < next->_players.size(); i++)
+            {
+                s += "\nGiocatore " + std::to_string(next->_players[i]) + " nella casella " + next->getCoordinata_to_String();
+                caselle_gia_stampate.push_back(next);
+            }
+        }
+        Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(next); //se il casting va a buon fine 
+        if (_pos1)
+        {
+            if (_pos1->isCasa())
+            {
+                s += " con casa\n";
+            }
+            else if (_pos1->isAlbergo())
+            {
+                s += " con Albergo\n";
+            }
+        }
+        next = next->getSucc();
+    }while (next == partenza);
+    // Ciclo per stampare il legenda caselle con case/alberghi (caselle non ancora stampate)
+    next = partenza->getSucc();
     while (next == partenza)
     {
         Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(next); //se il casting va a buon fine 
@@ -166,15 +197,29 @@ std::string Tabellone::getLegenda()
             int x = _pos1->getCoordinata().second;
             if (_pos1->isCasa())
             {
-                s = s + "Casella ";
-                //s.push_back(carattere);
-                s += + y;
-                s += std::to_string(x) + " con casa\n";
+                if(_pos1->_players.size()>0)
+                {
+                    // Non la stampo in legenda, perchè la ho già stampata prima con il/i giocatore/i che é/sono sopra alla casella
+                }
+                else
+                {
+                    s = s + "Casella ";
+                    s += + y;
+                    s += std::to_string(x) + " con casa\n";
+                }
             }
             else if (_pos1->isAlbergo())
             {
-                s += + y;
-                s += std::to_string(x) + " con Albergo\n";
+                if(_pos1->_players.size()>0)
+                {
+                    // Non la stampo in legenda, perchè la ho già stampata prima con il/i giocatore/i che é/sono sopra alla casella
+                }
+                else
+                {
+                    s = s + "Casella ";
+                    s += + y;
+                    s += std::to_string(x) + " con Albergo\n";
+                }
             }
             next = next->getSucc();
         }

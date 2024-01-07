@@ -1,34 +1,34 @@
 // Giulio Zanardi 2076063
 #include "../include/Casella_laterale.h"
 
-Casella_Laterale::Casella_Laterale(int R, int C, char cont) : Casella(R,C,cont)
+Casella_Laterale::Casella_Laterale(int R, int C, char cont) : Casella(R, C, cont)
 {
-    // Per settare _albergo, _casa e _proprietario
-    reset();
+    // Il contenuto e la coordinata li faccio settare alla superclasse casella
+    reset(); // Per settare _albergo, _casa e _proprietario
 
-    if(_type=='E')
+    if (_type == 'E')
     {
         _prezzo_terreno = 6;
-        _prezzo_casa    = 3;
+        _prezzo_casa = 3;
         _prezzo_albergo = 3;
-        _affitto_casa   = 2;
-        _affitto_albergo= 4;
+        _affitto_casa = 2;
+        _affitto_albergo = 4;
     }
-    if(_type=='S')
+    if (_type == 'S')
     {
         _prezzo_terreno = 10;
-        _prezzo_casa    = 5;
+        _prezzo_casa = 5;
         _prezzo_albergo = 5;
-        _affitto_casa   = 4;
-        _affitto_albergo= 8;
+        _affitto_casa = 4;
+        _affitto_albergo = 8;
     }
-    if(_type=='L')
+    if (_type == 'L')
     {
         _prezzo_terreno = 20;
-        _prezzo_casa    = 10;
+        _prezzo_casa = 10;
         _prezzo_albergo = 10;
-        _affitto_casa   = 7;
-        _affitto_albergo= 14;
+        _affitto_casa = 7;
+        _affitto_albergo = 14;
     }
 }
 
@@ -47,25 +47,25 @@ std::string Casella_Laterale::to_String()
         s = s + "*";
 
     // Salva in s eventuali giocatori
-    for (int i=0; i < _players.size(); i++)
+    for (int i = 0; i < _players.size(); i++)
     {
-        s = s +  std::to_string(_players.at(i));
+        s = s + std::to_string(_players.at(i));
     }
-    
+
     s = s + "|";
     s = normalize(s, _dim_max_Casella);
     return s;
 }
 
-void Casella_Laterale::buy(Giocatore* g)
+void Casella_Laterale::buy(Giocatore *g)
 {
     // Se il giocatore possiede già il terreno e la casa, si procede all'acquisto di un albergo
-    if ((_proprietario == g)&&(!_albergo)&&(_casa == true))
+    if ((_proprietario == g) && (!_albergo) && (_casa == true))
     {
         _albergo = true;
     }
     // Se il giocatore possiede già il terreno, si procede all'acquisto di una casa
-    else if ((_proprietario == g)&&(_casa == false))
+    else if ((_proprietario == g) && (_casa == false))
     {
         _casa = true;
     }
@@ -82,7 +82,7 @@ int Casella_Laterale::getAffitto() const
         return _affitto_albergo;
     if (_casa)
         return _affitto_casa;
-    // Se non ci sono case o alberghi l'affitto da pagare è 0 
+    // Se non ci sono case o alberghi l'affitto da pagare è 0
     // (Nella consegna del progetto NON c'è scritto di far pagare la rendita del solo terreno, come avviene nel "vero" gioco del monopoli)
     return 0;
 }
@@ -96,9 +96,9 @@ void Casella_Laterale::reset()
 
 int Casella_Laterale::getPrezzo()
 {
-    if(_albergo)
+    if (_albergo)
         return _prezzo_albergo;
-    if(_casa)
+    if (_casa)
         return _prezzo_casa;
     return _prezzo_terreno;
 }

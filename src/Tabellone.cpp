@@ -5,14 +5,15 @@
     Il tabellone ha come variabile membro un puntatore alla casella di partenza.
     Creo la casella di partenza.
     Poi in base a quanto grande è il campo da gioco inserisco n-1 caselle (Ex. 8x8 => n_caselle = 24, quindi ne devo inserire altre 23).
-    Per ogni casella setto la posizione (Ex. A2) andrà inserita tramite le proprietà del labirinto (numero di caselle orizzontali e verticali)
+    Per ogni casella setto la posizione (Ex. A2) in base alle proprietà del labirinto (numero di caselle orizzontali e verticali)
     Una volta capito se angolare o laterale la creo e la aggiungo alla lista.
     Per la creazione casuale delle caselle laterali c'è il metodo decide_type e ho a disposizione E = 8 economiche, S = 10 Standard, L = 6 lusso (da creare).
     Ogni volta che ne viene creata una, diminuisce il numero di caselle disponibili da creare.
     Alla fine del processo l'ultima casella punterà alla casella di partenza creando così una lista concatenata di caselle chiusa in sè stassa.
 */
-Tabellone::Tabellone(int tot_R, int tot_C) 
-{    
+
+Tabellone::Tabellone(int tot_R, int tot_C)
+{
     // Set delle variabili di default del tabellone
     dim_y = tot_R;
     dim_x = tot_C;
@@ -20,32 +21,33 @@ Tabellone::Tabellone(int tot_R, int tot_C)
 
     // Indici di riga e colonna
     int indice_riga = tot_R - 1;
-    int indice_colonna = tot_C; 
+    int indice_colonna = tot_C;
 
     // Creo e riempio di dati la prima casella
-    partenza = new Casella {indice_riga,indice_colonna,'P'};
-    dim_max_Casella= partenza->_dim_max_Casella;
+    partenza = new Casella{indice_riga, indice_colonna, 'P'};
+    dim_max_Casella = partenza->_dim_max_Casella;
+
     // Creo un puntatore con cui spostarmi per creare le caselle successive alla prima
     Casella* Casella_Now = partenza;
     // Utili per le variazioni degli indici (assumono solo 0 e 1 e -1)
     int vx = -1, vy = 0;
-    
+
     // Creo le altre caselle
-    for (int i=1; i < tot_caselle; i++) // i=1 perchè ho già sistemato la rpima casella
+    for (int i = 1; i < tot_caselle; i++) // i=1 perchè ho già sistemato la prima casella
     {
         // Aggiorno gli indice di riga e colonna
         indice_colonna += vx;
-        indice_riga    += vy;
+        indice_riga += vy;
         // Creo il puntatore ad una nuova casella
         Casella* New_Casella;
 
-        if ((i == dim_x - 1) || (i == dim_x + dim_y - 2) || (i == 2*dim_x + dim_y - 3)) // Mi trovo agli angoli (escluso P, già creato)
+        if ((i == dim_x - 1) || (i == dim_x + dim_y - 2) || (i == 2 * dim_x + dim_y - 3)) // Mi trovo agli angoli (escluso P, già creato)
         {
             // Creo una nuova casella angolare
-            New_Casella = new Casella{indice_riga,indice_colonna,' '};
+            New_Casella = new Casella{indice_riga, indice_colonna, ' '};
 
             // Cambio di direzione della variazione degli indici (lo faccio quando creo un angolo)
-            if (i == dim_x + dim_y - 2)     // Sono nel secondo angolo, ora gli indici devono aumentare quindi cambio il segno alla velocità
+            if (i == dim_x + dim_y - 2) // Sono nel secondo angolo, ora gli indici devono aumentare quindi cambio il segno alla velocità
                 vy = -vy;
             int tmp = vx;
             vx = vy;
@@ -54,21 +56,20 @@ Tabellone::Tabellone(int tot_R, int tot_C)
         else
         {
             // Creo una nuova casella laterale
-            New_Casella = new Casella_Laterale {indice_riga,indice_colonna,decide_type(E, S, L)};
+            New_Casella = new Casella_Laterale{indice_riga, indice_colonna, decide_type(E, S, L)};
         }
-        
+
         // Aggiungo la casella al tabellone e mi sposto su di essa
         Casella_Now->setSucc(New_Casella);
         Casella_Now = New_Casella;
-        
-        // Chiusura della lista concatenata su sè stessa ("head" = "tail" = "tabellone")
-        if(i==tot_caselle-1)
-            Casella_Now->setSucc(partenza);
 
+        // Chiusura della lista concatenata su sè stessa ("head" = "tail" = "tabellone")
+        if (i == tot_caselle - 1)
+            Casella_Now->setSucc(partenza);
     }
 }
 
-char Tabellone::decide_type(int& E, int& S, int& L)
+char Tabellone::decide_type(int &E, int &S, int &L)
 {
     // Inizializza il generatore di numeri casuali con un seed basato sull'orologio di sistema
     std::random_device rd;
@@ -81,33 +82,33 @@ char Tabellone::decide_type(int& E, int& S, int& L)
     do
     {
         int numeroCasuale = distr(gen);
-        if ((numeroCasuale==1)&&(E>0))
+        if ((numeroCasuale == 1) && (E > 0))
         {
             c = 'E';
             (E)--;
         }
-        if ((numeroCasuale==2)&&(S>0))
+        if ((numeroCasuale == 2) && (S > 0))
         {
             c = 'S';
             (S)--;
         }
-        if ((numeroCasuale==3)&&(L>0))
+        if ((numeroCasuale == 3) && (L > 0))
         {
             c = 'L';
             (L)--;
         }
-    } while (c=='j');
+    } while (c == 'j');
 
     return c;
 }
 
 std::string Tabellone::to_String()
 {
-    
+
     std::string tmp;
     std::string space;
     // Creo la stringa space in base alla dimensione di una Casella
-    for (int i=0; i < dim_max_Casella; i++)
+    for (int i = 0; i < dim_max_Casella; i++)
     {
         space += " ";
     }
@@ -116,7 +117,7 @@ std::string Tabellone::to_String()
     // Comincio a salvare la prima riga
     s = s + space;
     // Finisco di salvare tutta la prima riga (l'intestazione con le colonne A, B, C ...)
-    for (int i=1; i <= dim_x; i++)
+    for (int i = 1; i <= dim_x; i++)
     {
         tmp = std::to_string(i);
         s += normalize(tmp, dim_max_Casella);
@@ -125,30 +126,31 @@ std::string Tabellone::to_String()
     s = s + "\n";
 
     // Ora stampo il tabellone
+
     Casella* Target;
-    for (int i=0; i < dim_y; i++)
+    for (int i = 0; i < dim_y; i++)
     {
         // Inizio di riga
         tmp = int_to_char(i);
         s += normalize(tmp, dim_max_Casella);
-        for (int j=0; j < dim_x; j++)
+        for (int j = 0; j < dim_x; j++)
         {
-            if ((i==0)||(i==dim_y-1)||(j==0)||(j==dim_x-1)) // Se sono ai bordi del tabellone
+            if ((i == 0) || (i == dim_y - 1) || (j == 0) || (j == dim_x - 1)) // Se sono ai bordi del tabellone
             {
-                std::pair<char, int> target(int_to_char(i), j+1);
+                std::pair<char, int> target(int_to_char(i), j + 1);
                 Target = partenza->find(target);
                 s = s + Target->to_String();
             }
-            else    // Sono in mezzo, quindi devo stampare spazio vuoto
+            else // Sono in mezzo, quindi devo stampare spazio vuoto
                 s = s + space;
         }
         s = s + "\n";
     }
-    
+
     return s;
 }
 
-std::ostream& operator<<(std::ostream& os, Tabellone A)
+std::ostream &operator<<(std::ostream &os, Tabellone A)
 {
     return os << A.to_String();
 }
@@ -156,19 +158,19 @@ std::ostream& operator<<(std::ostream& os, Tabellone A)
 std::string Tabellone::getLegenda()
 {
     std::string s = "\n Legenda:\n";
-    
+
     // Ciclo per stampare in legenda dov'è ogni giocatore
     Casella* next = partenza;
     do
     {
-        if (next->_players.size() > 0)  // Se nella casella next ci sono giocatori
+        if (next->_players.size() > 0) // Se nella casella next ci sono giocatori
         {
-            for (int i=0; i < next->_players.size(); i++)   // Questo for è per verificare se nella casella corrente c'è più di un giocatore
+            for (int i = 0; i < next->_players.size(); i++) // Questo for è per verificare se nella casella corrente c'è più di un giocatore
             {
                 s += "\nGiocatore " + std::to_string(next->_players[i]) + " nella casella " + next->getCoordinata_to_String();
             }
         }
-        Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(next); //se il casting va a buon fine 
+        Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(next); // se il casting va a buon fine
         if (_pos1)
         {
             if (_pos1->isCasa())
@@ -180,47 +182,43 @@ std::string Tabellone::getLegenda()
                 s += " con Albergo\n";
             }
         }
-        next = next->getSucc();
-    }while (next->getType() != 'P');
+        next = next->getSucc(); // Passo alla successiva e ripeto
+    } while (next->getType() != 'P');
 
     // Ciclo per stampare in legenda caselle con case/alberghi (caselle non ancora stampate)
     next = partenza;
     do
     {
-        Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(next); //se il casting va a buon fine 
+        Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(next); // se il casting va a buon fine
         if (_pos1)
         {
             char y = _pos1->getCoordinata().first;
             int x = _pos1->getCoordinata().second;
             if (_pos1->isCasa())
             {
-                if(_pos1->_players.size()>0)
+                if (_pos1->_players.size() > 0)
                 {
                     // Non la stampo in legenda, perchè la ho già stampata prima con il/i giocatore/i che é/sono sopra alla casella
                 }
                 else
                 {
-                    s = s + "Casella ";
-                    s += + y;
-                    s += std::to_string(x) + " con casa\n";
+                    s = s + "\nCasella " + _pos1->getCoordinata_to_String() + " con casa\n";
                 }
             }
             else if (_pos1->isAlbergo())
             {
-                if(_pos1->_players.size()>0)
+                if (_pos1->_players.size() > 0)
                 {
                     // Non la stampo in legenda, perchè la ho già stampata prima con il/i giocatore/i che é/sono sopra alla casella
                 }
                 else
                 {
-                    s = s + "Casella ";
-                    s += + y;
-                    s += std::to_string(x) + " con Albergo\n";
+                    s = s + "\nCasella " + _pos1->getCoordinata_to_String() + " con Albergo\n";
                 }
             }
-            next = next->getSucc();
+            next = next->getSucc(); // Passo alla successiva e ripeto
         }
-    }while (next->getType() != 'P');
+    } while (next->getType() != 'P');
 
     return s;
 }

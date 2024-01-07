@@ -11,7 +11,7 @@
 #include "../include/Tabellone.h"
 
 int getDiceRoll();                                     // restituisce la somme di due numeri casuali tra 1 e 6
-void startingOrder(std::vector<Giocatore*> &players); // ordina i players in base ai lanci dei dadi
+void startingOrder(std::vector<Giocatore *> &players); // ordina i players in base ai lanci dei dadi
 void show(Tabellone &T);
 
 // Mode passata come argomento da terminale
@@ -28,17 +28,18 @@ int main(int argc, char *argv[])
     const int nGiocatori = 4;
     const int nMaxTurni = 400; // Ogni giocatore se sono in una partita tra robot fa al massimo N_Max_turni
     const int startMoney = 100;
-    
+
     int j = 1;  // Contatore di turni
     bool human; // Variabile che mi dice se ho creato un giocatore Human (=true), o un giocatore computer (=false)
     bool game_is_On = true;
     Tabellone T;                      // creo il tabellone
     std::vector<Giocatore *> players; // I giocatori che sono dentro players sono quelli che giocano, se un giocatore viene eliminato esce dal vettore
 
-    //Creo il file log
+    // Creo il file log
     std::ofstream file("log.txt");
     // Verifica se il file è stato aperto correttamente
-    if (!file.is_open()) {
+    if (!file.is_open())
+    {
         std::cerr << "Impossibile aprire il file." << std::endl;
         return 1; // Esce con un codice di errore
     }
@@ -95,7 +96,7 @@ int main(int argc, char *argv[])
         {
             // Turno di un giocatore
             file << "Inizio turno " << j << " del giocatore " << players[i]->getID() << ".\n";
-            
+
             // Il giocatore tira i dadi
             int n = getDiceRoll();
             file << "Giocatore " << players[i]->getID() << " ha tirato i dadi e ha fatto " << n << ".\n";
@@ -110,14 +111,14 @@ int main(int argc, char *argv[])
                 file << "Giocatore " << players[i]->getID() << " e' passato dal via e ha ritirato " << players[i]->_moneyPassaggioVia << " fiorini.\n";
 
             // Se il giocatore è umano c'è un interazione con l'utente
-            if ((players[i]->getID()==1)&&(human))
+            if ((players[i]->getID() == 1) && (human))
             {
                 std::string s;
                 std::cout << "Comandi\n  show: per visualizzare il tabellone e la legenda. \n more: per visualizzare lista delle proprietà e i fiorini di ogni giocatore: ";
                 std::cin >> s;
-                if (s=="show")
+                if (s == "show")
                     show(T);
-                else if (s=="more")
+                else if (s == "more")
                 {
                     for (int i = 0; i < players.size(); i++)
                     {
@@ -155,38 +156,31 @@ int main(int argc, char *argv[])
                                 file << "Giocatore " << players[i]->getID() << " ha acquistato casella " << pos1->getCoordinata_to_String() << ".\n";
                             }
                         }
-                        catch (const std::exception &Not_Enough_Money)
+                        catch (const Giocatore::Not_Enough_Money& e)
                         {
-                            // std::cout <<"Tentativo di acquisto non riuscito, troppi pochi soldi.\n";
+                            file <<"Tentativo di acquisto non riuscito, soldi non sufficenti.\n";
                         }
                     }
                 }
-                else // La casella laterale non è del giocatore e non è "della banca" (nullptr), quindi è di qualcuno e se c'è almeno una casa devo pagare l'affitto
+                else if ((pos1->getProprietario()!=players[i])&&(pos1->isCasa()) || (pos1->isAlbergo())) //Se la casella laterale non è del giocatore-iesimo e c'è un albergo o una casa        
                 {
-                    if ((pos1->isCasa()) || (pos1->isAlbergo())) // Se sono su un terreno non mio con una casa o un albergo devo pagare l'affitto al proprietario
+                    try
                     {
-                        try
-                        {
-                            players[i]->Transfert(pos1->getAffitto(), pos1->getProprietario());
-                            // Il metodo Transfert gestisce l'eccezione lanciata in caso di mancanza di soldi eliminando
-                            // il giocatore (se deve pagare 10 e ha solo 5 paga 5, arriva a 0 euro, perde tutte le proprietà
-                            // (che tornano senza proprietario, nuovamente acquistabili) e viene settato che ha perso, quando
-                            // tutti i giocatori avranno finito il loro turno il giocatore verrà rimosso dal vettore player, vedi codice uscito dal ciclo for).
-                            file << "Il giocatore " << players[i]->getID() << "ha pagato un affitto di " << pos1->getAffitto() << " fiorini al giocatore " << pos1->getProprietario()->getID() << " per il pernottamento nella casella " << pos1->getCoordinata_to_String() << ".\n";
-                        }
-                        catch (const Giocatore::You_Loosed &e)
-                        {
-                            file << "Il giocatore " << players[i]->getID() << " ha perso perche' non aveva abbastanza soldi per pagare l'affitto al giocatore " << pos1->getProprietario()->getID() << ".\n";
-                        }
+                        players[i]->Transfert(pos1->getAffitto(), pos1->getProprietario());
+                        // Il metodo Transfert gestisce l'eccezione lanciata in caso di mancanza di soldi eliminando
+                        // il giocatore (se deve pagare 10 e ha solo 5 paga 5, arriva a 0 euro, perde tutte le proprietà
+                        // (che tornano senza proprietario, nuovamente acquistabili) e viene settato che ha perso, quando
+                        // tutti i giocatori avranno finito il loro turno il giocatore verrà rimosso dal vettore player, vedi codice uscito dal ciclo for).
+                        file << "Il giocatore " << players[i]->getID() << "ha pagato un affitto di " << pos1->getAffitto() << " fiorini al giocatore " << pos1->getProprietario()->getID() << " per il pernottamento nella casella " << pos1->getCoordinata_to_String() << ".\n";
+                    }
+                    catch (const Giocatore::You_Loosed &e)
+                    {
+                        file << "Il giocatore " << players[i]->getID() << " ha perso perche' non aveva abbastanza soldi per pagare l'affitto al giocatore " << pos1->getProprietario()->getID() << ".\n";
                     }
                 }
-                // Se il giocatore è arrivato fino a qui senza entrare in nessun if significa che è il proprietario e ha già costruito tutto nei turni prima (fino all'albergo) e quindi siccome non può fare nulla il suo turno finisce
+                // Se il giocatore-iesimo è arrivato fino a qui senza entrare in nessun if significa che è il proprietario e ha già costruito tutto nei turni prima (fino all'albergo) e quindi siccome non può fare nulla il suo turno finisce
             }
-            else
-            {
-                // Il giocatore è in una casella angolare, non succede nulla.
-            }
-
+            // Il giocatore è in una casella angolare, non succede nulla.
             file << "Giocatore " << players[i]->getID() << " ha finito il turno.\n";
         }
         // Tutti i giocatori hanno finito il loro turno
@@ -223,7 +217,7 @@ int main(int argc, char *argv[])
     // Stampo chi ha vinto
     if (j > nMaxTurni)
     {
-        std::cout<< "Gioco finito per raggiungimento limite massimo di turni (turni giocati = " << nMaxTurni << ")";
+        std::cout << "Gioco finito per raggiungimento limite massimo di turni (turni giocati = " << nMaxTurni << ")";
         file << "Gioco finito per raggiungimento limite massimo di turni (turni giocati = " << nMaxTurni << ")";
     }
 
@@ -260,7 +254,8 @@ void startingOrder(std::vector<Giocatore *> &players)
         std::cout << "\nGiocatore " << players[i]->getID() << " ha tirato i dadi e ha fatto " << l;
         lanci.push_back(l);
     }
-    
+
+    // utilizzio l'algoritmo boble sort
     bool isOrder = false;
     while (!isOrder)
     {
@@ -280,35 +275,35 @@ void startingOrder(std::vector<Giocatore *> &players)
         }
     }
 
-    // Vado a caccia di eventuali doppioni
+    // Vado a Verificare se ci sono doppioni
     std::vector<int> indicidoppioni;
-    for (int i=1; i < players.size(); i++)
+    for (int i = 1; i < players.size(); i++)
     {
-        if (lanci[i-1]==lanci[i])
+        if (lanci[i - 1] == lanci[i])
         {
-            if (indicidoppioni.empty())   // Lo inserisco solo se è il primo doppione che trovo
+            if (indicidoppioni.empty()) // Lo inserisco solo se è il primo doppione che trovo
             {
-                indicidoppioni.push_back(i-1);  // eventuali successivi indici verranno salvati senza eseguire questa operazione
+                indicidoppioni.push_back(i - 1); // eventuali successivi indici verranno salvati senza eseguire questa operazione
             }
             indicidoppioni.push_back(i);
         }
     }
-    if (indicidoppioni.size()>0) // Se ci sono almeno 2 giocatori che hanno fatto un tiro uguale
+    if (indicidoppioni.size() > 0) // Se ci sono almeno 2 giocatori che hanno fatto un tiro uguale
     {
-        std::vector<Giocatore*> tmp;
+        std::vector<Giocatore *> tmp;
         std::string output = "\nI giocatori ";
-        for (int i=0; i < indicidoppioni.size(); i++)
+        for (int i = 0; i < indicidoppioni.size(); i++)
         {
             tmp.push_back(players[indicidoppioni[i]]);
-            output +=  std::to_string(players[indicidoppioni[i]]->getID()) + " ";
+            output += std::to_string(players[indicidoppioni[i]]->getID()) + " ";
         }
-        output +=  " hanno fatto lo stesso numero, quindi ritirano i dadi.";
+        output += " hanno fatto lo stesso numero, quindi ritirano i dadi.";
         std::cout << output;
         startingOrder(tmp);
         // Ora che il vettore tmp è ordinato aggiorno il vettore players
-        for (int i=0; i < indicidoppioni.size(); i++)
+        for (int i = 0; i < indicidoppioni.size(); i++)
         {
-            players[indicidoppioni[i]] = tmp [i];
+            players[indicidoppioni[i]] = tmp[i];
         }
     }
 }

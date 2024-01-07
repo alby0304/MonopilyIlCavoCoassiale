@@ -54,7 +54,7 @@ public:
     class Not_Enough_Money{};
     class Invalid_Cell{};
     
-    const int _moneyPassaggioVia = 20;
+    static const int _moneyPassaggioVia = 20;
 protected:
     std::vector<Casella_Laterale*> _elenco_proprieta;
     int _money;

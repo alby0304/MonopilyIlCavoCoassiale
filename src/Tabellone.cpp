@@ -1,5 +1,5 @@
+// Giulio Zanardi 2076063
 #include "../include/Tabellone.h"
-
 
 /*  Il meccanismo di creazione del tabellone viene brevemente spiegato qui.
     Il tabellone ha come variabile membro un puntatore alla casella di partenza.

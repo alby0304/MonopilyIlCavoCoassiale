@@ -1,5 +1,5 @@
+// Giulio Zanardi 2076063
 #include "../include/Casella_laterale.h"
-
 
 Casella_Laterale::Casella_Laterale(int R, int C, char cont) : Casella(R,C,cont)
 {

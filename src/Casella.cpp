@@ -1,3 +1,4 @@
+// Giulio Zanardi 2076063
 #include "../include/Casella.h"
 
 Casella::Casella(int R, int C, char cont): _coordinata{std::make_pair(int_to_char(R),C)}, _type{cont}

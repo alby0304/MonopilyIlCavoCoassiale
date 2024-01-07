@@ -23,6 +23,7 @@ public:
     Giocatore* getProprietario() const    {return _proprietario;}
     bool isCasa()    const {return _casa;}
     bool isAlbergo() const {return _albergo;}
+    int getPrezzo(); //restituisce il prezzo per aquistare la casella/casa/albergo;
 
     // Utile per la stampa
     std::string to_String() override;

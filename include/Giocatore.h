@@ -13,16 +13,16 @@ class Giocatore
 {
 public:
     // Costruttore
-    Giocatore(int, Casella*);
+    Giocatore(int, Casella*,int money);
     Giocatore() {};
 
     Giocatore& operator=(Giocatore* g);
 
     // Funzioni membro
     void buy(); // Effettua l'acquisto (push della casella in elenco proprietà, set variabili casella_laterale)
-    bool want_to_buy_terreno();      // Restituisce true se il giocatore vuole comprare il terreno
-    bool want_to_buy_casa();         // Restituisce true se il giocatore vuole comprare la casa
-    bool want_to_buy_albergo();      // Restituisce true se il giocatore vuole comprare l'albergo
+
+    virtual bool choice(){return false;}; 
+
     void resetPlayer();              // Per quando un giocatore perde
 
     // Scambi di denaro tra giocatori
@@ -53,7 +53,9 @@ public:
     // Eccezioni
     class You_Loosed{};
     class Not_Enough_Money{};
+    class Invalid_Cell{};
     
+    const int _moneyPassaggioVia = 20;
 protected:
     std::vector<Casella_Laterale*> _elenco_proprieta;
     int _money;

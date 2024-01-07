@@ -1,10 +1,9 @@
 #include "../include/Casella_Laterale.h"
 #include "../include/Giocatore.h"
 
-Giocatore::Giocatore(int n, Casella* P) : _pos{P}, ID{n}, _isInGame{true}, _money{100}{
+Giocatore::Giocatore(int n, Casella* P, int money) : _pos{P}, ID{n}, _isInGame{true}, _money{money}{
     _pos->addPlayer(ID);
-    std::cout << "\nCostruttore di giocatore ha fatto il suo sporco lavoro, creato giocatore " << ID << std::endl;
-    
+    // std::cout << "\nCostruttore di giocatore ha fatto il suo sporco lavoro, creato giocatore " << ID << std::endl;
 }
 
 Giocatore& Giocatore::operator=(Giocatore* g){
@@ -18,13 +17,21 @@ Giocatore& Giocatore::operator=(Giocatore* g){
 }
 
 void Giocatore::buy() // si effettua il cast della posizione 
-{   
+{
     Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(_pos); //se il casting va a buon fine 
     if (_pos1)
     {
-        _pos1->buy(this);  // si richiama il buy della classe Casella Laterale (che effettua anche il pay)
-        if (!_pos1->isCasa()&&(_pos1->getProprietario()==this))   // Se non c'è stato l'acquisto di una casa significa che il giocatore ha acquistato il terreno (verifico cmq che ne sia il proprietario)
-        _elenco_proprieta.push_back(_pos1);                       // e quindi aggiungo la casella alla lista di proprietà
+        try
+        {
+            pay(_pos1->getPrezzo()); //lancia eccezione se il igocatore non ha abbastanza soldi
+            _pos1->buy(this);  //buy di Casella Laterale setta le sue cose in
+            if (!_pos1->isCasa()&&(_pos1->getProprietario()==this))   // Se non c'è stato l'acquisto di una casa significa che il giocatore ha acquistato il terreno (verifico cmq che ne sia il proprietario)
+            _elenco_proprieta.push_back(_pos1);                       // e quindi aggiungo la casella alla lista di proprietà
+        }
+        catch(const Giocatore::Not_Enough_Money& e)
+        {
+            std::cout << "\nAcquisto non avvenuto, lanciata Not_Enough_Money.";
+        }
     }
 }
 
@@ -42,13 +49,12 @@ void Giocatore::Transfert (int n, Giocatore* Other){ // trasferisco i soldi da u
         this->pay(n);
         Other->deposit(n);
     }
-    catch(const std::exception& Not_Enough_Money)
+    catch(const Giocatore::Not_Enough_Money& e)
     {
         _isInGame = false;
         Other->deposit(_money); // il giocatore paga tutti i soldi che ha 
         resetPlayer();
         throw You_Loosed();    // se il giocatore non ha abbastanza soldi per pagare perde ed esce dalla partita 
-        
     }
 }
 
@@ -63,7 +69,7 @@ void Giocatore::move(int n){  // mi sposto da una posizione alla successiva
     {
         _pos = _pos->getSucc();
         if (_pos->getType() == 'P') // Passaggio dal via che incrementa il budget dei giocatori 
-            deposit(20);
+            deposit(_moneyPassaggioVia);
     }
 }
 
@@ -93,19 +99,4 @@ std::string Giocatore::to_String()
 std::ostream& operator<<(std::ostream& os, Giocatore G)
 {
     return os << G.to_String();
-}
-
-bool Giocatore::want_to_buy_terreno()
-{
-    return true;
-}
-
-bool Giocatore::want_to_buy_casa()
-{
-    return true;
-}
-
-bool Giocatore::want_to_buy_albergo()
-{
-    return true;
 }

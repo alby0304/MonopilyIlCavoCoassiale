@@ -59,44 +59,20 @@ std::string Casella_Laterale::to_String()
 
 void Casella_Laterale::buy(Giocatore* g)
 {
-    // Se il giocatore possiede già il terreno e la casa e ha abbastanza soldi, si procede all'acquisto di un albergo
+    // Se il giocatore possiede già il terreno e la casa, si procede all'acquisto di un albergo
     if ((_proprietario == g)&&(!_albergo)&&(_casa == true))
     {
-        try
-        {
-            g->pay(_prezzo_albergo);
-            _albergo = true;
-        }
-        catch(const std::exception& Not_Enough_Money)
-        {
-            // Non succede nulla
-        }
+        _albergo = true;
     }
-    // Se il giocatore possiede già il terreno e ha abbastanza soldi, si procede all'acquisto di una casa
+    // Se il giocatore possiede già il terreno, si procede all'acquisto di una casa
     else if ((_proprietario == g)&&(_casa == false))
     {
-        try
-        {
-            g->pay(_prezzo_casa);
-            _casa = true;
-        }
-        catch(const std::exception& Not_Enough_Money)
-        {
-            // Non succede nulla
-        }
+        _casa = true;
     }
-    // Se la casella non è di nessuno e il giocatore ha abbastanza soldi, si procede all'acquisto
+    // Se la casella non è di nessuno, si procede all'acquisto del terreno
     else if ((_proprietario == nullptr))
     {
-        try
-        {
-            g->pay(_prezzo_terreno);
-            _proprietario = g;
-        }
-        catch(const std::exception& Not_Enough_Money)
-        {
-            // Non succede nulla
-        }
+        _proprietario = g;
     }
 }
 
@@ -116,4 +92,13 @@ void Casella_Laterale::reset()
     _casa = false;
     _albergo = false;
     _proprietario = nullptr;
+}
+
+int Casella_Laterale::getPrezzo()
+{
+    if(_albergo)
+        return _prezzo_albergo;
+    if(_casa)
+        return _prezzo_casa;
+    return _prezzo_terreno;
 }

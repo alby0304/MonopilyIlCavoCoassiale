@@ -7,14 +7,12 @@ class Computer : public Giocatore
 {
 public:
 
-    Computer(int ID, Casella* P) : Giocatore(ID,P){}
+    Computer(int ID, Casella* P, int money) : Giocatore(ID,P,money){}
     Computer() {}
 
     Giocatore& operator=(Computer* g);
 
-    bool want_to_buy_terreno();     // Decisione automatica con 25% di possibilità di comprare il terreno
-    bool want_to_buy_casa();        // Decisione automatica con 25% di possibilità di comprare la casa
-    bool want_to_buy_albergo();     // Decisione automatica con 25% di possibilità di comprarle l'albergo
+    bool choice() override;
 };
 
 std::ostream& operator<<(std::ostream& os, Computer G);

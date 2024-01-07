@@ -17,14 +17,14 @@ Casella* Casella::find(std::pair<char,int> target)
 
     // Se il giocatore non è in questa casella, provo a cercare "andando avanti" rispetto alla Casella this
     // Questo avviene finchè non ritorno da dove sono partito (controllo nella condizone while)
-    Casella* next = this->succ;
+    Casella* next = this->_succ;
     while (next->_type != 'P')
     {
         if ((next->_coordinata.first == target.first)&&((next->_coordinata.second == target.second)))
         {
             return next;
         }
-        next = next->succ;
+        next = next->_succ;
     }
 
     // Se non lo ho trovato significa che non c'è (non dovrebbe succedere), quindi restituisco nullptr 

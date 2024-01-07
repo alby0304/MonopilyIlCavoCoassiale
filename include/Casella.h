@@ -1,3 +1,4 @@
+// Giulio Zanardi 2076063
 #ifndef CASELLA_H
 #define CASELLA_H
 
@@ -23,13 +24,13 @@ public:
     
     // Funzioni GET
     char getType()     const    {return _type;}   // Utile per le caselle laterali
-    Casella* getSucc() const    {return succ;}
+    Casella* getSucc() const    {return _succ;}
     std::pair<char,int> getCoordinata() const   {return _coordinata;}
     
     std::string getCoordinata_to_String() const   {return _coordinata.first + std::to_string(_coordinata.second);}
 
     // Metodo per settare la casella successiva (usato solo dal costruttore del tabellone)
-    void setSucc(Casella* next) {succ = next;}
+    void setSucc(Casella* next) {_succ = next;}
 
     // Variabili oggetto
     const int _dim_max_Casella = 9;
@@ -41,7 +42,7 @@ public:
     */
     std::vector<int> _players;      // Rappresenta i giocatori che sono sopra alla casella
 protected:
-    Casella *succ;
+    Casella* _succ;
     std::pair<char,int> _coordinata;
     char _type;
 };

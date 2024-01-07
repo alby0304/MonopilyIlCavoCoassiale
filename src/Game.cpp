@@ -1,5 +1,6 @@
-#include <chrono>
-#include <thread>
+//Autore Alberto Bettini N°matricola 2074984
+
+#include <fstream>
 #include <iostream>
 #include <vector>
 #include <random>
@@ -11,6 +12,7 @@
 
 int getDiceRoll();                   // restituisce la somme di due numeri casuali tra 1 e 6
 void startingOrder(std::vector<Giocatore*>& players); // ordina i players in base ai lanci dei dadi
+void show(Tabellone T);
 
 // Mode passata come argomento da terminale
 int main(int argc, char *argv[])
@@ -23,83 +25,119 @@ int main(int argc, char *argv[])
         return 1; // Restituisce 1 in caso di errore
     }
 
+    //Creo il file log
+    std::ofstream file("log.txt");
+    // Verifica se il file è stato aperto correttamente
+    if (!file.is_open()) {
+        std::cerr << "Impossibile aprire il file." << std::endl;
+        return 1; // Esce con un codice di errore
+    }
+    file << "CREAZIONE GIOCO\n";
+
     // Dichiarazione di variabili
     const int nGiocatori = 4;
     const int nMaxTurni = 50; // Ogni giocatore se sono in una partita tra robot fa al massimo N_Max_turni
     const int startMoney = 100; 
 
     
-    int j = 0;                // Contatore di turni
+    int j = 1;                // Contatore di turni
     bool human;               // Variabile che mi dice se ho creato un giocatore Human (=true), o un giocatore computer (=false)
     bool game_is_On = true;
     Tabellone T;                      // creo il tabellone
     std::vector<Giocatore *> players; // I giocatori che sono dentro players sono quelli che giocano, se un giocatore viene eliminato esce dal vettore
 
     std::string mode = argv[1]; // salvo l'argomento passato da terminale
+    file<< "Modalità selezionata: "<< mode << ".\n";
     // Creazione del primo giocatore a seconda del mode
     if (mode == "computer")
     {
         human = false;
         Giocatore *player1 = new Computer{1, T.partenza, startMoney};
         players.push_back(player1);
+        file << "Creato Giocatore 1 Computer."<< std::endl;
     }
     else if (mode == "human")
     {
         human = true;
         Giocatore *player1 = new Human{1, T.partenza, startMoney};
         players.push_back(player1);
+        file << "Creato Giocatore 1 Human."<< std::endl;
     }
     else
     {
         std::cout << "Argomenti errati riprovate, Argomenti accettari\n computer: partita con 4 Computer \n human: partita con 3 Computer e un Human";
+        file.close();
         return 1;
     }
+
+    
 
     // Creazione degli altri 3 giocatori e relativo push nel vettore players
     for (int i = 2; i <= nGiocatori; i++)
     {
         Giocatore *player = new Computer{i, T.partenza, startMoney};
         players.push_back(player);
+        file << "Creato Giocatore " << i << " Computer." << player->getID() << ".\n";
     }
 
     startingOrder(players); // Ordine dei giocatori
 
-
-    std::cout << "\nL'ordine di gioco dei giocatori è";
+    
+    file << "Ordine dei giocatori: ";
     for (int i = 0; i < players.size(); i++)
     {
-        std::cout << players[i]->getID() << " ";
+        file << players[i]->getID() << " ";
     }
+    file << "\n";
     std::cout << "\nBenvenuto, questo e' il tabellone:"
               << T << "\nOra inizia il gioco.";
     while (game_is_On)
     {
+        file << "N° Turno: " << j << ".\n";
         // I giocatori fanno il loro turno
         for (int i = 0; i < players.size(); i++)
         {
             // Turno di un giocatore
-            // Movimento su un'altra casella
-            std::cout << "\nTurno " << j << "\nInizio turno del giocatore " << players[i]->getID();
+            file << "Inizio turno " << j << " del giocatore " << players[i]->getID()<< ".\n";
+            
+            if ((players[i]->getID()==1)&&(human))
+            {
+                std::string s;
+                std::cout << "Comandi\n  show: per visualizzare il tabellone e la legenda. \n more: per visualizzare lista delle proprietà e i fiorini di ogni giocatore: ";
+                std::cin >> s;
+                if (s=="show")
+                    show(T);
+                else if (s=="more")
+                {
+                    for (int i = 0; i < players.size(); i++)
+                    {
+                        std::cout << "Giocatore " << players[i]->getID() << players[i]->to_String();
+                        std::cout << "Giocatore " << players[i]->getID() << " ha: " << players[i]->getMoney() << " fiorini.\n";
+                    }
+                }
+            }
+
+            // Il giocatore tira i dadi
             int n = getDiceRoll();
-            std::cout << "\nGiocatore " << players[i]->getID() << " ha tirato i dadi e ha fatto " << n;
+            file << "Giocatore " << players[i]->getID() << " ha tirato i dadi e ha fatto " << n << ".\n";
             int tmpMoney = players[i]->getMoney();
-            // Rimozione dal tabellone del giocatore dalla casella vecchia
-            players[i]->getPosition()->removePlayer();
+            // Movimento su un'altra casella
+            players[i]->getPosition()->removePlayer(); // Rimozione dal tabellone del giocatore dalla casella vecchia
             players[i]->move(n);
-            // Aggiunta al tabellone del giocatore (nella casella dove si è spostato)
-            players[i]->getPosition()->addPlayer(players[i]->getID());
-            std::cout << "\nGiocatore " << players[i]->getID() << " si e' mosso sulla casella " << players[i]->getPosition()->getCoordinata_to_String();
+            players[i]->getPosition()->addPlayer(players[i]->getID()); // Aggiunta al tabellone del giocatore (nella casella dove si è spostato)
+            file << "Giocatore " << players[i]->getID() << " si e' mosso sulla casella " << players[i]->getPosition()->getCoordinata_to_String()<< ".\n";
+            
             // Stampo il passaggio dal via (intercettato nel move)
             if (players[i]->getMoney() > tmpMoney)
-                std::cout << "\nGiocatore " << players[i]->getID() << " e' passato dal via e ha ritirato " << players[i]->_moneyPassaggioVia << " fiorini.";
+                file << "Giocatore " << players[i]->getID() << " e' passato dal via e ha ritirato " << players[i]->_moneyPassaggioVia << " fiorini.\n";
 
-            // Verifico su che casella sono capitato
+            // Verifico su che casella è il giocatore
             Casella_Laterale *pos1 = dynamic_cast<Casella_Laterale *>(players[i]->getPosition()); // se il casting va a buon fine
-            if (pos1)                                                                             // Se mi trovo su una casella laterale
+            if (pos1)                                                                             // allora mi trovo su una casella laterale
             {
-                if ((pos1->getProprietario() == nullptr) || ((pos1->getProprietario() == players[i]) && (!pos1->isAlbergo()))) // La casella laterale non è di nessuno o del giocatore, quindi posso l'azione di buy
+                if ((pos1->getProprietario() == nullptr) || ((pos1->getProprietario() == players[i]) && (!pos1->isAlbergo()))) // La casella laterale non è di nessuno o è del giocatore, quindi il giocatore può effetturare il buy
                 {
-                    bool scelta = players[i]->choice();
+                    bool scelta = players[i]->choice(); // Il giocatore sceglie se comprare
                     if (scelta)
                     {
                         try
@@ -109,21 +147,23 @@ int main(int argc, char *argv[])
                             {
                                 if (pos1->isAlbergo())
                                 {
-                                    std::cout << "\nGiocatore " << players[i]->getID() << " ha acquistato albergo in " << pos1->getCoordinata_to_String();
+                                    file << "Giocatore " << players[i]->getID() << " ha acquistato un albergo in " << pos1->getCoordinata_to_String() << ".\n";
                                 }
                                 else
                                 {
-                                    std::cout << "\nGiocatore " << players[i]->getID() << " ha acquistato casa in " << pos1->getCoordinata_to_String();
+                                    file << "Giocatore " << players[i]->getID() << " ha acquistato una casa in " << pos1->getCoordinata_to_String() << ".\n";
                                 }
                             }
                             else
                             {
-                                std::cout << "\nGiocatore " << players[i]->getID() << " ha acquistato casella " << pos1->getCoordinata_to_String();
+                                file << "Giocatore " << players[i]->getID() << " ha acquistato casella " << pos1->getCoordinata_to_String() << ".\n";
                             }
                         }
                         catch (const std::exception &Not_Enough_Money)
                         {
-                            std::cout << "\nTentativo di acquisto non riuscito, troppi pochi soldi.";
+                            std::string s = "Tentativo di acquisto non riuscito, troppi pochi soldi.\n";
+                            std::cout << s;
+                            file << s;
                         }
                     }
                 }
@@ -138,11 +178,11 @@ int main(int argc, char *argv[])
                             // il giocatore (se deve pagare 10 e ha solo 5 paga 5, arriva a 0 euro, perde tutte le proprietà
                             // (che tornano senza proprietario, nuovamente acquistabili) e viene settato che ha perso, quando
                             // tutti i giocatori avranno finito il loro turno il giocatore verrà rimosso dal vettore player, vedi codice uscito dal ciclo for).
-                            std::cout << "\nIl giocatore " << players[i]->getID() << "ha pagato un affitto di " << pos1->getAffitto() << " al giocatore " << pos1->getProprietario()->getID();
+                            file << "Il giocatore " << players[i]->getID() << "ha pagato un affitto di " << pos1->getAffitto() << " fiorini al giocatore " << pos1->getProprietario()->getID() << " per il pernottamento nella casella " << pos1->getCoordinata_to_String() << ".\n";
                         }
                         catch (const Giocatore::You_Loosed& e)
                         {
-                            std::cout << "\nIl giocatore " << players[i]->getID() << " ha perso perche' non aveva abbastanza soldi per pagare l'affitto al giocatore " << pos1->getProprietario()->getID();
+                            file << "Il giocatore " << players[i]->getID() << " ha perso perche' non aveva abbastanza soldi per pagare l'affitto al giocatore " << pos1->getProprietario()->getID()<< ".\n";
                         }
                     }
                 }
@@ -150,19 +190,12 @@ int main(int argc, char *argv[])
             }
 
             // Se non è una casella Laterale, Non succede nulla.
+            
+            file << "Giocatore " << players[i]->getID() << " ha finito il turno.\n";
         }
         // Tutti i giocatori hanno finito il loro turno
         j++; // aumento il conteggio dei turni
-        // Stampo tabellone
-        std::cout << T;
-        // Stampo i fiorini e le proprietà di ogni giocatore
-        for (int i = 0; i < players.size(); i++)
-        {
-            std::cout << players[i]->to_String() << ". Fiorini = " << players[i]->getMoney()<< ".";
-        }
-        // Il programma fa una pausa di 1 secondo ogni volta che tutti i giocatori hanno finito il proprio turno
-        std::this_thread::sleep_for(std::chrono::seconds(1));
-        // std::system("cls");     // Pulizia schermo (funzionante solo su windows)
+        
 
         // Verifiche per capire se continuare a giocare (set game_is_On = false)
         // Verifica se i giocatori (contenuti in player) sono ancora in gioco, se non si è più in gioco si viene rimossi dal vettore
@@ -195,17 +228,20 @@ int main(int argc, char *argv[])
     // Stampo chi ha vinto
     if (j > nMaxTurni)
     {
-        std::cout << "\nGioco finito per raggiungimento limite massimo di turni (turni giocati = " << nMaxTurni << ")";
+        std::cout << "Gioco finito per raggiungimento limite massimo di turni (turni giocati = " << nMaxTurni << ")";
+        file << "Gioco finito per raggiungimento limite massimo di turni (turni giocati = " << nMaxTurni << ")";
         
     }
 
     std::cout << "\nHa vinto il giocatore " << players[0]->getID();
+    file << "\nHa vinto il giocatore " << players[0]->getID();
     if (human) // Se nella partita c'era un giocatore umano
     {
         if (players[0]->getID() == 1) // Se l'ultimo giocatore rimasto è l'1, allora è l'umano
             std::cout << "\nComplimenti, hai vinto !!!";
     }
     
+    file.close();
     return 0;
 }
 
@@ -223,7 +259,6 @@ int getDiceRoll()
 
 void startingOrder(std::vector<Giocatore*>& players)
 {
-
     std::vector<int> lanci;
     for (int i = 0; i < players.size(); i++) //assegno a ogni elemento un lancio di dadi
     {
@@ -249,4 +284,11 @@ void startingOrder(std::vector<Giocatore*>& players)
             }
         }
     }
+}
+
+void show(Tabellone T)
+{
+    // Stampo tabellone
+    std::cout << T;
+    std::cout << T.getLegenda();
 }

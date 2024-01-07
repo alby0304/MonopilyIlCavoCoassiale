@@ -156,20 +156,16 @@ std::ostream& operator<<(std::ostream& os, Tabellone A)
 std::string Tabellone::getLegenda()
 {
     std::string s = "\n Legenda:\n";
-
-    // Puntatore che salva dove sono i giocatori nel tabellone
-    std::vector<Casella*> caselle_gia_stampate;
     
-    // Ciclo per stampare il legenda dov'è ogni giocatore
+    // Ciclo per stampare in legenda dov'è ogni giocatore
     Casella* next = partenza;
     do
     {
         if (next->_players.size() > 0)  // Se nella casella next ci sono giocatori
         {
-            for (int i=0; i < next->_players.size(); i++)
+            for (int i=0; i < next->_players.size(); i++)   // Questo for è per verificare se nella casella corrente c'è più di un giocatore
             {
                 s += "\nGiocatore " + std::to_string(next->_players[i]) + " nella casella " + next->getCoordinata_to_String();
-                caselle_gia_stampate.push_back(next);
             }
         }
         Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(next); //se il casting va a buon fine 
@@ -185,10 +181,11 @@ std::string Tabellone::getLegenda()
             }
         }
         next = next->getSucc();
-    }while (next == partenza);
-    // Ciclo per stampare il legenda caselle con case/alberghi (caselle non ancora stampate)
-    next = partenza->getSucc();
-    while (next == partenza)
+    }while (next->getType() != 'P');
+
+    // Ciclo per stampare in legenda caselle con case/alberghi (caselle non ancora stampate)
+    next = partenza;
+    do
     {
         Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(next); //se il casting va a buon fine 
         if (_pos1)
@@ -223,6 +220,7 @@ std::string Tabellone::getLegenda()
             }
             next = next->getSucc();
         }
-    }
+    }while (next->getType() != 'P');
+
     return s;
 }

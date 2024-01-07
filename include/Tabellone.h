@@ -1,3 +1,4 @@
+// Autore Giulio Zanardi 2076063
 #include <random>
 #include "Casella_Laterale.h"
 

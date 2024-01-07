@@ -45,7 +45,6 @@ public:
     //***************
 
     std::string to_String();
-    std::string to_String_elenco_proprietà();
 
     // Distruttore
     ~Giocatore(); // _elenco_proprietà, _pos

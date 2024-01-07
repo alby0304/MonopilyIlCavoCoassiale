@@ -18,10 +18,6 @@ add_library(Monopoly
     src/Human.cpp
     include/Computer.h
     src/Computer.cpp
-    include/Human.h
-    src/Human.cpp
-    include/Computer.h
-    src/Computer.cpp
 )
 
 add_executable(TestTabellone src/TestTabellone.cpp)
@@ -31,6 +27,7 @@ target_link_libraries(TestTabellone Monopoly)
 target_link_libraries(Game Monopoly)
 
 
-
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2")
 install(TARGETS TestTabellone DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 install(TARGETS Game DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+

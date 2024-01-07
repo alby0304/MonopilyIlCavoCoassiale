@@ -17,7 +17,6 @@ public:
 
     // Funzioni Membro
     void buy(Giocatore* g);  // compro casella (set proprietario), se ho casella compro casa, se ho casa compro albergo
-                             // restituisce true se l'acquisto è andato buon fine
     void reset();            // reset cella (per quando un giocatore perde)
     int  getAffitto() const; // ritorna il prezzo da pagare di pedaggio (if casa e if albergo)
     Giocatore* getProprietario() const    {return _proprietario;}

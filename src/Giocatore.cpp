@@ -86,7 +86,7 @@ void Giocatore::resetPlayer()
     }
 }
 
-std::string Giocatore::to_String()
+std::string Giocatore::to_String_elenco_proprieta()
 {
     std::string s= "\nGiocatore " + std::to_string(ID) + ": ";
     for (int i=0; i< _elenco_proprieta.size(); i++)
@@ -94,9 +94,4 @@ std::string Giocatore::to_String()
         s +=  _elenco_proprieta[i]->getCoordinata_to_String() + " ";
     }
     return s;
-}
-
-std::ostream& operator<<(std::ostream& os, Giocatore G)
-{
-    return os << G.to_String();
 }

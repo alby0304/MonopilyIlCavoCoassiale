@@ -15,6 +15,4 @@ public:
     bool choice() override;
 };
 
-std::ostream& operator<<(std::ostream& os, Computer G);
-
 #endif  // COMPUTER_H

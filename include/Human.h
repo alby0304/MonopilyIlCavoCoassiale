@@ -16,6 +16,4 @@ public:
 
 };
 
-std::ostream& operator<<(std::ostream& os, Human G);
-
 #endif  // HUMAN_H

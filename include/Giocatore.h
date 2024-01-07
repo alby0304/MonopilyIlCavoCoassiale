@@ -44,7 +44,7 @@ public:
     // void move(Casella c);
     //***************
 
-    std::string to_String();
+    std::string to_String_elenco_proprieta();
 
     // Distruttore
     ~Giocatore(); // _elenco_proprietà, _pos
@@ -62,7 +62,5 @@ protected:
     bool _isInGame; // = true (utile per lfica il giocatore come giocatore 1, 2, 3, ecc. (utile per la stampa)
     Casella* _pos;  // La posizione in cuia stampa)
 };
-
-std::ostream& operator<<(std::ostream& os, Giocatore G);
 
 #endif // GIOCATORE_H

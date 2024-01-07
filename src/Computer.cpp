@@ -19,8 +19,3 @@ Giocatore& Computer::operator=(Computer* g)
     _pos->addPlayer(ID);
     return *this;
 }
-
-std::ostream& operator<<(std::ostream& os, Computer G)
-{
-    return os << G.to_String();
-}

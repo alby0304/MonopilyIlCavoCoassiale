@@ -297,6 +297,8 @@ int main(int argc, char *argv[])
     {
         std::cout << "Vincitore non chiaro, qualcosa è andato storto nella chiusura del game.";
         file << "Vincitore non chiaro, qualcosa è andato storto nella chiusura del game.";
+        file.close();
+        return 1;
     }
 
     file.close();

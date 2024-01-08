@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 
     // Dichiarazione di costanti e di metodi
     const int nGiocatori = 4;
-    const int nMaxTurni = 400; // Ogni giocatore se sono in una partita tra robot fa al massimo N_Max_turni
+    const int nMaxTurni = 100; // Ogni giocatore se sono in una partita tra robot fa al massimo N_Max_turni
     const int startMoney = 100;
 
     int j = 1;  // Contatore di turni

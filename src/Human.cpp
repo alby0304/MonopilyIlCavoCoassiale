@@ -28,10 +28,7 @@ bool Human::choice()
             std::cout << "\nComando non riconosciuto (Inserire S per si, N per no)";
         } while (true);
     }
-    else
-    {
-        throw Invalid_Cell();
-    }
+    return false; // Non lo farà mai perchè ritorna nel do while quando l'utente inserisce S o N
 }
 
 

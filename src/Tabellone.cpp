@@ -157,7 +157,7 @@ std::ostream &operator<<(std::ostream &os, Tabellone A)
 
 std::string Tabellone::getLegenda()
 {
-    std::string s = "\n Legenda:\n";
+    std::string s = "\n Legenda:";
 
     // Ciclo per stampare in legenda dov'è ogni giocatore
     Casella* next = partenza;
@@ -168,32 +168,30 @@ std::string Tabellone::getLegenda()
             for (int i = 0; i < next->_players.size(); i++) // Questo for è per verificare se nella casella corrente c'è più di un giocatore
             {
                 s += "\nGiocatore " + std::to_string(next->_players[i]) + " nella casella " + next->getCoordinata_to_String();
-            }
-        }
-        Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(next); // se il casting va a buon fine
-        if (_pos1)
-        {
-            if (_pos1->isCasa())
-            {
-                s += " con casa\n";
-            }
-            else if (_pos1->isAlbergo())
-            {
-                s += " con Albergo\n";
+                Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(next); // se il casting va a buon fine
+                if (_pos1)
+                {
+                    if (_pos1->isCasa())
+                    {
+                        s += " con casa.";
+                    }
+                    else if (_pos1->isAlbergo())
+                    {
+                        s += " con albergo.";
+                    }
+                }
             }
         }
         next = next->getSucc(); // Passo alla successiva e ripeto
     } while (next->getType() != 'P');
 
     // Ciclo per stampare in legenda caselle con case/alberghi (caselle non ancora stampate)
-    next = partenza;
+    // next = partenza;
     do
     {
         Casella_Laterale* _pos1 = dynamic_cast<Casella_Laterale*>(next); // se il casting va a buon fine
         if (_pos1)
         {
-            char y = _pos1->getCoordinata().first;
-            int x = _pos1->getCoordinata().second;
             if (_pos1->isCasa())
             {
                 if (_pos1->_players.size() > 0)
@@ -202,7 +200,7 @@ std::string Tabellone::getLegenda()
                 }
                 else
                 {
-                    s = s + "\nCasella " + _pos1->getCoordinata_to_String() + " con casa\n";
+                    s = s + "\nCasella " + _pos1->getCoordinata_to_String() + " con casa.";
                 }
             }
             else if (_pos1->isAlbergo())
@@ -213,7 +211,7 @@ std::string Tabellone::getLegenda()
                 }
                 else
                 {
-                    s = s + "\nCasella " + _pos1->getCoordinata_to_String() + " con Albergo\n";
+                    s = s + "\nCasella " + _pos1->getCoordinata_to_String() + " con albergo.";
                 }
             }
             next = next->getSucc(); // Passo alla successiva e ripeto

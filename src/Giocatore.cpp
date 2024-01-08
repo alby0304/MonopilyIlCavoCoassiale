@@ -3,7 +3,6 @@
 
 Giocatore::Giocatore(int n, Casella* P, int money) : _pos{P}, ID{n}, _isInGame{true}, _money{money}{
     _pos->addPlayer(ID);
-    // std::cout << "\nCostruttore di giocatore ha fatto il suo sporco lavoro, creato giocatore " << ID << std::endl;
 }
 
 Giocatore& Giocatore::operator=(Giocatore* g){
@@ -30,7 +29,7 @@ void Giocatore::buy() // si effettua il cast della posizione
         }
         catch(const Giocatore::Not_Enough_Money& e)
         {
-            std::cout << "\nAcquisto non avvenuto, lanciata Not_Enough_Money.";
+            // std::cout << "\nAcquisto non avvenuto, lanciata Not_Enough_Money.";
         }
     }
 }

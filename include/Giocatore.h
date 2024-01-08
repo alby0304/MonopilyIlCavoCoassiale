@@ -52,7 +52,6 @@ public:
     // Eccezioni
     class You_Loosed{};
     class Not_Enough_Money{};
-    class Invalid_Cell{};
     
     static const int _moneyPassaggioVia = 20;
 protected:

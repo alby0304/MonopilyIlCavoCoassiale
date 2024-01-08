@@ -1,3 +1,4 @@
+//Christian De Chirico 2074972
 #include "../include/Casella_Laterale.h"
 #include "../include/Giocatore.h"
 

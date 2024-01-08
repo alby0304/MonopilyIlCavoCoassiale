@@ -227,17 +227,12 @@ int main(int argc, char *argv[])
             winner.push_back(players[0]->getID());
             game_is_On = false;
         }
-        else if ((j >= nMaxTurni))   // Arrivo al turno di gioco max per ogni giocatore, il gioco si ferma e vince chi ha più soldi
+        else if ((j >= nMaxTurni))   // Arrivo al turno di gioco max , il gioco si ferma e vince chi ha più soldi
         {
-            // Stampo il tabellone per vedere la situa a fine partita
+            // Stampo il tabellone per vedere la situazione a fine partita
             std::cout << T;
             file << T; 
-            // Stampo quanti soldi ha ogni giocatore
-            for (int i = 0; i < players.size(); i++)
-            {
-                std::cout << "\nGiocatore " << players[i]->getID() << " ha: " << players[i]->getMoney() << " fiorini.";
-                file << "\nGiocatore " << players[i]->getID() << " ha: " << players[i]->getMoney() << " fiorini.";
-            }
+            
             // Ordino il vettore da quello con più soldi [0], a quello con meno soldi [players.size()-1]
             for (int i = 1; i < players.size(); i++)
             {
@@ -251,6 +246,12 @@ int main(int argc, char *argv[])
                 }
             }
             // Ora che il vettore players è ordìdinato in modo che il primo giocatore sia quello con più soldi
+            // Stampo quanti soldi ha ogni giocatore
+            for (int i = 0; i < players.size(); i++)
+            {
+                std::cout << "\nGiocatore " << players[i]->getID() << " ha: " << players[i]->getMoney() << " fiorini.";
+                file << "\nGiocatore " << players[i]->getID() << " ha: " << players[i]->getMoney() << " fiorini.";
+            }
             // Controllo se qualche altro giocatore ha lo stesso quantitativo di soldi
             for (int i = 1; i < players.size(); i++)
             {

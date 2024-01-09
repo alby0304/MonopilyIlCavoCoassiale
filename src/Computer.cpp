@@ -10,13 +10,12 @@ bool Computer::choice(){
     return distr(gen) == 1;
 }
 
-Giocatore& Computer::operator=(Computer* g)
-{
+Giocatore& Computer::operator=(Computer* g){
     _pos= g->getPosition();
-    ID = g->getID();
+    _ID = g->getID();
     _isInGame = g->isInGame();
     _money = g->getMoney();
     // Aggiungo il giocatore al tabellone
-    _pos->addPlayer(ID);
+    _pos->addPlayer(_ID);
     return *this;
 }

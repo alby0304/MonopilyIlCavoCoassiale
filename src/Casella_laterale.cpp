@@ -1,4 +1,5 @@
 // Giulio Zanardi 2076063
+
 #include "../include/Casella_laterale.h"
 
 Casella_Laterale::Casella_Laterale(int R, int C, char cont) : Casella(R, C, cont)
@@ -8,27 +9,27 @@ Casella_Laterale::Casella_Laterale(int R, int C, char cont) : Casella(R, C, cont
 
     if (_type == 'E')
     {
-        _prezzo_terreno = 6;
-        _prezzo_casa = 3;
-        _prezzo_albergo = 3;
-        _affitto_casa = 2;
-        _affitto_albergo = 4;
+        _prezzo_terreno = Variabili::prezzoTerrenoE;
+        _prezzo_casa = Variabili::prezzoCasaE;
+        _prezzo_albergo = Variabili::prezzoAlbergoE;
+        _affitto_casa = Variabili::affittoCasaE;
+        _affitto_albergo = Variabili::affittoAlbergoE;
     }
     if (_type == 'S')
     {
-        _prezzo_terreno = 10;
-        _prezzo_casa = 5;
-        _prezzo_albergo = 5;
-        _affitto_casa = 4;
-        _affitto_albergo = 8;
+        _prezzo_terreno = Variabili::prezzoTerrenoS;
+        _prezzo_casa = Variabili::prezzoCasaS;
+        _prezzo_albergo = Variabili::prezzoAlbergoS;
+        _affitto_casa = Variabili::affittoCasaS;
+        _affitto_albergo = Variabili::affittoAlbergoS;
     }
     if (_type == 'L')
     {
-        _prezzo_terreno = 20;
-        _prezzo_casa = 10;
-        _prezzo_albergo = 10;
-        _affitto_casa = 7;
-        _affitto_albergo = 14;
+        _prezzo_terreno = Variabili::prezzoTerrenoL;
+        _prezzo_casa = Variabili::prezzoCasaL;
+        _prezzo_albergo = Variabili::prezzoAlbergoL;
+        _affitto_casa = Variabili::affittoCasaL;
+        _affitto_albergo = Variabili::affittoAlbergoL;
     }
 }
 
@@ -53,7 +54,7 @@ std::string Casella_Laterale::to_String()
     }
 
     s = s + "|";
-    s = normalize(s, _dim_max_Casella);
+    s = normalize(s);
     return s;
 }
 

@@ -1,8 +1,8 @@
 // Giulio Zanardi 2076063
+
 #ifndef CASELLA_LATERALE_H
 #define CASELLA_LATERALE_H
 
-#include <iostream>
 #include "Casella.h"
 #include "Giocatore.h"
 

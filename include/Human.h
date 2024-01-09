@@ -1,4 +1,4 @@
-//Christian De Chirico 2074972
+// Christian De Chirico 2074972
 #ifndef HUMAN_H
 #define HUMAN_H
 
@@ -8,8 +8,7 @@ class Human : public Giocatore
 {
 public:
     // Costruttore che richiama quello della superclasse
-    Human(int ID, Casella* P, int money) : Giocatore(ID,P,money){}
-    Human() {}
+    Human(int ID) : Giocatore(ID){}
 
     Giocatore& operator=(Human* g);
 

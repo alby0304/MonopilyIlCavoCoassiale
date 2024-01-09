@@ -1,2088 +1,2492 @@
 CREAZIONE GIOCO
+
 Modalita' selezionata: human.
 
 Creato Giocatore 1, Human.
-
 Creato Giocatore 2, Computer.
 Creato Giocatore 3, Computer.
 Creato Giocatore 4, Computer.
-Giocatore 1 ha tirato i dadi e ha fatto 5
-Giocatore 2 ha tirato i dadi e ha fatto 5
-Giocatore 3 ha tirato i dadi e ha fatto 7
-Giocatore 4 ha tirato i dadi e ha fatto 6
-I giocatori 1 2  hanno fatto lo stesso numero, quindi ritirano i dadi.
-Giocatore 1 ha tirato i dadi e ha fatto 5
-Giocatore 2 ha tirato i dadi e ha fatto 11
-Ordine dei giocatori: 3 4 2 1 
 
-Benvenuto, questo e' il tabellone:
-             1        2        3        4        5        6        7        8    
-    A       | |      |E|      |E|      |L|      |L|      |E|      |S|      | |   
-    B       |E|                                                            |S|   
-    C       |S|                                                            |L|   
-    D       |L|                                                            |S|   
-    E       |S|                                                            |S|   
-    F       |S|                                                            |L|   
-    G       |E|                                                            |S|   
-    H       | |      |L|      |E|      |E|      |S|      |E|      |S|    |P1234| 
+Giocatore 1 ha tirato i dadi e ha fatto 5
+Giocatore 2 ha tirato i dadi e ha fatto 10
+Giocatore 3 ha tirato i dadi e ha fatto 6
+Giocatore 4 ha tirato i dadi e ha fatto 10
+
+I giocatori 2 4 hanno fatto lo stesso numero, quindi ritirano i dadi.
+Giocatore 2 ha tirato i dadi e ha fatto 6
+Giocatore 4 ha tirato i dadi e ha fatto 3
+
+Ordine dei giocatori: 2 4 3 1 
 
 Ora inizia il gioco.
+
 N° Turno: 1.
-Inizio turno 1 del giocatore 3.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella G1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 8.
+Giocatore 4 si e' mosso sulla casella G1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
 Giocatore 3 ha tirato i dadi e ha fatto 8.
 Giocatore 3 si e' mosso sulla casella G1.
 Giocatore 3 ha acquistato casella G1.
 Giocatore 3 ha finito il turno.
-Inizio turno 1 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 8.
-Giocatore 4 si e' mosso sulla casella G1.
-Giocatore 4 ha finito il turno.
-Inizio turno 1 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella H2.
-Giocatore 2 ha acquistato casella H2.
-Giocatore 2 ha finito il turno.
-Inizio turno 1 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella H3.
-Giocatore 1 ha acquistato casella H3.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 2.
-Inizio turno 2 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella A1.
-Giocatore 3 ha finito il turno.
-Inizio turno 2 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 11.
-Giocatore 4 si e' mosso sulla casella A6.
-Giocatore 4 ha finito il turno.
-Inizio turno 2 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 8.
-Giocatore 2 si e' mosso sulla casella A1.
-Giocatore 2 ha finito il turno.
-Inizio turno 2 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 4.
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
 Giocatore 1 si e' mosso sulla casella F1.
 Giocatore 1 ha acquistato casella F1.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 3.
-Inizio turno 3 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 8.
-Giocatore 3 si e' mosso sulla casella B8.
-Giocatore 3 ha finito il turno.
-Inizio turno 3 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 11.
-Giocatore 4 si e' mosso sulla casella H6.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 4 ha finito il turno.
-Inizio turno 3 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella A8.
+N° Turno: 2.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 9.
+Giocatore 2 si e' mosso sulla casella A4.
 Giocatore 2 ha finito il turno.
-Inizio turno 3 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella A1.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 8.
+Giocatore 4 si e' mosso sulla casella A3.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
+Giocatore 3 si e' mosso sulla casella A4.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 7.
+Giocatore 1 si e' mosso sulla casella A3.
+Giocatore 1 ha acquistato casella A3.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 3.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella E8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella C8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
+Giocatore 3 si e' mosso sulla casella F8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
+Giocatore 1 si e' mosso sulla casella B8.
+Giocatore 1 ha acquistato casella B8.
 Giocatore 1 ha finito il turno.
 
 N° Turno: 4.
-Inizio turno 4 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 2.
-Giocatore 3 si e' mosso sulla casella D8.
-Giocatore 3 ha acquistato casella D8.
-Giocatore 3 ha finito il turno.
-Inizio turno 4 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 8.
-Giocatore 4 si e' mosso sulla casella E1.
-Giocatore 4 ha finito il turno.
-Inizio turno 4 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 4.
-Giocatore 2 si e' mosso sulla casella E8.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 5.
+Giocatore 2 si e' mosso sulla casella H6.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha acquistato casella H6.
 Giocatore 2 ha finito il turno.
-Inizio turno 4 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 11.
-Giocatore 1 si e' mosso sulla casella E8.
-Giocatore 1 ha acquistato casella E8.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella G8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
+Giocatore 3 si e' mosso sulla casella H1.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 8.
+Giocatore 1 si e' mosso sulla casella H6.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 1 ha finito il turno.
 
 N° Turno: 5.
-Inizio turno 5 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 4.
-Giocatore 3 si e' mosso sulla casella H8.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 3 ha finito il turno.
-Inizio turno 5 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella A4.
-Giocatore 4 ha finito il turno.
-Inizio turno 5 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella H4.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella E1.
 Giocatore 2 ha finito il turno.
-Inizio turno 5 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 8.
-Giocatore 1 si e' mosso sulla casella H3.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha acquistato una casa in H3.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 3.
+Giocatore 4 si e' mosso sulla casella H6.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 5.
+Giocatore 3 si e' mosso sulla casella C1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
+Giocatore 1 si e' mosso sulla casella H1.
 Giocatore 1 ha finito il turno.
 
 N° Turno: 6.
-Inizio turno 6 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 10.
-Giocatore 3 si e' mosso sulla casella E1.
-Giocatore 3 ha finito il turno.
-Inizio turno 6 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella D8.
-Giocatore 4 ha finito il turno.
-Inizio turno 6 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella D1.
-Giocatore 2 ha acquistato casella D1.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 4.
+Giocatore 2 si e' mosso sulla casella A1.
 Giocatore 2 ha finito il turno.
-Inizio turno 6 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 10.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 6.
+Giocatore 4 si e' mosso sulla casella G1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 6.
+Giocatore 3 si e' mosso sulla casella A5.
+Giocatore 3 ha acquistato casella A5.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 8.
 Giocatore 1 si e' mosso sulla casella A2.
 Giocatore 1 ha acquistato casella A2.
 Giocatore 1 ha finito il turno.
 
 N° Turno: 7.
-Inizio turno 7 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella A3.
-Giocatore 3 ha finito il turno.
-Inizio turno 7 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 10.
-Giocatore 4 si e' mosso sulla casella H2.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 4 ha finito il turno.
-Inizio turno 7 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 12.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 9.
 Giocatore 2 si e' mosso sulla casella C8.
 Giocatore 2 ha finito il turno.
-Inizio turno 7 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 4.
-Giocatore 1 si e' mosso sulla casella A6.
-Giocatore 1 ha acquistato casella A6.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 8.
-Inizio turno 8 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 7.
-Giocatore 3 si e' mosso sulla casella C8.
-Giocatore 3 ha finito il turno.
-Inizio turno 8 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 12.
-Giocatore 4 si e' mosso sulla casella A5.
-Giocatore 4 ha finito il turno.
-Inizio turno 8 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
-Giocatore 2 si e' mosso sulla casella H8.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 2 ha finito il turno.
-Inizio turno 8 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 10.
-Giocatore 1 si e' mosso sulla casella H7.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha acquistato casella H7.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 9.
-Inizio turno 9 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 3.
-Giocatore 3 si e' mosso sulla casella F8.
-Giocatore 3 ha finito il turno.
-Inizio turno 9 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 4.
-Giocatore 4 si e' mosso sulla casella B8.
-Giocatore 4 ha finito il turno.
-Inizio turno 9 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella H1.
-Giocatore 2 ha finito il turno.
-Inizio turno 9 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 10.
-Giocatore 1 si e' mosso sulla casella D1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 10.
-Inizio turno 10 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 8.
-Giocatore 3 si e' mosso sulla casella H2.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 3 ha finito il turno.
-Inizio turno 10 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella H7.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 4 ha finito il turno.
-Inizio turno 10 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 8.
-Giocatore 2 si e' mosso sulla casella A2.
-Giocatore 2 ha finito il turno.
-Inizio turno 10 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 3.
-Giocatore 1 si e' mosso sulla casella A1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 11.
-Inizio turno 11 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 4.
-Giocatore 3 si e' mosso sulla casella E1.
-Giocatore 3 ha finito il turno.
-Inizio turno 11 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella G1.
-Giocatore 4 ha finito il turno.
-Inizio turno 11 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella B8.
-Giocatore 2 ha finito il turno.
-Inizio turno 11 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 4.
-Giocatore 1 si e' mosso sulla casella A5.
-Giocatore 1 ha acquistato casella A5.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 12.
-Inizio turno 12 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 8.
-Giocatore 3 si e' mosso sulla casella A5.
-Giocatore 3 ha finito il turno.
-Inizio turno 12 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella B1.
-Giocatore 4 ha finito il turno.
-Inizio turno 12 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 3.
-Giocatore 2 si e' mosso sulla casella E8.
-Giocatore 2 ha finito il turno.
-Inizio turno 12 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 6.
-Giocatore 1 si e' mosso sulla casella D8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 13.
-Inizio turno 13 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 5.
-Giocatore 3 si e' mosso sulla casella C8.
-Giocatore 3 ha finito il turno.
-Inizio turno 13 del giocatore 4.
+Inizio turno del giocatore 4.
 Giocatore 4 ha tirato i dadi e ha fatto 9.
-Giocatore 4 si e' mosso sulla casella B8.
+Giocatore 4 si e' mosso sulla casella A4.
 Giocatore 4 ha finito il turno.
-Inizio turno 13 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 3.
-Giocatore 2 si e' mosso sulla casella H8.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 2 ha finito il turno.
-Inizio turno 13 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 9.
-Giocatore 1 si e' mosso sulla casella H3.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha acquistato un albergo in H3.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 14.
-Inizio turno 14 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 8.
-Giocatore 3 si e' mosso sulla casella H5.
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 10.
+Giocatore 3 si e' mosso sulla casella H8.
 Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 3 ha finito il turno.
-Inizio turno 14 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 2.
-Giocatore 4 si e' mosso sulla casella D8.
-Giocatore 4 ha finito il turno.
-Inizio turno 14 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella H1.
-Giocatore 2 ha finito il turno.
-Inizio turno 14 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella E1.
-Giocatore 1 ha acquistato casella E1.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 15.
-Inizio turno 15 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 12.
-Giocatore 3 si e' mosso sulla casella A2.
-Giocatore 3 ha finito il turno.
-Inizio turno 15 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 6.
-Giocatore 4 si e' mosso sulla casella H6.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 4 ha finito il turno.
-Inizio turno 15 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella B1.
-Giocatore 2 ha finito il turno.
-Inizio turno 15 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella A2.
-Giocatore 1 ha acquistato una casa in A2.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 16.
-Inizio turno 16 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella A8.
-Giocatore 3 ha finito il turno.
-Inizio turno 16 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 11.
-Giocatore 4 si e' mosso sulla casella B1.
-Giocatore 4 ha acquistato casella B1.
-Giocatore 4 ha finito il turno.
-Inizio turno 16 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 10.
-Giocatore 2 si e' mosso sulla casella C8.
-Giocatore 2 ha finito il turno.
-Inizio turno 16 del giocatore 1.
+Inizio turno del giocatore 1.
 Giocatore 1 ha tirato i dadi e ha fatto 5.
 Giocatore 1 si e' mosso sulla casella A7.
 Giocatore 1 ha acquistato casella A7.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 17.
-Inizio turno 17 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 3.
-Giocatore 3 si e' mosso sulla casella D8.
-Giocatore 3 ha finito il turno.
-Inizio turno 17 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella A7.
+N° Turno: 8.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 3.
+Giocatore 2 si e' mosso sulla casella F8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 2.
+Giocatore 4 si e' mosso sulla casella A6.
+Giocatore 4 ha acquistato casella A6.
 Giocatore 4 ha finito il turno.
-Inizio turno 17 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella H7.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella H1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
+Giocatore 1 si e' mosso sulla casella F8.
+Giocatore 1 ha acquistato casella F8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 9.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 10.
+Giocatore 2 si e' mosso sulla casella G1.
 Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 2 ha finito il turno.
-Inizio turno 17 del giocatore 1.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella F8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 4.
+Giocatore 3 si e' mosso sulla casella D1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 3.
+Giocatore 1 si e' mosso sulla casella H7.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha acquistato casella H7.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 10.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 3.
+Giocatore 2 si e' mosso sulla casella D1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella H3.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 6.
+Giocatore 3 si e' mosso sulla casella A4.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
+Giocatore 1 si e' mosso sulla casella E1.
+Giocatore 1 ha acquistato casella E1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 11.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 6.
+Giocatore 2 si e' mosso sulla casella A4.
+Giocatore 2 ha acquistato casella A4.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 6.
+Giocatore 4 si e' mosso sulla casella D1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 8.
+Giocatore 3 si e' mosso sulla casella E8.
+Giocatore 3 ha acquistato casella E8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
+Giocatore 1 si e' mosso sulla casella A6.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 12.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 4.
+Giocatore 2 si e' mosso sulla casella A8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 10.
+Giocatore 4 si e' mosso sulla casella A8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 6.
+Giocatore 3 si e' mosso sulla casella H5.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 7.
+Giocatore 1 si e' mosso sulla casella F8.
+Giocatore 1 ha acquistato una casa in F8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 13.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 3.
+Giocatore 2 si e' mosso sulla casella D8.
+Giocatore 2 ha acquistato casella D8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 5.
+Giocatore 4 si e' mosso sulla casella F8.
+Giocatore 4 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 11.
+Giocatore 3 si e' mosso sulla casella A1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 3.
+Giocatore 1 si e' mosso sulla casella H7.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha acquistato una casa in H7.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 14.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 7.
+Giocatore 2 si e' mosso sulla casella H5.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 6.
+Giocatore 4 si e' mosso sulla casella H4.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella A8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 8.
+Giocatore 1 si e' mosso sulla casella F1.
+Giocatore 1 ha acquistato una casa in F1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 15.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 7.
+Giocatore 2 si e' mosso sulla casella E1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 9.
+Giocatore 4 si e' mosso sulla casella B1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella H8.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
 Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella E8.
-Giocatore 1 ha acquistato una casa in E8.
+Giocatore 1 si e' mosso sulla casella A1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 16.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 4.
+Giocatore 2 si e' mosso sulla casella A1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 5.
+Giocatore 4 si e' mosso sulla casella A5.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 4.
+Giocatore 3 si e' mosso sulla casella H4.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
+Giocatore 1 si e' mosso sulla casella A6.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 17.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 10.
+Giocatore 2 si e' mosso sulla casella D8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 6.
+Giocatore 4 si e' mosso sulla casella D8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 12.
+Giocatore 3 si e' mosso sulla casella A3.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
+Giocatore 1 si e' mosso sulla casella D8.
 Giocatore 1 ha finito il turno.
 
 N° Turno: 18.
-Inizio turno 18 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella H6.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 3 ha acquistato casella H6.
-Giocatore 3 ha finito il turno.
-Inizio turno 18 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 4.
-Giocatore 4 si e' mosso sulla casella D8.
-Giocatore 4 ha finito il turno.
-Inizio turno 18 del giocatore 2.
+
+Inizio turno del giocatore 2.
 Giocatore 2 ha tirato i dadi e ha fatto 8.
-Giocatore 2 si e' mosso sulla casella F1.
+Giocatore 2 si e' mosso sulla casella H4.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 2 ha finito il turno.
-Inizio turno 18 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 6.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 3.
+Giocatore 4 si e' mosso sulla casella G8.
+Giocatore 4 ha acquistato casella G8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella C8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 4.
+Giocatore 1 si e' mosso sulla casella H8.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 19.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 10.
+Giocatore 2 si e' mosso sulla casella A1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella H5.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 5.
+Giocatore 3 si e' mosso sulla casella H8.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 4.
+Giocatore 1 si e' mosso sulla casella H4.
+Giocatore 1 ha acquistato casella H4.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 20.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 9.
+Giocatore 2 si e' mosso sulla casella C8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 5.
+Giocatore 4 si e' mosso sulla casella G1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 5.
+Giocatore 3 si e' mosso sulla casella H3.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
+Giocatore 1 si e' mosso sulla casella B1.
+Giocatore 1 ha acquistato casella B1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 21.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 12.
+Giocatore 2 si e' mosso sulla casella H1.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella C1.
+Giocatore 4 ha acquistato casella C1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 10.
+Giocatore 3 si e' mosso sulla casella A2.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 7.
+Giocatore 1 si e' mosso sulla casella A7.
+Giocatore 1 ha acquistato una casa in A7.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 22.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 9.
+Giocatore 2 si e' mosso sulla casella A3.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 8.
+Giocatore 4 si e' mosso sulla casella A7.
+Giocatore 4 ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella A7.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 11.
+Giocatore 3 si e' mosso sulla casella F8.
+Giocatore 3 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 11.
 Giocatore 1 si e' mosso sulla casella H5.
 Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 1 ha acquistato casella H5.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 19.
-Inizio turno 19 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 10.
-Giocatore 3 si e' mosso sulla casella C1.
-Giocatore 3 ha finito il turno.
-Inizio turno 19 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella H7.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 4 ha finito il turno.
-Inizio turno 19 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella A2.
-Il giocatore 2ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella A2.
-Giocatore 2 ha finito il turno.
-Inizio turno 19 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 3.
-Giocatore 1 si e' mosso sulla casella H2.
-Giocatore 1 ha finito il turno.
+N° Turno: 23.
 
-N° Turno: 20.
-Inizio turno 20 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 5.
-Giocatore 3 si e' mosso sulla casella A4.
-Giocatore 3 ha finito il turno.
-Inizio turno 20 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella H2.
-Giocatore 4 ha finito il turno.
-Inizio turno 20 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella B8.
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella D8.
 Giocatore 2 ha finito il turno.
-Inizio turno 20 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 9.
-Giocatore 1 si e' mosso sulla casella A2.
-Giocatore 1 ha acquistato un albergo in A2.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 21.
-Inizio turno 21 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 9.
-Giocatore 3 si e' mosso sulla casella F8.
-Giocatore 3 ha acquistato casella F8.
-Giocatore 3 ha finito il turno.
-Inizio turno 21 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella B1.
-Giocatore 4 ha acquistato una casa in B1.
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella D8.
 Giocatore 4 ha finito il turno.
-Inizio turno 21 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 4.
-Giocatore 2 si e' mosso sulla casella F8.
-Giocatore 2 ha finito il turno.
-Inizio turno 21 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 6.
-Giocatore 1 si e' mosso sulla casella A8.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 22.
-Inizio turno 22 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 5.
-Giocatore 3 si e' mosso sulla casella H5.
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella H3.
 Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 3 ha finito il turno.
-Inizio turno 22 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella A7.
-Giocatore 4 ha finito il turno.
-Inizio turno 22 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 8.
-Giocatore 2 si e' mosso sulla casella H2.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 2 ha finito il turno.
-Inizio turno 22 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 7.
-Giocatore 1 si e' mosso sulla casella H8.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 23.
-Inizio turno 23 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 10.
-Giocatore 3 si e' mosso sulla casella B1.
-Il giocatore 3ha pagato un affitto di 2 fiorini al giocatore 4 per il pernottamento nella casella B1.
-Giocatore 3 ha finito il turno.
-Inizio turno 23 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 8.
-Giocatore 4 si e' mosso sulla casella H8.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 4 ha finito il turno.
-Inizio turno 23 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
-Giocatore 2 si e' mosso sulla casella D1.
-Giocatore 2 ha finito il turno.
-Inizio turno 23 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 7.
-Giocatore 1 si e' mosso sulla casella H1.
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
+Giocatore 1 si e' mosso sulla casella C1.
 Giocatore 1 ha finito il turno.
 
 N° Turno: 24.
-Inizio turno 24 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella A6.
-Giocatore 3 ha finito il turno.
-Inizio turno 24 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella H1.
-Giocatore 4 ha finito il turno.
-Inizio turno 24 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 9.
-Giocatore 2 si e' mosso sulla casella A7.
-Giocatore 2 ha finito il turno.
-Inizio turno 24 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 11.
-Giocatore 1 si e' mosso sulla casella A5.
-Giocatore 1 ha acquistato una casa in A5.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 25.
-Inizio turno 25 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella E8.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella E8.
-Giocatore 3 ha finito il turno.
-Inizio turno 25 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella C1.
-Giocatore 4 ha finito il turno.
-Inizio turno 25 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella G8.
-Giocatore 2 ha finito il turno.
-Inizio turno 25 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella C8.
-Giocatore 1 ha acquistato casella C8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 26.
-Inizio turno 26 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 7.
-Giocatore 3 si e' mosso sulla casella H4.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 3 ha finito il turno.
-Inizio turno 26 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 6.
-Giocatore 4 si e' mosso sulla casella A5.
-Il giocatore 4ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella A5.
-Giocatore 4 ha finito il turno.
-Inizio turno 26 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
 Giocatore 2 si e' mosso sulla casella H4.
 Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 2 ha finito il turno.
-Inizio turno 26 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 8.
-Giocatore 1 si e' mosso sulla casella H5.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha acquistato una casa in H5.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 27.
-Inizio turno 27 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella E1.
-Giocatore 3 ha finito il turno.
-Inizio turno 27 del giocatore 4.
+Inizio turno del giocatore 4.
 Giocatore 4 ha tirato i dadi e ha fatto 6.
-Giocatore 4 si e' mosso sulla casella D8.
-Giocatore 4 ha finito il turno.
-Inizio turno 27 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella E1.
-Giocatore 2 ha finito il turno.
-Inizio turno 27 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 10.
-Giocatore 1 si e' mosso sulla casella B1.
-Il giocatore 1ha pagato un affitto di 2 fiorini al giocatore 4 per il pernottamento nella casella B1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 28.
-Inizio turno 28 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 4.
-Giocatore 3 si e' mosso sulla casella A1.
-Giocatore 3 ha finito il turno.
-Inizio turno 28 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 9.
-Giocatore 4 si e' mosso sulla casella H3.
+Giocatore 4 si e' mosso sulla casella H6.
 Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H3.
 Giocatore 4 ha finito il turno.
-Inizio turno 28 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 3.
-Giocatore 2 si e' mosso sulla casella B1.
-Il giocatore 2ha pagato un affitto di 2 fiorini al giocatore 4 per il pernottamento nella casella B1.
-Giocatore 2 ha finito il turno.
-Inizio turno 28 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 8.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella C1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
 Giocatore 1 si e' mosso sulla casella A8.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 29.
-Inizio turno 29 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 5.
-Giocatore 3 si e' mosso sulla casella A6.
-Giocatore 3 ha finito il turno.
-Inizio turno 29 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella E1.
-Giocatore 4 ha finito il turno.
-Inizio turno 29 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella A7.
-Giocatore 2 ha finito il turno.
-Inizio turno 29 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 8.
-Giocatore 1 si e' mosso sulla casella H7.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha finito il turno.
+N° Turno: 25.
 
-N° Turno: 30.
-Inizio turno 30 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 3.
-Giocatore 3 si e' mosso sulla casella B8.
-Giocatore 3 ha finito il turno.
-Inizio turno 30 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella A4.
-Giocatore 4 ha acquistato casella A4.
-Giocatore 4 ha finito il turno.
-Inizio turno 30 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella G8.
-Giocatore 2 ha finito il turno.
-Inizio turno 30 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 10.
-Giocatore 1 si e' mosso sulla casella D1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 31.
-Inizio turno 31 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella H8.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 3 ha finito il turno.
-Inizio turno 31 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 3.
-Giocatore 4 si e' mosso sulla casella A7.
-Giocatore 4 ha finito il turno.
-Inizio turno 31 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella H3.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H3.
-Giocatore 2 ha finito il turno.
-Inizio turno 31 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 8.
-Giocatore 1 si e' mosso sulla casella A6.
-Giocatore 1 ha acquistato una casa in A6.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 32.
-Inizio turno 32 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella H2.
-Giocatore 3 ha finito il turno.
-Inizio turno 32 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella E8.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella E8.
-Giocatore 4 ha finito il turno.
-Inizio turno 32 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
-Giocatore 2 si e' mosso sulla casella E1.
-Giocatore 2 ha finito il turno.
-Inizio turno 32 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 3.
-Giocatore 1 si e' mosso sulla casella B8.
-Giocatore 1 ha acquistato casella B8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 33.
-Inizio turno 33 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 9.
-Giocatore 3 si e' mosso sulla casella A2.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A2.
-Giocatore 3 ha finito il turno.
-Inizio turno 33 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella H4.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 4 ha finito il turno.
-Inizio turno 33 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
-Giocatore 2 si e' mosso sulla casella A2.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A2.
-Giocatore 2 ha finito il turno.
-Inizio turno 33 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 10.
-Giocatore 1 si e' mosso sulla casella H4.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha acquistato casella H4.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 34.
-Inizio turno 34 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 4.
-Giocatore 3 si e' mosso sulla casella A6.
-Il giocatore 3ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella A6.
-Giocatore 3 ha finito il turno.
-Inizio turno 34 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 2.
-Giocatore 4 si e' mosso sulla casella H2.
-Giocatore 4 ha finito il turno.
-Inizio turno 34 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 8.
-Giocatore 2 si e' mosso sulla casella C8.
-Giocatore 2 ha finito il turno.
-Inizio turno 34 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 9.
-Giocatore 1 si e' mosso sulla casella B1.
-Il giocatore 1ha pagato un affitto di 2 fiorini al giocatore 4 per il pernottamento nella casella B1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 35.
-Inizio turno 35 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella E8.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella E8.
-Giocatore 3 ha finito il turno.
-Inizio turno 35 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 6.
-Giocatore 4 si e' mosso sulla casella C1.
-Giocatore 4 ha finito il turno.
-Inizio turno 35 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 8.
-Giocatore 2 si e' mosso sulla casella H5.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H5.
-Giocatore 2 ha finito il turno.
-Inizio turno 35 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 12.
-Giocatore 1 si e' mosso sulla casella E8.
-Giocatore 1 ha acquistato un albergo in E8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 36.
-Inizio turno 36 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 8.
-Giocatore 3 si e' mosso sulla casella H3.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H3.
-Giocatore 3 ha finito il turno.
-Inizio turno 36 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 8.
-Giocatore 4 si e' mosso sulla casella A7.
-Giocatore 4 ha finito il turno.
-Inizio turno 36 del giocatore 2.
+Inizio turno del giocatore 2.
 Giocatore 2 ha tirato i dadi e ha fatto 3.
-Giocatore 2 si e' mosso sulla casella H2.
+Giocatore 2 si e' mosso sulla casella H1.
 Giocatore 2 ha finito il turno.
-Inizio turno 36 del giocatore 1.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 2.
+Giocatore 4 si e' mosso sulla casella H4.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 11.
+Giocatore 3 si e' mosso sulla casella C8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 4.
+Giocatore 1 si e' mosso sulla casella E8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 26.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 10.
+Giocatore 2 si e' mosso sulla casella A4.
+Giocatore 2 ha acquistato una casa in A4.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 9.
+Giocatore 4 si e' mosso sulla casella B1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 8.
+Giocatore 3 si e' mosso sulla casella H5.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
 Giocatore 1 ha tirato i dadi e ha fatto 7.
 Giocatore 1 si e' mosso sulla casella H4.
 Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 1 ha acquistato una casa in H4.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 37.
-Inizio turno 37 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella D1.
-Giocatore 3 ha finito il turno.
-Inizio turno 37 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 6.
-Giocatore 4 si e' mosso sulla casella F8.
-Giocatore 4 ha finito il turno.
-Inizio turno 37 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 3.
-Giocatore 2 si e' mosso sulla casella F1.
-Giocatore 2 ha finito il turno.
-Inizio turno 37 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 7.
-Giocatore 1 si e' mosso sulla casella D1.
-Giocatore 1 ha finito il turno.
+N° Turno: 27.
 
-N° Turno: 38.
-Inizio turno 38 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella A4.
-Giocatore 3 ha finito il turno.
-Inizio turno 38 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 3.
-Giocatore 4 si e' mosso sulla casella H7.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 4 ha finito il turno.
-Inizio turno 38 del giocatore 2.
+Inizio turno del giocatore 2.
 Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella A3.
+Giocatore 2 si e' mosso sulla casella D8.
 Giocatore 2 ha finito il turno.
-Inizio turno 38 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 4.
-Giocatore 1 si e' mosso sulla casella A2.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 39.
-Inizio turno 39 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 10.
-Giocatore 3 si e' mosso sulla casella G8.
-Giocatore 3 ha finito il turno.
-Inizio turno 39 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 4.
-Giocatore 4 si e' mosso sulla casella H3.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H3.
-Giocatore 4 ha finito il turno.
-Inizio turno 39 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 4.
-Giocatore 2 si e' mosso sulla casella A7.
-Giocatore 2 ha finito il turno.
-Inizio turno 39 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 6.
-Giocatore 1 si e' mosso sulla casella A8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 40.
-Inizio turno 40 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 4.
-Giocatore 3 si e' mosso sulla casella H5.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H5.
-Giocatore 3 ha finito il turno.
-Inizio turno 40 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 3.
-Giocatore 4 si e' mosso sulla casella G1.
-Giocatore 4 ha finito il turno.
-Inizio turno 40 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 10.
-Giocatore 2 si e' mosso sulla casella H6.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 2 ha finito il turno.
-Inizio turno 40 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 7.
-Giocatore 1 si e' mosso sulla casella H8.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 41.
-Inizio turno 41 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 5.
-Giocatore 3 si e' mosso sulla casella G1.
-Giocatore 3 ha finito il turno.
-Inizio turno 41 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 9.
-Giocatore 4 si e' mosso sulla casella A4.
-Giocatore 4 ha finito il turno.
-Inizio turno 41 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 8.
-Giocatore 2 si e' mosso sulla casella E1.
-Giocatore 2 ha finito il turno.
-Inizio turno 41 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 6.
-Giocatore 1 si e' mosso sulla casella H2.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 42.
-Inizio turno 42 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 9.
-Giocatore 3 si e' mosso sulla casella A4.
-Giocatore 3 ha finito il turno.
-Inizio turno 42 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 6.
-Giocatore 4 si e' mosso sulla casella C8.
-Giocatore 4 ha finito il turno.
-Inizio turno 42 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
-Giocatore 2 si e' mosso sulla casella A2.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A2.
-Giocatore 2 ha finito il turno.
-Inizio turno 42 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 10.
-Giocatore 1 si e' mosso sulla casella A3.
-Giocatore 1 ha acquistato casella A3.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 43.
-Inizio turno 43 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 4.
-Giocatore 3 si e' mosso sulla casella A8.
-Giocatore 3 ha finito il turno.
-Inizio turno 43 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella H8.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 4 ha finito il turno.
-Inizio turno 43 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 8.
-Giocatore 2 si e' mosso sulla casella C8.
-Giocatore 2 ha finito il turno.
-Inizio turno 43 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 6.
-Giocatore 1 si e' mosso sulla casella B8.
-Giocatore 1 ha acquistato una casa in B8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 44.
-Inizio turno 44 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 9.
-Giocatore 3 si e' mosso sulla casella H6.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 3 ha finito il turno.
-Inizio turno 44 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 10.
-Giocatore 4 si e' mosso sulla casella E1.
-Giocatore 4 ha finito il turno.
-Inizio turno 44 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
-Giocatore 2 si e' mosso sulla casella H8.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 2 ha finito il turno.
-Inizio turno 44 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 2.
-Giocatore 1 si e' mosso sulla casella D8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 45.
-Inizio turno 45 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella G1.
-Giocatore 3 ha finito il turno.
-Inizio turno 45 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 11.
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 8.
 Giocatore 4 si e' mosso sulla casella A8.
 Giocatore 4 ha finito il turno.
-Inizio turno 45 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella H1.
-Giocatore 2 ha finito il turno.
-Inizio turno 45 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella H7.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha acquistato una casa in H7.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 46.
-Inizio turno 46 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 10.
-Giocatore 3 si e' mosso sulla casella A5.
-Il giocatore 3ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella A5.
-Giocatore 3 ha finito il turno.
-Inizio turno 46 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella H8.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 4 ha finito il turno.
-Inizio turno 46 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella A1.
-Giocatore 2 ha finito il turno.
-Inizio turno 46 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 6.
-Giocatore 1 si e' mosso sulla casella H1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 47.
-Inizio turno 47 del giocatore 3.
+Inizio turno del giocatore 3.
 Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella D8.
-Giocatore 3 ha acquistato una casa in D8.
+Giocatore 3 si e' mosso sulla casella F1.
+Giocatore 3 ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella F1.
 Giocatore 3 ha finito il turno.
-Inizio turno 47 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella H3.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H3.
-Giocatore 4 ha finito il turno.
-Inizio turno 47 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 8.
-Giocatore 2 si e' mosso sulla casella B8.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella B8.
-Giocatore 2 ha finito il turno.
-Inizio turno 47 del giocatore 1.
+
+Inizio turno del giocatore 1.
 Giocatore 1 ha tirato i dadi e ha fatto 10.
-Giocatore 1 si e' mosso sulla casella A4.
+Giocatore 1 si e' mosso sulla casella A1.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 48.
-Inizio turno 48 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 3.
-Giocatore 3 si e' mosso sulla casella G8.
-Giocatore 3 ha finito il turno.
-Inizio turno 48 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 10.
-Giocatore 4 si e' mosso sulla casella A2.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A2.
-Giocatore 4 ha finito il turno.
-Inizio turno 48 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 4.
-Giocatore 2 si e' mosso sulla casella F8.
-Giocatore 2 ha finito il turno.
-Inizio turno 48 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella B8.
-Giocatore 1 ha acquistato un albergo in B8.
-Giocatore 1 ha finito il turno.
+N° Turno: 28.
 
-N° Turno: 49.
-Inizio turno 49 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 9.
-Giocatore 3 si e' mosso sulla casella G1.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 3 ha acquistato una casa in G1.
-Giocatore 3 ha finito il turno.
-Inizio turno 49 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella A7.
-Giocatore 4 ha finito il turno.
-Inizio turno 49 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 2.
-Giocatore 2 si e' mosso sulla casella H8.
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 7.
+Giocatore 2 si e' mosso sulla casella H5.
 Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 2 ha finito il turno.
-Inizio turno 49 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 8.
-Giocatore 1 si e' mosso sulla casella H6.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 50.
-Inizio turno 50 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 8.
-Giocatore 3 si e' mosso sulla casella A3.
-Giocatore 3 ha finito il turno.
-Inizio turno 50 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 9.
-Giocatore 4 si e' mosso sulla casella H7.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H7.
-Giocatore 4 ha finito il turno.
-Inizio turno 50 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 9.
-Giocatore 2 si e' mosso sulla casella F1.
-Giocatore 2 ha finito il turno.
-Inizio turno 50 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 4.
-Giocatore 1 si e' mosso sulla casella H2.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 51.
-Inizio turno 51 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 7.
-Giocatore 3 si e' mosso sulla casella C8.
-Giocatore 3 ha finito il turno.
-Inizio turno 51 del giocatore 4.
+Inizio turno del giocatore 4.
 Giocatore 4 ha tirato i dadi e ha fatto 3.
-Giocatore 4 si e' mosso sulla casella H4.
-Il giocatore 4ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella H4.
+Giocatore 4 si e' mosso sulla casella D8.
 Giocatore 4 ha finito il turno.
-Inizio turno 51 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
-Giocatore 2 si e' mosso sulla casella A1.
-Giocatore 2 ha finito il turno.
-Inizio turno 51 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 11.
-Giocatore 1 si e' mosso sulla casella A4.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 52.
-Inizio turno 52 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 4.
-Giocatore 3 si e' mosso sulla casella G8.
-Giocatore 3 ha finito il turno.
-Inizio turno 52 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 9.
-Giocatore 4 si e' mosso sulla casella B1.
-Giocatore 4 ha finito il turno.
-Inizio turno 52 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
-Giocatore 2 si e' mosso sulla casella A6.
-Il giocatore 2ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella A6.
-Giocatore 2 ha finito il turno.
-Inizio turno 52 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 6.
-Giocatore 1 si e' mosso sulla casella C8.
-Giocatore 1 ha acquistato una casa in C8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 53.
-Inizio turno 53 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 5.
-Giocatore 3 si e' mosso sulla casella H4.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 3ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella H4.
-Giocatore 3 ha finito il turno.
-Inizio turno 53 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella A5.
-Il giocatore 4ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella A5.
-Giocatore 4 ha finito il turno.
-Inizio turno 53 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
-Giocatore 2 si e' mosso sulla casella D8.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 3 per il pernottamento nella casella D8.
-Giocatore 2 ha finito il turno.
-Inizio turno 53 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 7.
-Giocatore 1 si e' mosso sulla casella H6.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 54.
-Inizio turno 54 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 7.
-Giocatore 3 si e' mosso sulla casella D1.
-Giocatore 3 ha finito il turno.
-Inizio turno 54 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 11.
-Giocatore 4 si e' mosso sulla casella H7.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H7.
-Giocatore 4 ha finito il turno.
-Inizio turno 54 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella H6.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 2 ha finito il turno.
-Inizio turno 54 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 9.
-Giocatore 1 si e' mosso sulla casella D1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 55.
-Inizio turno 55 del giocatore 3.
+Inizio turno del giocatore 3.
 Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella A4.
+Giocatore 3 si e' mosso sulla casella A2.
 Giocatore 3 ha finito il turno.
-Inizio turno 55 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 8.
-Giocatore 4 si e' mosso sulla casella F1.
-Giocatore 4 ha finito il turno.
-Inizio turno 55 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 8.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 3.
+Giocatore 1 si e' mosso sulla casella A4.
+Giocatore 1 ha pagato un affitto di 4 fiorini al giocatore 2 per il pernottamento nella casella A4.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 29.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 7.
 Giocatore 2 si e' mosso sulla casella E1.
 Giocatore 2 ha finito il turno.
-Inizio turno 55 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 11.
-Giocatore 1 si e' mosso sulla casella B8.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 56.
-Inizio turno 56 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 12.
-Giocatore 3 si e' mosso sulla casella H7.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H7.
-Giocatore 3 ha finito il turno.
-Inizio turno 56 del giocatore 4.
+Inizio turno del giocatore 4.
 Giocatore 4 ha tirato i dadi e ha fatto 6.
-Giocatore 4 si e' mosso sulla casella A2.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A2.
-Giocatore 4 ha finito il turno.
-Inizio turno 56 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 8.
-Giocatore 2 si e' mosso sulla casella A5.
-Il giocatore 2ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella A5.
-Giocatore 2 ha finito il turno.
-Inizio turno 56 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella G8.
-Giocatore 1 ha acquistato casella G8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 57.
-Inizio turno 57 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella H1.
-Giocatore 3 ha finito il turno.
-Inizio turno 57 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella A7.
-Giocatore 4 ha finito il turno.
-Inizio turno 57 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 4.
-Giocatore 2 si e' mosso sulla casella B8.
-Il giocatore 2ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella B8.
-Giocatore 2 ha finito il turno.
-Inizio turno 57 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 6.
-Giocatore 1 si e' mosso sulla casella H3.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 58.
-Inizio turno 58 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 5.
-Giocatore 3 si e' mosso sulla casella C1.
-Giocatore 3 ha finito il turno.
-Inizio turno 58 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella G8.
-Giocatore 4 ha finito il turno.
-Inizio turno 58 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella H8.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 2 ha finito il turno.
-Inizio turno 58 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 7.
-Giocatore 1 si e' mosso sulla casella C1.
-Giocatore 1 ha acquistato casella C1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 59.
-Inizio turno 59 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 11.
-Giocatore 3 si e' mosso sulla casella C8.
-Il giocatore 3ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella C8.
-Giocatore 3 ha finito il turno.
-Inizio turno 59 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 8.
-Giocatore 4 si e' mosso sulla casella H1.
+Giocatore 4 si e' mosso sulla casella H6.
 Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 4 ha finito il turno.
-Inizio turno 59 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella H1.
-Giocatore 2 ha finito il turno.
-Inizio turno 59 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella A4.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 60.
-Inizio turno 60 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 7.
-Giocatore 3 si e' mosso sulla casella H6.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 5.
+Giocatore 3 si e' mosso sulla casella A7.
+Giocatore 3 ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella A7.
 Giocatore 3 ha finito il turno.
-Inizio turno 60 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 10.
-Giocatore 4 si e' mosso sulla casella A4.
-Giocatore 4 ha finito il turno.
-Inizio turno 60 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 9.
-Giocatore 2 si e' mosso sulla casella A3.
-Giocatore 2 ha finito il turno.
-Inizio turno 60 del giocatore 1.
+
+Inizio turno del giocatore 1.
 Giocatore 1 ha tirato i dadi e ha fatto 8.
 Giocatore 1 si e' mosso sulla casella E8.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 61.
-Inizio turno 61 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 5.
-Giocatore 3 si e' mosso sulla casella H1.
-Giocatore 3 ha finito il turno.
-Inizio turno 61 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella D8.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 3 per il pernottamento nella casella D8.
-Giocatore 4 ha finito il turno.
-Inizio turno 61 del giocatore 2.
+N° Turno: 30.
+
+Inizio turno del giocatore 2.
 Giocatore 2 ha tirato i dadi e ha fatto 4.
-Giocatore 2 si e' mosso sulla casella A7.
+Giocatore 2 si e' mosso sulla casella A1.
 Giocatore 2 ha finito il turno.
-Inizio turno 61 del giocatore 1.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella H2.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 3.
+Giocatore 3 si e' mosso sulla casella C8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 8.
+Giocatore 1 si e' mosso sulla casella H3.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha acquistato casella H3.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 31.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 7.
+Giocatore 2 si e' mosso sulla casella A8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 10.
+Giocatore 4 si e' mosso sulla casella A3.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella H6.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 4.
+Giocatore 1 si e' mosso sulla casella F1.
+Giocatore 1 ha acquistato un albergo in F1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 32.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 6.
+Giocatore 2 si e' mosso sulla casella G8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 9.
+Giocatore 4 si e' mosso sulla casella E8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella F1.
+Giocatore 3 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella F1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
+Giocatore 1 si e' mosso sulla casella A2.
+Giocatore 1 ha acquistato una casa in A2.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 33.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 6.
+Giocatore 2 si e' mosso sulla casella H3.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 10.
+Giocatore 4 si e' mosso sulla casella H1.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 6.
+Giocatore 3 si e' mosso sulla casella A2.
+Giocatore 3 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A2.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
 Giocatore 1 ha tirato i dadi e ha fatto 7.
+Giocatore 1 si e' mosso sulla casella B8.
+Giocatore 1 ha acquistato una casa in B8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 34.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 11.
+Giocatore 2 si e' mosso sulla casella A3.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella A1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 4.
+Giocatore 3 si e' mosso sulla casella A6.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
+Giocatore 1 si e' mosso sulla casella H8.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 35.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 10.
+Giocatore 2 si e' mosso sulla casella F8.
+Giocatore 2 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella A5.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella F8.
+Giocatore 3 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 8.
+Giocatore 1 si e' mosso sulla casella G1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 36.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella H2.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella B8.
+Giocatore 4 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella B8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 8.
+Giocatore 3 si e' mosso sulla casella H2.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
+Giocatore 1 si e' mosso sulla casella A4.
+Giocatore 1 ha pagato un affitto di 4 fiorini al giocatore 2 per il pernottamento nella casella A4.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 37.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 4.
+Giocatore 2 si e' mosso sulla casella E1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 9.
+Giocatore 4 si e' mosso sulla casella H5.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 2.
+Giocatore 3 si e' mosso sulla casella G1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
+Giocatore 1 si e' mosso sulla casella F8.
+Giocatore 1 ha acquistato un albergo in F8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 38.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 10.
+Giocatore 2 si e' mosso sulla casella A7.
+Giocatore 2 ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella A7.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 10.
+Giocatore 4 si e' mosso sulla casella B1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella A2.
+Giocatore 3 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A2.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
 Giocatore 1 si e' mosso sulla casella H4.
 Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 1 ha acquistato un albergo in H4.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 62.
-Inizio turno 62 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella B1.
-Il giocatore 3ha pagato un affitto di 2 fiorini al giocatore 4 per il pernottamento nella casella B1.
-Giocatore 3 ha finito il turno.
-Inizio turno 62 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 4.
-Giocatore 4 si e' mosso sulla casella H8.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 4 ha finito il turno.
-Inizio turno 62 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella F8.
+N° Turno: 39.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 10.
+Giocatore 2 si e' mosso sulla casella H6.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 2 ha finito il turno.
-Inizio turno 62 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 8.
-Giocatore 1 si e' mosso sulla casella C1.
-Giocatore 1 ha acquistato una casa in C1.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 8.
+Giocatore 4 si e' mosso sulla casella A8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
+Giocatore 3 si e' mosso sulla casella D8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 11.
+Giocatore 1 si e' mosso sulla casella A2.
+Giocatore 1 ha acquistato un albergo in A2.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 63.
-Inizio turno 63 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 5.
-Giocatore 3 si e' mosso sulla casella A5.
-Il giocatore 3ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella A5.
-Giocatore 3 ha finito il turno.
-Inizio turno 63 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 4.
-Giocatore 4 si e' mosso sulla casella H4.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H4.
-Giocatore 4 ha finito il turno.
-Inizio turno 63 del giocatore 2.
+N° Turno: 40.
+
+Inizio turno del giocatore 2.
 Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella H3.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H3.
+Giocatore 2 si e' mosso sulla casella F1.
+Giocatore 2 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella F1.
 Giocatore 2 ha finito il turno.
-Inizio turno 63 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 4.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 6.
+Giocatore 4 si e' mosso sulla casella G8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 10.
+Giocatore 3 si e' mosso sulla casella H2.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 10.
+Giocatore 1 si e' mosso sulla casella E8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 41.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 3.
+Giocatore 2 si e' mosso sulla casella C1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 10.
+Giocatore 4 si e' mosso sulla casella F1.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella F1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 3.
+Giocatore 3 si e' mosso sulla casella F1.
+Giocatore 3 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella F1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 11.
+Giocatore 1 si e' mosso sulla casella G1.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 42.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 6.
+Giocatore 2 si e' mosso sulla casella A5.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella B1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 6.
+Giocatore 3 si e' mosso sulla casella A2.
+Giocatore 3 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella A2.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 10.
+Giocatore 1 si e' mosso sulla casella A5.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 43.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 9.
+Giocatore 2 si e' mosso sulla casella G8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 2.
+Giocatore 4 si e' mosso sulla casella A2.
+Giocatore 4 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella A2.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
+Giocatore 3 si e' mosso sulla casella D8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
+Giocatore 1 si e' mosso sulla casella C8.
+Giocatore 1 ha acquistato casella C8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 44.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella H1.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 6.
+Giocatore 4 si e' mosso sulla casella A8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 8.
+Giocatore 3 si e' mosso sulla casella H4.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella H4.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
+Giocatore 1 si e' mosso sulla casella H4.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 45.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 7.
+Giocatore 2 si e' mosso sulla casella A1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 5.
+Giocatore 4 si e' mosso sulla casella F8.
+Giocatore 4 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 11.
+Giocatore 3 si e' mosso sulla casella A2.
+Giocatore 3 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella A2.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
+Giocatore 1 si e' mosso sulla casella F1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 46.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 7.
+Giocatore 2 si e' mosso sulla casella A8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 8.
+Giocatore 4 si e' mosso sulla casella H2.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 4.
+Giocatore 3 si e' mosso sulla casella A6.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 2.
+Giocatore 1 si e' mosso sulla casella D1.
+Giocatore 1 ha acquistato casella D1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 47.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 6.
+Giocatore 2 si e' mosso sulla casella G8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 10.
+Giocatore 4 si e' mosso sulla casella A3.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 11.
+Giocatore 3 si e' mosso sulla casella H6.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
 Giocatore 1 si e' mosso sulla casella A3.
 Giocatore 1 ha acquistato una casa in A3.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 64.
-Inizio turno 64 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 7.
-Giocatore 3 si e' mosso sulla casella E8.
-Il giocatore 3ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella E8.
-Giocatore 3 ha finito il turno.
-Inizio turno 64 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 10.
-Giocatore 4 si e' mosso sulla casella A1.
-Giocatore 4 ha finito il turno.
-Inizio turno 64 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 4.
-Giocatore 2 si e' mosso sulla casella F1.
-Giocatore 2 ha finito il turno.
-Inizio turno 64 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 7.
-Giocatore 1 si e' mosso sulla casella C8.
-Giocatore 1 ha acquistato un albergo in C8.
-Giocatore 1 ha finito il turno.
+N° Turno: 48.
 
-N° Turno: 65.
-Inizio turno 65 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella H5.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H5.
-Giocatore 3 ha finito il turno.
-Inizio turno 65 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 6.
-Giocatore 4 si e' mosso sulla casella A7.
-Giocatore 4 ha finito il turno.
-Inizio turno 65 del giocatore 2.
+Inizio turno del giocatore 2.
 Giocatore 2 ha tirato i dadi e ha fatto 12.
-Giocatore 2 si e' mosso sulla casella A8.
+Giocatore 2 si e' mosso sulla casella D1.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 2 ha finito il turno.
-Inizio turno 65 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 7.
-Giocatore 1 si e' mosso sulla casella H6.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella C8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 12.
+Giocatore 3 si e' mosso sulla casella A1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 4.
+Giocatore 1 si e' mosso sulla casella A7.
+Giocatore 1 ha acquistato un albergo in A7.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 66.
-Inizio turno 66 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 8.
-Giocatore 3 si e' mosso sulla casella D1.
-Giocatore 3 ha finito il turno.
-Inizio turno 66 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 8.
+N° Turno: 49.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella A6.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 5.
 Giocatore 4 si e' mosso sulla casella H8.
 Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 4 ha finito il turno.
-Inizio turno 66 del giocatore 2.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 4.
+Giocatore 3 si e' mosso sulla casella A5.
+Giocatore 3 ha acquistato una casa in A5.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
+Giocatore 1 si e' mosso sulla casella E8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 50.
+
+Inizio turno del giocatore 2.
 Giocatore 2 ha tirato i dadi e ha fatto 6.
+Giocatore 2 si e' mosso sulla casella E8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella H4.
+Giocatore 4 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella H4.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 5.
+Giocatore 3 si e' mosso sulla casella C8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
+Giocatore 1 si e' mosso sulla casella H5.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha acquistato una casa in H5.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 51.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 4.
+Giocatore 2 si e' mosso sulla casella H7.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella H7.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 11.
+Giocatore 4 si e' mosso sulla casella A2.
+Giocatore 4 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella A2.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 5.
+Giocatore 3 si e' mosso sulla casella H8.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
+Giocatore 1 si e' mosso sulla casella F1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 52.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 10.
+Giocatore 2 si e' mosso sulla casella D1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 6.
+Giocatore 4 si e' mosso sulla casella A8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 4.
+Giocatore 3 si e' mosso sulla casella H4.
+Giocatore 3 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella H4.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 2.
+Giocatore 1 si e' mosso sulla casella D1.
+Giocatore 1 ha acquistato una casa in D1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 53.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 9.
+Giocatore 2 si e' mosso sulla casella A7.
+Giocatore 2 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A7.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 5.
+Giocatore 4 si e' mosso sulla casella F8.
+Giocatore 4 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 5.
+Giocatore 3 si e' mosso sulla casella F1.
+Giocatore 3 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella F1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 3.
+Giocatore 1 si e' mosso sulla casella A1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 54.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 4.
+Giocatore 2 si e' mosso sulla casella D8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 9.
+Giocatore 4 si e' mosso sulla casella H1.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 3.
+Giocatore 3 si e' mosso sulla casella C1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 7.
+Giocatore 1 si e' mosso sulla casella A8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 55.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 3.
 Giocatore 2 si e' mosso sulla casella G8.
 Giocatore 2 ha finito il turno.
-Inizio turno 66 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 9.
-Giocatore 1 si e' mosso sulla casella D1.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 2.
+Giocatore 4 si e' mosso sulla casella F1.
+Giocatore 4 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella F1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
+Giocatore 3 si e' mosso sulla casella A8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
+Giocatore 1 si e' mosso sulla casella G8.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 67.
-Inizio turno 67 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 8.
-Giocatore 3 si e' mosso sulla casella A6.
-Il giocatore 3ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella A6.
-Giocatore 3 ha finito il turno.
-Inizio turno 67 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella H3.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H3.
-Giocatore 4 ha finito il turno.
-Inizio turno 67 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella H3.
+N° Turno: 56.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella H1.
 Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H3.
 Giocatore 2 ha finito il turno.
-Inizio turno 67 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella A3.
-Giocatore 1 ha acquistato un albergo in A3.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 68.
-Inizio turno 68 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella E8.
-Il giocatore 3ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella E8.
-Giocatore 3 ha finito il turno.
-Inizio turno 68 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella E1.
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella A3.
+Giocatore 4 ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella A3.
 Giocatore 4 ha finito il turno.
-Inizio turno 68 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella C1.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella C1.
-Giocatore 2 ha finito il turno.
-Inizio turno 68 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 7.
-Giocatore 1 si e' mosso sulla casella C8.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
+Giocatore 3 si e' mosso sulla casella H6.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
+Giocatore 1 si e' mosso sulla casella H4.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 69.
-Inizio turno 69 del giocatore 3.
+N° Turno: 57.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 7.
+Giocatore 2 si e' mosso sulla casella A1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 5.
+Giocatore 4 si e' mosso sulla casella A8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 6.
+Giocatore 3 si e' mosso sulla casella G1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 8.
+Giocatore 1 si e' mosso sulla casella C1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 58.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella B8.
+Giocatore 2 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella B8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 9.
+Giocatore 4 si e' mosso sulla casella H6.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
 Giocatore 3 ha tirato i dadi e ha fatto 10.
+Giocatore 3 si e' mosso sulla casella A5.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
+Giocatore 1 si e' mosso sulla casella A5.
+Giocatore 1 ha pagato un affitto di 2 fiorini al giocatore 3 per il pernottamento nella casella A5.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 59.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 5.
+Giocatore 2 si e' mosso sulla casella G8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 3.
+Giocatore 4 si e' mosso sulla casella H3.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 10.
+Giocatore 3 si e' mosso sulla casella H8.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
+Giocatore 1 si e' mosso sulla casella G8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 60.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella H1.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 11.
+Giocatore 4 si e' mosso sulla casella A3.
+Giocatore 4 ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella A3.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 5.
+Giocatore 3 si e' mosso sulla casella H3.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 7.
+Giocatore 1 si e' mosso sulla casella H2.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha acquistato casella H2.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 61.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 2.
+Giocatore 2 si e' mosso sulla casella F1.
+Giocatore 2 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella F1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 5.
+Giocatore 4 si e' mosso sulla casella A8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 6.
+Giocatore 3 si e' mosso sulla casella D1.
+Giocatore 3 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella D1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
+Giocatore 1 si e' mosso sulla casella D1.
+Giocatore 1 ha acquistato un albergo in D1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 62.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 5.
+Giocatore 2 si e' mosso sulla casella A1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 8.
+Giocatore 4 si e' mosso sulla casella H7.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella H7.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella A5.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 8.
+Giocatore 1 si e' mosso sulla casella A6.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 63.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 6.
+Giocatore 2 si e' mosso sulla casella A7.
+Giocatore 2 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A7.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 8.
+Giocatore 4 si e' mosso sulla casella F1.
+Giocatore 4 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella F1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 8.
+Giocatore 3 si e' mosso sulla casella F8.
+Giocatore 3 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 8.
+Giocatore 1 si e' mosso sulla casella G8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 64.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 6.
+Giocatore 2 si e' mosso sulla casella F8.
+Giocatore 2 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella A3.
+Giocatore 4 ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella A3.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
 Giocatore 3 si e' mosso sulla casella H1.
 Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 3 ha finito il turno.
-Inizio turno 69 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 4.
-Giocatore 4 si e' mosso sulla casella A1.
-Giocatore 4 ha finito il turno.
-Inizio turno 69 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella A5.
-Il giocatore 2ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella A5.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
+Giocatore 1 si e' mosso sulla casella G1.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 65.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 5.
+Giocatore 2 si e' mosso sulla casella H5.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella H5.
 Giocatore 2 ha finito il turno.
-Inizio turno 69 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella C8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 11.
+Giocatore 3 si e' mosso sulla casella A5.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 4.
+Giocatore 1 si e' mosso sulla casella C1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 66.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 5.
+Giocatore 2 si e' mosso sulla casella G1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 6.
+Giocatore 4 si e' mosso sulla casella H7.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella H7.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella E8.
+Giocatore 3 ha acquistato una casa in E8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
+Giocatore 1 si e' mosso sulla casella A5.
+Giocatore 1 ha pagato un affitto di 2 fiorini al giocatore 3 per il pernottamento nella casella A5.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 67.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella A3.
+Giocatore 2 ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella A3.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella H3.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 3.
+Giocatore 3 si e' mosso sulla casella H8.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 3.
+Giocatore 1 si e' mosso sulla casella A8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 68.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella D8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella C1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
+Giocatore 3 si e' mosso sulla casella F1.
+Giocatore 3 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella F1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 10.
+Giocatore 1 si e' mosso sulla casella H5.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha acquistato un albergo in H5.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 69.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 7.
+Giocatore 2 si e' mosso sulla casella H5.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella H5.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella A6.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 6.
+Giocatore 3 si e' mosso sulla casella A2.
+Giocatore 3 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella A2.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
+Giocatore 1 si e' mosso sulla casella F1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 70.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 4.
+Giocatore 2 si e' mosso sulla casella H1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella C8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
+Giocatore 3 si e' mosso sulla casella D8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
+Giocatore 1 si e' mosso sulla casella A5.
+Giocatore 1 ha pagato un affitto di 2 fiorini al giocatore 3 per il pernottamento nella casella A5.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 71.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella A2.
+Giocatore 2 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella A2.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 8.
+Giocatore 4 si e' mosso sulla casella H5.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella H5.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 12.
+Giocatore 3 si e' mosso sulla casella G1.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 4.
+Giocatore 1 si e' mosso sulla casella B8.
+Giocatore 1 ha acquistato un albergo in B8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 72.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 6.
+Giocatore 2 si e' mosso sulla casella A8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 8.
+Giocatore 4 si e' mosso sulla casella D1.
+Giocatore 4 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella D1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 4.
+Giocatore 3 si e' mosso sulla casella C1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
 Giocatore 1 si e' mosso sulla casella H8.
 Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 70.
-Inizio turno 70 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 5.
-Giocatore 3 si e' mosso sulla casella C1.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella C1.
-Giocatore 3 ha finito il turno.
-Inizio turno 70 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 3.
-Giocatore 4 si e' mosso sulla casella A4.
-Giocatore 4 ha acquistato una casa in A4.
-Giocatore 4 ha finito il turno.
-Inizio turno 70 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
-Giocatore 2 si e' mosso sulla casella C8.
-Il giocatore 2ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella C8.
-Giocatore 2 ha finito il turno.
-Inizio turno 70 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 6.
-Giocatore 1 si e' mosso sulla casella H2.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 71.
-Inizio turno 71 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 9.
-Giocatore 3 si e' mosso sulla casella A8.
-Giocatore 3 ha finito il turno.
-Inizio turno 71 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 6.
-Giocatore 4 si e' mosso sulla casella C8.
-Il giocatore 4ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella C8.
-Giocatore 4 ha finito il turno.
-Inizio turno 71 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
-Giocatore 2 si e' mosso sulla casella H8.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 2 ha finito il turno.
-Inizio turno 71 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella D1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 72.
-Inizio turno 72 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 5.
-Giocatore 3 si e' mosso sulla casella F8.
-Giocatore 3 ha acquistato una casa in F8.
-Giocatore 3 ha finito il turno.
-Inizio turno 72 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 3.
-Giocatore 4 si e' mosso sulla casella F8.
-Il giocatore 4ha pagato un affitto di 7 fiorini al giocatore 3 per il pernottamento nella casella F8.
-Giocatore 4 ha finito il turno.
-Inizio turno 72 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 9.
-Giocatore 2 si e' mosso sulla casella F1.
-Giocatore 2 ha finito il turno.
-Inizio turno 72 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 11.
-Giocatore 1 si e' mosso sulla casella B8.
-Giocatore 1 ha finito il turno.
-
 N° Turno: 73.
-Inizio turno 73 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella H4.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H4.
-Giocatore 3 ha finito il turno.
-Inizio turno 73 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella H3.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H3.
-Giocatore 4 ha finito il turno.
-Inizio turno 73 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella A3.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A3.
-Giocatore 2 ha finito il turno.
-Inizio turno 73 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 11.
-Giocatore 1 si e' mosso sulla casella H3.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 74.
-Inizio turno 74 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 8.
-Giocatore 3 si e' mosso sulla casella C1.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella C1.
-Giocatore 3 ha finito il turno.
-Inizio turno 74 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 10.
-Giocatore 4 si e' mosso sulla casella A2.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A2.
-Giocatore 4 ha finito il turno.
-Inizio turno 74 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella B8.
-Il giocatore 2ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella B8.
-Giocatore 2 ha finito il turno.
-Inizio turno 74 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 10.
-Giocatore 1 si e' mosso sulla casella A2.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 75.
-Inizio turno 75 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella A5.
-Il giocatore 3ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella A5.
-Giocatore 3 ha finito il turno.
-Inizio turno 75 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 9.
-Giocatore 4 si e' mosso sulla casella D8.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 3 per il pernottamento nella casella D8.
-Giocatore 4 ha finito il turno.
-Inizio turno 75 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 10.
-Giocatore 2 si e' mosso sulla casella H4.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H4.
-Giocatore 2 ha finito il turno.
-Inizio turno 75 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 9.
-Giocatore 1 si e' mosso sulla casella D8.
-Il giocatore 1ha pagato un affitto di 4 fiorini al giocatore 3 per il pernottamento nella casella D8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 76.
-Inizio turno 76 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 4.
-Giocatore 3 si e' mosso sulla casella B8.
-Il giocatore 3ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella B8.
-Giocatore 3 ha finito il turno.
-Inizio turno 76 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 8.
-Giocatore 4 si e' mosso sulla casella H4.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H4.
-Giocatore 4 ha finito il turno.
-Inizio turno 76 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 12.
-Giocatore 2 si e' mosso sulla casella A3.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A3.
-Giocatore 2 ha finito il turno.
-Inizio turno 76 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 6.
-Giocatore 1 si e' mosso sulla casella H6.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 77.
-Inizio turno 77 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 6.
-Giocatore 3 si e' mosso sulla casella H8.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 3 ha finito il turno.
-Inizio turno 77 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 6.
-Giocatore 4 si e' mosso sulla casella E1.
-Giocatore 4 ha finito il turno.
-Inizio turno 77 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 9.
-Giocatore 2 si e' mosso sulla casella E8.
-Il giocatore 2ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella E8.
-Giocatore 2 ha finito il turno.
-Inizio turno 77 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 4.
-Giocatore 1 si e' mosso sulla casella H2.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 78.
-Inizio turno 78 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 4.
-Giocatore 3 si e' mosso sulla casella H4.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H4.
-Giocatore 3 ha finito il turno.
-Inizio turno 78 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 8.
-Giocatore 4 si e' mosso sulla casella A5.
-Il giocatore 4ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella A5.
-Giocatore 4 ha finito il turno.
-Inizio turno 78 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella H4.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H4.
-Giocatore 2 ha finito il turno.
-Inizio turno 78 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 8.
-Giocatore 1 si e' mosso sulla casella A1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 79.
-Inizio turno 79 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 5.
-Giocatore 3 si e' mosso sulla casella F1.
-Giocatore 3 ha finito il turno.
-Inizio turno 79 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 2.
-Giocatore 4 si e' mosso sulla casella A7.
-Giocatore 4 ha finito il turno.
-Inizio turno 79 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
-Giocatore 2 si e' mosso sulla casella F1.
-Giocatore 2 ha finito il turno.
-Inizio turno 79 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella A6.
-Giocatore 1 ha acquistato un albergo in A6.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 80.
-Inizio turno 80 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 11.
-Giocatore 3 si e' mosso sulla casella A7.
-Giocatore 3 ha finito il turno.
-Inizio turno 80 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 4.
-Giocatore 4 si e' mosso sulla casella D8.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 3 per il pernottamento nella casella D8.
-Giocatore 4 ha finito il turno.
-Inizio turno 80 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella A3.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A3.
-Giocatore 2 ha finito il turno.
-Inizio turno 80 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 6.
-Giocatore 1 si e' mosso sulla casella E8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 81.
-Inizio turno 81 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 7.
-Giocatore 3 si e' mosso sulla casella G8.
-Giocatore 3 ha finito il turno.
-Inizio turno 81 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella H7.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H7.
-Giocatore 4 ha finito il turno.
-Inizio turno 81 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 9.
-Giocatore 2 si e' mosso sulla casella E8.
-Il giocatore 2ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella E8.
-Giocatore 2 ha finito il turno.
-Inizio turno 81 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 12.
-Giocatore 1 si e' mosso sulla casella F1.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha acquistato una casa in F1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 82.
-Inizio turno 82 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 9.
-Giocatore 3 si e' mosso sulla casella G1.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 3 ha finito il turno.
-Inizio turno 82 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella H2.
-Giocatore 4 ha finito il turno.
-Inizio turno 82 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella H4.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H4.
-Giocatore 2 ha finito il turno.
-Inizio turno 82 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 11.
-Giocatore 1 si e' mosso sulla casella A7.
-Giocatore 1 ha acquistato una casa in A7.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 83.
-Inizio turno 83 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 8.
-Giocatore 3 si e' mosso sulla casella A3.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A3.
-Giocatore 3 ha finito il turno.
-Inizio turno 83 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 8.
-Giocatore 4 si e' mosso sulla casella A1.
-Giocatore 4 ha finito il turno.
-Inizio turno 83 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 10.
-Giocatore 2 si e' mosso sulla casella A1.
-Giocatore 2 ha finito il turno.
-Inizio turno 83 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 7.
-Giocatore 1 si e' mosso sulla casella G8.
-Giocatore 1 ha acquistato una casa in G8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 84.
-Inizio turno 84 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 3.
-Giocatore 3 si e' mosso sulla casella A6.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A6.
-Giocatore 3 ha finito il turno.
-Inizio turno 84 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 10.
-Giocatore 4 si e' mosso sulla casella D8.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 3 per il pernottamento nella casella D8.
-Giocatore 4 ha finito il turno.
-Inizio turno 84 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella A8.
-Giocatore 2 ha finito il turno.
-Inizio turno 84 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 11.
-Giocatore 1 si e' mosso sulla casella E1.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha acquistato una casa in E1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 85.
-Inizio turno 85 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 9.
-Giocatore 3 si e' mosso sulla casella H8.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 3 ha finito il turno.
-Inizio turno 85 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 6.
-Giocatore 4 si e' mosso sulla casella H6.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 4 ha finito il turno.
-Inizio turno 85 del giocatore 2.
+Inizio turno del giocatore 2.
 Giocatore 2 ha tirato i dadi e ha fatto 11.
 Giocatore 2 si e' mosso sulla casella H4.
 Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H4.
+Giocatore 2 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella H4.
 Giocatore 2 ha finito il turno.
-Inizio turno 85 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 6.
-Giocatore 1 si e' mosso sulla casella A3.
-Giocatore 1 ha finito il turno.
 
-N° Turno: 86.
-Inizio turno 86 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 2.
-Giocatore 3 si e' mosso sulla casella H6.
-Giocatore 3 ha finito il turno.
-Inizio turno 86 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella F1.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella F1.
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 8.
+Giocatore 4 si e' mosso sulla casella A6.
 Giocatore 4 ha finito il turno.
-Inizio turno 86 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella D1.
-Giocatore 2 ha finito il turno.
-Inizio turno 86 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 9.
-Giocatore 1 si e' mosso sulla casella E8.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella A6.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 10.
+Giocatore 1 si e' mosso sulla casella E1.
+Giocatore 1 ha acquistato una casa in E1.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 87.
-Inizio turno 87 del giocatore 3.
+N° Turno: 74.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella C1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 9.
+Giocatore 4 si e' mosso sulla casella H8.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella F8.
+Giocatore 3 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 10.
+Giocatore 1 si e' mosso sulla casella A7.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 75.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 7.
+Giocatore 2 si e' mosso sulla casella A6.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 6.
+Giocatore 4 si e' mosso sulla casella H2.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 5.
+Giocatore 3 si e' mosso sulla casella H5.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella H5.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
+Giocatore 1 si e' mosso sulla casella E8.
+Giocatore 1 ha pagato un affitto di 4 fiorini al giocatore 3 per il pernottamento nella casella E8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 76.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 7.
+Giocatore 2 si e' mosso sulla casella F8.
+Giocatore 2 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 2.
+Giocatore 4 si e' mosso sulla casella G1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
+Giocatore 3 si e' mosso sulla casella C1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 4.
+Giocatore 1 si e' mosso sulla casella H7.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha acquistato un albergo in H7.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 77.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 11.
+Giocatore 2 si e' mosso sulla casella F1.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella F1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella C1.
+Giocatore 4 ha acquistato una casa in C1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
+Giocatore 3 si e' mosso sulla casella A8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
+Giocatore 1 si e' mosso sulla casella H1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 78.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 5.
+Giocatore 2 si e' mosso sulla casella A1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 9.
+Giocatore 4 si e' mosso sulla casella A8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 3.
+Giocatore 3 si e' mosso sulla casella D8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
+Giocatore 1 si e' mosso sulla casella C1.
+Giocatore 1 ha pagato un affitto di 7 fiorini al giocatore 4 per il pernottamento nella casella C1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 79.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella B8.
+Giocatore 2 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella B8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 10.
+Giocatore 4 si e' mosso sulla casella H5.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella H5.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 6.
+Giocatore 3 si e' mosso sulla casella H6.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 8.
+Giocatore 1 si e' mosso sulla casella A7.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 80.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 10.
+Giocatore 2 si e' mosso sulla casella H4.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella H4.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella E1.
+Giocatore 4 ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella E1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
 Giocatore 3 ha tirato i dadi e ha fatto 10.
 Giocatore 3 si e' mosso sulla casella C1.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella C1.
+Giocatore 3 ha pagato un affitto di 7 fiorini al giocatore 4 per il pernottamento nella casella C1.
 Giocatore 3 ha finito il turno.
-Inizio turno 87 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella A1.
-Giocatore 4 ha finito il turno.
-Inizio turno 87 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 2.
-Giocatore 2 si e' mosso sulla casella B1.
-Il giocatore 2ha pagato un affitto di 2 fiorini al giocatore 4 per il pernottamento nella casella B1.
-Giocatore 2 ha finito il turno.
-Inizio turno 87 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 10.
 Giocatore 1 si e' mosso sulla casella H6.
 Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 88.
-Inizio turno 88 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 7.
-Giocatore 3 si e' mosso sulla casella A6.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A6.
-Giocatore 3 ha finito il turno.
-Inizio turno 88 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 4.
-Giocatore 4 si e' mosso sulla casella A5.
-Il giocatore 4ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella A5.
-Giocatore 4 ha finito il turno.
-Inizio turno 88 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 10.
-Giocatore 2 si e' mosso sulla casella C8.
-Il giocatore 2ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella C8.
+N° Turno: 81.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 3.
+Giocatore 2 si e' mosso sulla casella H1.
 Giocatore 2 ha finito il turno.
-Inizio turno 88 del giocatore 1.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 5.
+Giocatore 4 si e' mosso sulla casella A2.
+Giocatore 4 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella A2.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 5.
+Giocatore 3 si e' mosso sulla casella A4.
+Giocatore 3 ha pagato un affitto di 4 fiorini al giocatore 2 per il pernottamento nella casella A4.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
 Giocatore 1 ha tirato i dadi e ha fatto 8.
 Giocatore 1 si e' mosso sulla casella E1.
 Giocatore 1 ha acquistato un albergo in E1.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 89.
-Inizio turno 89 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 7.
-Giocatore 3 si e' mosso sulla casella F8.
-Giocatore 3 ha finito il turno.
-Inizio turno 89 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella E8.
-Il giocatore 4ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella E8.
-Giocatore 4 ha finito il turno.
-Inizio turno 89 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 10.
-Giocatore 2 si e' mosso sulla casella H3.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H3.
-Giocatore 2 ha finito il turno.
-Inizio turno 89 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 9.
-Giocatore 1 si e' mosso sulla casella A6.
-Giocatore 1 ha finito il turno.
+N° Turno: 82.
 
-N° Turno: 90.
-Inizio turno 90 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 11.
-Giocatore 3 si e' mosso sulla casella F1.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella F1.
-Giocatore 3 ha finito il turno.
-Inizio turno 90 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 9.
-Giocatore 4 si e' mosso sulla casella H2.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 4 ha finito il turno.
-Inizio turno 90 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 3.
-Giocatore 2 si e' mosso sulla casella G1.
-Il giocatore 2ha pagato un affitto di 2 fiorini al giocatore 3 per il pernottamento nella casella G1.
-Giocatore 2 ha finito il turno.
-Inizio turno 90 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 4.
-Giocatore 1 si e' mosso sulla casella C8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 91.
-Inizio turno 91 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 7.
-Giocatore 3 si e' mosso sulla casella A3.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A3.
-Giocatore 3 ha finito il turno.
-Inizio turno 91 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 4.
-Giocatore 4 si e' mosso sulla casella E1.
-Il giocatore 4ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella E1.
-Giocatore 4 ha finito il turno.
-Inizio turno 91 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 2.
-Giocatore 2 si e' mosso sulla casella E1.
-Il giocatore 2ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella E1.
-Giocatore 2 ha finito il turno.
-Inizio turno 91 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 3.
-Giocatore 1 si e' mosso sulla casella F8.
-Il giocatore 1ha pagato un affitto di 7 fiorini al giocatore 3 per il pernottamento nella casella F8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 92.
-Inizio turno 92 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 11.
-Giocatore 3 si e' mosso sulla casella G8.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella G8.
-Giocatore 3 ha finito il turno.
-Inizio turno 92 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella A4.
-Giocatore 4 ha finito il turno.
-Inizio turno 92 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 5.
-Giocatore 2 si e' mosso sulla casella A2.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A2.
-Giocatore 2 ha finito il turno.
-Inizio turno 92 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 7.
-Giocatore 1 si e' mosso sulla casella H3.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 93.
-Inizio turno 93 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 7.
-Giocatore 3 si e' mosso sulla casella H2.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 3 ha finito il turno.
-Inizio turno 93 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella D8.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 3 per il pernottamento nella casella D8.
-Giocatore 4 ha finito il turno.
-Inizio turno 93 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 12.
-Giocatore 2 si e' mosso sulla casella G8.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella G8.
-Giocatore 2 ha finito il turno.
-Inizio turno 93 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 8.
-Giocatore 1 si e' mosso sulla casella B1.
-Il giocatore 1ha pagato un affitto di 2 fiorini al giocatore 4 per il pernottamento nella casella B1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 94.
-Inizio turno 94 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 9.
-Giocatore 3 si e' mosso sulla casella A2.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A2.
-Giocatore 3 ha finito il turno.
-Inizio turno 94 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 7.
-Giocatore 4 si e' mosso sulla casella H5.
-Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H5.
-Giocatore 4 ha finito il turno.
-Inizio turno 94 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella H2.
-Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Giocatore 2 ha finito il turno.
-Inizio turno 94 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 3.
-Giocatore 1 si e' mosso sulla casella A3.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 95.
-Inizio turno 95 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 9.
-Giocatore 3 si e' mosso sulla casella D8.
-Giocatore 3 ha finito il turno.
-Inizio turno 95 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 5.
-Giocatore 4 si e' mosso sulla casella G1.
-Il giocatore 4ha pagato un affitto di 2 fiorini al giocatore 3 per il pernottamento nella casella G1.
-Giocatore 4 ha finito il turno.
-Inizio turno 95 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella B1.
-Il giocatore 2ha pagato un affitto di 2 fiorini al giocatore 4 per il pernottamento nella casella B1.
-Giocatore 2 ha finito il turno.
-Inizio turno 95 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 10.
-Giocatore 1 si e' mosso sulla casella F8.
-Il giocatore 1ha pagato un affitto di 7 fiorini al giocatore 3 per il pernottamento nella casella F8.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 96.
-Inizio turno 96 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 5.
-Giocatore 3 si e' mosso sulla casella H7.
-Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H7.
-Giocatore 3 ha finito il turno.
-Inizio turno 96 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 10.
-Giocatore 4 si e' mosso sulla casella A5.
-Il giocatore 4ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella A5.
-Giocatore 4 ha finito il turno.
-Inizio turno 96 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 7.
-Giocatore 2 si e' mosso sulla casella A7.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A7.
-Giocatore 2 ha finito il turno.
-Inizio turno 96 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 10.
-Giocatore 1 si e' mosso sulla casella G1.
-Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 1ha pagato un affitto di 2 fiorini al giocatore 3 per il pernottamento nella casella G1.
-Giocatore 1 ha finito il turno.
-
-N° Turno: 97.
-Inizio turno 97 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 11.
-Giocatore 3 si e' mosso sulla casella C1.
-Il giocatore 3ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella C1.
-Giocatore 3 ha finito il turno.
-Inizio turno 97 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 8.
-Giocatore 4 si e' mosso sulla casella F8.
-Il giocatore 4ha pagato un affitto di 7 fiorini al giocatore 3 per il pernottamento nella casella F8.
-Giocatore 4 ha finito il turno.
-Inizio turno 97 del giocatore 2.
+Inizio turno del giocatore 2.
 Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella F8.
-Il giocatore 2ha pagato un affitto di 7 fiorini al giocatore 3 per il pernottamento nella casella F8.
+Giocatore 2 si e' mosso sulla casella B1.
 Giocatore 2 ha finito il turno.
-Inizio turno 97 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 5.
-Giocatore 1 si e' mosso sulla casella B1.
-Il giocatore 1ha pagato un affitto di 2 fiorini al giocatore 4 per il pernottamento nella casella B1.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella A6.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 3.
+Giocatore 3 si e' mosso sulla casella A7.
+Giocatore 3 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A7.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 8.
+Giocatore 1 si e' mosso sulla casella A5.
+Giocatore 1 ha pagato un affitto di 2 fiorini al giocatore 3 per il pernottamento nella casella A5.
 Giocatore 1 ha finito il turno.
 
-N° Turno: 98.
-Inizio turno 98 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 2.
-Giocatore 3 si e' mosso sulla casella A1.
-Giocatore 3 ha finito il turno.
-Inizio turno 98 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 2.
+N° Turno: 83.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 4.
+Giocatore 2 si e' mosso sulla casella A4.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 9.
 Giocatore 4 si e' mosso sulla casella H8.
 Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
 Giocatore 4 ha finito il turno.
-Inizio turno 98 del giocatore 2.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 8.
+Giocatore 3 si e' mosso sulla casella H8.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
+Giocatore 1 si e' mosso sulla casella D8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 84.
+
+Inizio turno del giocatore 2.
 Giocatore 2 ha tirato i dadi e ha fatto 5.
+Giocatore 2 si e' mosso sulla casella B8.
+Giocatore 2 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella B8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella H4.
+Giocatore 4 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella H4.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella H1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
+Giocatore 1 si e' mosso sulla casella H7.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 85.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 4.
+Giocatore 2 si e' mosso sulla casella F8.
+Giocatore 2 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 11.
+Giocatore 4 si e' mosso sulla casella A2.
+Giocatore 4 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella A2.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 8.
+Giocatore 3 si e' mosso sulla casella A2.
+Giocatore 3 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella A2.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
+Giocatore 1 si e' mosso sulla casella H2.
+Giocatore 1 ha acquistato una casa in H2.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 86.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 12.
+Giocatore 2 si e' mosso sulla casella E1.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella E1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella B8.
+Giocatore 4 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella B8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 11.
+Giocatore 3 si e' mosso sulla casella F8.
+Giocatore 3 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 11.
+Giocatore 1 si e' mosso sulla casella A4.
+Giocatore 1 ha pagato un affitto di 4 fiorini al giocatore 2 per il pernottamento nella casella A4.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 87.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 6.
+Giocatore 2 si e' mosso sulla casella A3.
+Giocatore 2 ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella A3.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella H7.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H7.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 6.
+Giocatore 3 si e' mosso sulla casella H4.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella H4.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
+Giocatore 1 si e' mosso sulla casella F8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 88.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 6.
+Giocatore 2 si e' mosso sulla casella B8.
+Giocatore 2 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella B8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 8.
+Giocatore 4 si e' mosso sulla casella F1.
+Giocatore 4 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella F1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella D1.
+Giocatore 3 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella D1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 3.
+Giocatore 1 si e' mosso sulla casella H7.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 89.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 6.
+Giocatore 2 si e' mosso sulla casella H8.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella B1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 3.
+Giocatore 3 si e' mosso sulla casella A1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 7.
+Giocatore 1 si e' mosso sulla casella G1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 90.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 5.
+Giocatore 2 si e' mosso sulla casella H3.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella A4.
+Giocatore 4 ha pagato un affitto di 4 fiorini al giocatore 2 per il pernottamento nella casella A4.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 12.
+Giocatore 3 si e' mosso sulla casella F8.
+Giocatore 3 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 10.
+Giocatore 1 si e' mosso sulla casella A5.
+Giocatore 1 ha pagato un affitto di 2 fiorini al giocatore 3 per il pernottamento nella casella A5.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 91.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 2.
+Giocatore 2 si e' mosso sulla casella H1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 2.
+Giocatore 4 si e' mosso sulla casella A6.
+Giocatore 4 ha acquistato una casa in A6.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 4.
+Giocatore 3 si e' mosso sulla casella H6.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 12.
+Giocatore 1 si e' mosso sulla casella H6.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 92.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 9.
+Giocatore 2 si e' mosso sulla casella A3.
+Giocatore 2 ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella A3.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 11.
+Giocatore 4 si e' mosso sulla casella H6.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
+Giocatore 3 si e' mosso sulla casella D1.
+Giocatore 3 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella D1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 6.
+Giocatore 1 si e' mosso sulla casella G1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 93.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 7.
+Giocatore 2 si e' mosso sulla casella C8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 9.
+Giocatore 4 si e' mosso sulla casella D1.
+Giocatore 4 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella D1.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 9.
+Giocatore 3 si e' mosso sulla casella A7.
+Giocatore 3 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A7.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 5.
+Giocatore 1 si e' mosso sulla casella B1.
+Giocatore 1 ha acquistato una casa in B1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 94.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
 Giocatore 2 si e' mosso sulla casella H5.
 Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella H5.
+Giocatore 2 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella H5.
 Giocatore 2 ha finito il turno.
-Inizio turno 98 del giocatore 1.
-Giocatore 1 ha tirato i dadi e ha fatto 8.
-Giocatore 1 si e' mosso sulla casella A8.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella A2.
+Giocatore 4 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella A2.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella G8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 7.
+Giocatore 1 si e' mosso sulla casella A7.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 95.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 4.
+Giocatore 2 si e' mosso sulla casella H1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 8.
+Giocatore 4 si e' mosso sulla casella C8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 7.
+Giocatore 3 si e' mosso sulla casella H2.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella H2.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 3.
+Giocatore 1 si e' mosso sulla casella C8.
+Giocatore 1 ha acquistato una casa in C8.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 96.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 3.
+Giocatore 2 si e' mosso sulla casella E1.
+Giocatore 2 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella E1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 4.
+Giocatore 4 si e' mosso sulla casella G8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 5.
+Giocatore 3 si e' mosso sulla casella D1.
+Giocatore 3 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella D1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
+Giocatore 1 si e' mosso sulla casella H4.
+Giocatore 1 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 97.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 3.
+Giocatore 2 si e' mosso sulla casella B1.
+Giocatore 2 ha pagato un affitto di 2 fiorini al giocatore 1 per il pernottamento nella casella B1.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 7.
+Giocatore 4 si e' mosso sulla casella H2.
+Giocatore 4 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 4 ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella H2.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 12.
+Giocatore 3 si e' mosso sulla casella C8.
+Giocatore 3 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella C8.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 3.
+Giocatore 1 si e' mosso sulla casella H1.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 98.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 8.
+Giocatore 2 si e' mosso sulla casella A8.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 11.
+Giocatore 4 si e' mosso sulla casella A4.
+Giocatore 4 ha pagato un affitto di 4 fiorini al giocatore 2 per il pernottamento nella casella A4.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 8.
+Giocatore 3 si e' mosso sulla casella H5.
+Giocatore 3 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 3 ha pagato un affitto di 14 fiorini al giocatore 1 per il pernottamento nella casella H5.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 4.
+Giocatore 1 si e' mosso sulla casella D1.
 Giocatore 1 ha finito il turno.
 
 N° Turno: 99.
-Inizio turno 99 del giocatore 3.
-Giocatore 3 ha tirato i dadi e ha fatto 4.
-Giocatore 3 si e' mosso sulla casella A5.
-Il giocatore 3ha pagato un affitto di 7 fiorini al giocatore 1 per il pernottamento nella casella A5.
-Giocatore 3 ha finito il turno.
-Inizio turno 99 del giocatore 4.
-Giocatore 4 ha tirato i dadi e ha fatto 12.
-Giocatore 4 si e' mosso sulla casella C1.
-Il giocatore 4ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella C1.
-Giocatore 4 ha finito il turno.
-Inizio turno 99 del giocatore 2.
-Giocatore 2 ha tirato i dadi e ha fatto 6.
-Giocatore 2 si e' mosso sulla casella F1.
-Il giocatore 2ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella F1.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 4.
+Giocatore 2 si e' mosso sulla casella E8.
+Giocatore 2 ha pagato un affitto di 4 fiorini al giocatore 3 per il pernottamento nella casella E8.
 Giocatore 2 ha finito il turno.
-Inizio turno 99 del giocatore 1.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 3.
+Giocatore 4 si e' mosso sulla casella A7.
+Giocatore 4 ha pagato un affitto di 4 fiorini al giocatore 1 per il pernottamento nella casella A7.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 8.
+Giocatore 3 si e' mosso sulla casella D1.
+Giocatore 3 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella D1.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
 Giocatore 1 ha tirato i dadi e ha fatto 4.
-Giocatore 1 si e' mosso sulla casella E8.
+Giocatore 1 si e' mosso sulla casella A2.
+Giocatore 1 ha finito il turno.
+
+N° Turno: 100.
+
+Inizio turno del giocatore 2.
+Giocatore 2 ha tirato i dadi e ha fatto 3.
+Giocatore 2 si e' mosso sulla casella H8.
+Giocatore 2 e' passato dal via e ha ritirato 20 fiorini.
+Giocatore 2 ha finito il turno.
+
+Inizio turno del giocatore 4.
+Giocatore 4 ha tirato i dadi e ha fatto 6.
+Giocatore 4 si e' mosso sulla casella F8.
+Giocatore 4 ha pagato un affitto di 8 fiorini al giocatore 1 per il pernottamento nella casella F8.
+Giocatore 4 ha finito il turno.
+
+Inizio turno del giocatore 3.
+Giocatore 3 ha tirato i dadi e ha fatto 8.
+Giocatore 3 si e' mosso sulla casella A6.
+Giocatore 3 ha pagato un affitto di 2 fiorini al giocatore 4 per il pernottamento nella casella A6.
+Giocatore 3 ha finito il turno.
+
+Inizio turno del giocatore 1.
+Giocatore 1 ha tirato i dadi e ha fatto 9.
+Giocatore 1 si e' mosso sulla casella D8.
 Giocatore 1 ha finito il turno.
 
              1        2        3        4        5        6        7        8    
-    A       | |      |E^|     |E^|     |L*|    |L*3|     |E^|     |S*|     | |   
+    A       | |      |S^|     |E*|     |S*|     |E*|    |E*3|     |E^|     | |   
     B       |E*|                                                           |S^|  
-    C      |S*4|                                                           |L^|  
-    D       |L|                                                            |S*|  
-    E       |S^|                                                          |S^1|  
-    F      |S*2|                                                           |L*|  
-    G       |E*|                                                           |S*|  
-    H       | |      |L|      |E^|     |E^|     |S*|     |E|      |S*|     |P|   
+    C       |L*|                                                           |S*|  
+    D       |S^|                                                           |E1|  
+    E       |L^|                                                           |S*|  
+    F       |L^|                                                          |S^4|  
+    G       |S|                                                            |S|   
+    H       | |      |L*|     |S|      |L^|     |L^|     |E|      |E^|     |P2|  
 
-Giocatore 1 ha: 646 fiorini.
-Giocatore 3 ha: 398 fiorini.
-Giocatore 4 ha: 355 fiorini.
-Giocatore 2 ha: 331 fiorini.
-Gioco finito per raggiungimento limite massimo di turni (turni giocati da ogni giocatore = 100)
+Giocatore 2 ha: 351 fiorini.
+Giocatore 4 ha: 244 fiorini.
+Giocatore 3 ha: 293 fiorini.
+Giocatore 1 ha: 832 fiorini.
+
+Gioco finito per raggiungimento limite massimo di turni (i giocatori rimasti in gioco hanno fatto 100 turni).
 Ha vinto il giocatore 1

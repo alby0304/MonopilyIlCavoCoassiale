@@ -1,10 +1,11 @@
 // Giulio Zanardi 2076063
+
 #ifndef CASELLA_H
 #define CASELLA_H
 
 #include <iostream>
-#include <string>
 #include <vector>
+#include "Variabili.h"
 
 // Questa è una casella generica e rappresenta le caselle agli angoli
 class Casella
@@ -32,13 +33,6 @@ public:
     void setSucc(Casella *next) { _succ = next; }
 
     // Variabili oggetto
-    const int _dim_max_Casella = 9;
-    /*
-    La scelta del 9 è per poter stampare il carattere di inizio casella "|" + il tipo di casella "E/S/L/ "
-    + un numero variabile di giocatori (massimo 4, caso raro ma possibile) + carattere di chiusura cella "|"
-    = tot, che al massimo è 7.
-    Aggiungo qualche spazio a destra e sinistra per avere un output del tabellone più omogeneo e arrivo a 9.
-    */
     std::vector<int> _players; // Rappresenta i giocatori che sono sopra alla casella
 protected:
     Casella* _succ;
@@ -47,7 +41,7 @@ protected:
 };
 
 // Metodi e variabili utili per la stampa, dichiarati in scope globale così tutti i file vi hanno accesso
-std::string normalize(std::string, int);
+std::string normalize(std::string);
 char int_to_char(int);
 
 #endif // CASELLA_H

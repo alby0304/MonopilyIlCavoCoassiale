@@ -1,4 +1,5 @@
 // Giulio Zanardi 2076063
+
 #include "../include/Casella.h"
 
 Casella::Casella(int R, int C, char cont) : _coordinata{std::make_pair(int_to_char(R), C)}, _type{cont}
@@ -48,22 +49,22 @@ std::string Casella::to_String()
     }
 
     s = s + "|";
-    s = normalize(s, _dim_max_Casella);
+    s = normalize(s);
     return s;
 }
 
-std::string normalize(std::string s, int _dim_max_Casella)
+std::string normalize(std::string s)
 {
     // In questo progetto normalize viene invocato da stringhe con lunghezza massima di 7 caratteri, quindi è sempre minore di dim_max_Cella
     // Sfrutto il fatto che la divisione tra due interi in C++ restituisce la parte intera del risultato, troncando eventuali decimali
-    int x = (_dim_max_Casella - s.length()) / 2;
+    int x = (Variabili::dimMaxCasella - s.length()) / 2;
     // Aggiungo x spazi da entrambe le parti (per arrivaere a: s.length() = dim_max_Cella || dim_max_Cella-1)
     for (int i = 0; i < x; i++)
     {
         s = " " + s + " ";
     }
     // Se s.length() = dim_max_Cella-1, aggiungo uno spazio a sinistra (scelta di programmazione, potevo agiungerlo anche a destra)
-    if (s.length() != _dim_max_Casella)
+    if (s.length() != Variabili::dimMaxCasella)
     {
         s = " " + s;
     }
@@ -103,7 +104,7 @@ void Casella::addPlayer(int ID_player)
 void Casella::removePlayer()
 {
     // Se c'è almeno un giocatore su questa casella, allora posso toglierlo
-    if (!_players.empty())
+    if (!_players.empty())  // Prevengo la possibile eccezione
     {
         // Il giocatore che si sposta sarà sempre il primo del vettore, perchè è stato il primo ad arrivare (quindi funziona anche in caso di più giocatori sulla stessa casella)
         _players.erase(_players.begin());

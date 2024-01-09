@@ -1,8 +1,7 @@
 // Christian De Chirico 2074972
 #include "../include/Human.h"
 
-bool Human::choice()
-{
+bool Human::choice(){
     Casella_Laterale *posNow = dynamic_cast<Casella_Laterale *>(_pos); // se il casting va a buon fine
     if (posNow)
     {
@@ -33,13 +32,12 @@ bool Human::choice()
 }
 
 
-Giocatore &Human::operator=(Human *g)
-{
+Giocatore &Human::operator=(Human *g){
     _pos = g->getPosition();
-    ID = g->getID();
+    _ID = g->getID();
     _isInGame = g->isInGame();
     _money = g->getMoney();
     // Aggiungo il giocatore al tabellone
-    _pos->addPlayer(ID);
+    _pos->addPlayer(_ID);
     return *this;
 }

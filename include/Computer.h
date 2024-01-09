@@ -8,8 +8,7 @@ class Computer : public Giocatore
 {
 public:
 
-    Computer(int ID, Casella* P, int money) : Giocatore(ID,P,money){}
-    Computer() {}
+    Computer(int ID) : Giocatore(ID){}
 
     Giocatore& operator=(Computer* g);
 

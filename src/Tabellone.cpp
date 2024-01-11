@@ -17,7 +17,7 @@ Alla fine del processo l'ultima casella punterà alla casella di partenza creand
 Tabellone::Tabellone(int tot_R, int tot_C)
 {
     // Scelta progettuale: non si possono creare tabelloni più piccoli di un 3x3
-    if ((tot_R < 3) || (tot_C < 3))
+    if ((tot_R < 3) || (tot_C < 3) || (tot_R >= 27))
         throw Too_Small();
 
     // Set delle variabili di default del tabellone

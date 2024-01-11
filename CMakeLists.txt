@@ -4,27 +4,29 @@ project(Monopoly_Il_Cavo_Coassiale)
 
 include_directories(include) 
 
+add_library(Giocatori
+    include/Giocatore.h
+    src/Giocatore.cpp
+    include/Computer.h
+    src/Computer.cpp
+    include/Human.h
+    src/Human.cpp
+)
 
-add_library(Monopoly
+add_library(Tabellone
+    include/Tabellone.h
+    src/Tabellone.cpp
     include/Casella.h
     src/Casella.cpp
     include/Casella_Laterale.h
     src/Casella_Laterale.cpp
-    include/Tabellone.h
-    src/Tabellone.cpp
-    include/Giocatore.h
-    src/Giocatore.cpp
-    include/Human.h
-    src/Human.cpp
-    include/Computer.h
-    src/Computer.cpp
 )
 
 add_executable(TestTabellone src/TestTabellone.cpp)
 add_executable(Game src/Game.cpp)
 
-target_link_libraries(TestTabellone Monopoly)
-target_link_libraries(Game Monopoly)
+target_link_libraries(TestTabellone Tabellone)
+target_link_libraries(Game Tabellone Giocatori)
 
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2")

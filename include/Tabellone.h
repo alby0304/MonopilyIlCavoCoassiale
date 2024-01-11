@@ -14,6 +14,7 @@ Limitazioni:
     -> se cerco di creare tabelloni  2xN  Nx2 => sto cercando di creare tabelloni di 2 righe / 2 colonne,
     quindi con 2 caselle angolari vicine e quindi senza caselle laterali in verticale/orizzontale 
     (il tabellone non va bene per il gioco di monopoly)
+- non posso creare tabelloni con più di 27 righe (numero massimo di lettere che posso inserire per identificare una riga)
 */
 
 class Tabellone

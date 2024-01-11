@@ -73,27 +73,12 @@ std::string normalize(std::string s)
 
 char int_to_char(int n)
 {
-    switch (n)
-    {
-    case 0:
-        return 'A';
-    case 1:
-        return 'B';
-    case 2:
-        return 'C';
-    case 3:
-        return 'D';
-    case 4:
-        return 'E';
-    case 5:
-        return 'F';
-    case 6:
-        return 'G';
-    case 7:
-        return 'H';
-    }
+    std::string alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    char conv = ' ';    // conv = int convertito in carattere convertito
+    if ((n < alfabeto.size()) && (n >= 0))
+        conv = alfabeto[n];
 
-    return ' '; // Sarebbe il default dello switch
+    return conv;
 }
 
 void Casella::addPlayer(int ID_player)
@@ -104,7 +89,7 @@ void Casella::addPlayer(int ID_player)
 void Casella::removePlayer()
 {
     // Se c'è almeno un giocatore su questa casella, allora posso toglierlo
-    if (!_players.empty())  // Prevengo la possibile eccezione
+    if (!_players.empty()) // Prevengo la possibile eccezione
     {
         // Il giocatore che si sposta sarà sempre il primo del vettore, perchè è stato il primo ad arrivare (quindi funziona anche in caso di più giocatori sulla stessa casella)
         _players.erase(_players.begin());
